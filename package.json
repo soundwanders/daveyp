@@ -1,0 +1,35 @@
+{
+  "name": "daveyp",
+  "version": "1.0.0",
+  "description": "Portfolio website",
+  "main": "index.js",
+  "scripts": {
+    "test": "\"echo \\\"Error: no test specified\\\" && exit 1\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soundwanders/daveyp.git"
+  },
+  "keywords": [
+    "davey",
+    "perron",
+    "ultra",
+    "nightmare",
+    "music",
+    "html",
+    "css",
+    "js",
+    "bootstrap",
+    "portfolio",
+    "website"
+  ],
+  "author": "soundwanders",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/soundwanders/ultranightmare/issues"
+  },
+  "homepage": "https://github.com/soundwanders/ultranightmare#readme",
+  "devDependencies": {
+    "prettier": "2.5.1"
+  }
+}

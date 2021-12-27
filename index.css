@@ -1,0 +1,33 @@
+body {
+    background-color: #292929;
+}
+
+.container.intro {
+    padding: 80px 0;
+    color: #f8f8f8;
+}
+
+.row.title {
+    color: #f8f8f8;
+    text-align: center;
+}
+
+#logo {
+    width: 50%;
+}
+
+.lead {
+    color: #f8f8f8;
+}
+
+.col {
+    border: 2px solid red;
+}
+
+.col-8 {
+    border: 2px solid red;
+}
+
+.navbar-toggler {
+    color: #f8f8f8;
+}
