@@ -2,24 +2,25 @@ body {
     background-color: #292929;
 }
 
-.container.intro {
+#intro {
     padding: 80px 0;
     color: #f8f8f8;
 }
 
-.row.title {
-    color: #f8f8f8;
-    text-align: center;
+/** Davey Perron png logo */
+#dpLogo {
+    max-width: 60%;
 }
 
-#logo {
-    width: 50%;
-}
-
+/**
+lead targets music - movies - art on top section...
+will need to target deeper props if lead p class is reused
+*/
 .lead {
     color: #f8f8f8;
 }
 
+/** placeholder borders for columns to plan out sections" */
 .col {
     border: 2px solid red;
 }
@@ -28,6 +29,24 @@ body {
     border: 2px solid red;
 }
 
+/** top of page header list */
+
+#listRow {
+    margin: 0 auto;
+}
+
+.list-group-horizontal {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.list-group-item {
+    border: none;
+    outline: none;
+    background-color: #292929;
+}
+
+/** hamburger icon for navbar toggling */
 .navbar-toggler {
     color: #f8f8f8;
 }
