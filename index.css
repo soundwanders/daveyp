@@ -1,52 +1,72 @@
 body {
     background-color: #292929;
+    font-size: calc(0.75em + 1vmin);
 }
 
+/** hamburger icon for navbar toggling */
+.navbar-toggler {
+    color: #f8f8f8;
+}
+
+/** Davey png header logo */
+#logo-container {
+    background: #5f5f5f;
+    padding: 5rem 0 1.5rem 0;
+}
+
+#dp-logo {
+    max-width: 60%;
+}
+
+/** header logo's subtext 'music-movies-art' */
+.logo-subtext {
+    font-family: 'Metamorphous', cursive;
+    font-weight: 700;
+    color: #f8f8f8;
+}
+
+#header-sub {
+    background: #5f5f5f;
+}
+
+/** header logo subtext horizontal ul */
+#list-row {
+    margin: 0 auto;
+}
+
+.list-group-horizontal {
+    background: #5f5f5f;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.list-group-item {
+    background: #5f5f5f;
+    border: none;
+    outline: none;
+}
+
+/** intro / bio section */
 #intro {
     padding: 80px 0;
     color: #f8f8f8;
 }
 
-/** Davey Perron png logo */
-#dpLogo {
-    max-width: 60%;
-}
-
-/**
-lead targets music - movies - art on top section...
-will need to target deeper props if lead p class is reused
-*/
-.lead {
+.lead.bio {
+    font-family: 'Rokkitt', serif;
+    text-align: center;
     color: #f8f8f8;
 }
 
-/** placeholder borders for columns to plan out sections" */
+.cd {
+    width: 60px;
+}
+
+/** placeholder borders for columns to help plan out sections" */
 .col {
     border: 2px solid red;
 }
 
 .col-8 {
     border: 2px solid red;
-}
-
-/** top of page header list */
-
-#listRow {
-    margin: 0 auto;
-}
-
-.list-group-horizontal {
-    text-align: center;
-    margin: 0 auto;
-}
-
-.list-group-item {
-    border: none;
-    outline: none;
-    background-color: #292929;
-}
-
-/** hamburger icon for navbar toggling */
-.navbar-toggler {
-    color: #f8f8f8;
 }
