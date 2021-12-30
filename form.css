@@ -1,34 +1,8 @@
-a {
-	font-family: 'Roboto', sans-serif;
-	font-size: 14px;
-	line-height: 1.7;
-	color: #666666;
-	margin: 0px;
-	transition: all 0.4s;
-	-webkit-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-}
-
-a:focus {
-	outline: none !important;
-}
-
-a:hover {
-	text-decoration: none;
-}
-
-/*---------------------------------------------*/
-h1,h2,h4,h5,h6 {
-	margin: 0px;
-}
-
 ul, li {
 	margin: 0px;
 	list-style-type: none;
 }
 
-/*---------------------------------------------*/
 input {
 	outline: none;
 	border: none;
@@ -36,8 +10,8 @@ input {
 
 input[type="number"] {
     -moz-appearance: textfield;
-    appearance: none;
     -webkit-appearance: none;
+    appearance: none;
 }
 
 input[type="number"]::-webkit-outer-spin-button,
@@ -89,19 +63,17 @@ iframe {
 	border: none !important;
 }
 
-/*Utility */
+/** Utility */
 .bg0 {background-color: #292929;}
 .bg1 {background-color: #252525;}
 
 
-/** Contact Form */
+/** Form */
 .container-contact100 {
   width: 100%;  
   min-height: 100vh;
   display: -webkit-box;
   display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -123,8 +95,6 @@ iframe {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -133,12 +103,12 @@ iframe {
 .contact100-form-title {
   display: block;
   width: 100%;
-  font-family: Montserrat-Black;
-  font-size: 39px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
   color: #f8f8f8;
   line-height: 1.2;
   text-align: center;
-  padding-bottom: 59px;
+  padding-bottom: 40px;
 }
 
 .wrap-input100 {
@@ -155,8 +125,8 @@ iframe {
 }
 
 .label-input100 {
-  font-family: Montserrat-SemiBold;
-  font-size: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.625rem;
   color: #f8f8f8;
   line-height: 1.5;
   text-transform: uppercase;
@@ -166,8 +136,8 @@ iframe {
   display: block;
   width: 100%;
   background: transparent;
-  font-family: Montserrat-SemiBold;
-  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
   color: #f8f8f8;
   line-height: 1.2;
   padding-right: 15px;
@@ -196,8 +166,6 @@ textarea.input100 {
 .container-contact100-form-btn {
   display: -webkit-box;
   display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -208,20 +176,17 @@ textarea.input100 {
 .contact100-form-btn {
   display: -webkit-box;
   display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0 20px;
   width: 100%;
   height: 50px;
-  background-color: #f8f8f8;
   border-radius: 25px;
-
-  font-family: Montserrat-Medium;
-  font-size: 16px;
-  color: #222;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.175rem;
+  color: #f8f8f8;
+  background-color: #222;
   line-height: 1.2;
 
   -webkit-transition: all 0.4s;
@@ -238,7 +203,7 @@ textarea.input100 {
 }
 
 .contact100-form-btn:hover {
-  background-color: #494baf;
+  background-color: #252525;
 }
 
 .contact100-form-btn:hover i {
@@ -249,6 +214,11 @@ textarea.input100 {
   transform: translateX(10px);
 }
 
+
+.contact100-form-btn:active {
+  transform: translateY(3px);
+  background-color: #00ce71;
+}
 /** Responsive */
 
 @media (max-width: 768px) {
@@ -275,34 +245,30 @@ textarea.input100 {
   content: attr(data-validate);
   display: -webkit-box;
   display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: flex;
   align-items: center;
   position: absolute;
   width: 100%;
   min-height: 40px;
   background-color: rgb(75, 75, 75);
-  top: 35px;
+  top: 40px;
   left: 0px;
   padding: 0 45px 0 22px;
   pointer-events: none;
 
-  font-family: Montserrat-SemiBold;
-  font-size: 18px;
-  color: #fa4251;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.875rem;
+  color: #ff3a4a;
   line-height: 1.2;
 }
 
 .btn-hide-validate {
   font-family: 'Roboto', sans serif;
-  font-size: 18px;
-  color: #fa4251;
+  font-size: 0.875rem;
+  color: #ff3a4a;
   cursor: pointer;
   display: -webkit-box;
   display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -318,14 +284,11 @@ textarea.input100 {
 }
 
 .true-validate::after {
-  content: "\f26b";
   font-family: 'Roboto', sans serif;
-  font-size: 18px;
-  color: #00ad5f;
+  font-size: 1.125rem;
+  color: #00ce71;
   display: -webkit-box;
   display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -336,7 +299,6 @@ textarea.input100 {
   right: 10px;
 }
 
-/*---------------------------------------------*/
 @media (max-width: 576px) {
   .alert-validate::before {
     padding: 0 10px 0 10px;
@@ -349,7 +311,6 @@ textarea.input100 {
   }
 }
 
-
 /** Restyle Select2.js */
 
 .select2-container {
@@ -361,8 +322,6 @@ textarea.input100 {
 .select2-container .select2-selection--single {
   display: -webkit-box;
   display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: flex;
   align-items: center;
   background-color: transparent;
@@ -372,12 +331,12 @@ textarea.input100 {
   position: relative;
 }
 
-/*------------------------------------------------------------------
-[ in select ]*/
+/* Select2 Dropdown*/
 .select2-container .select2-selection--single .select2-selection__rendered {
-  font-family: Montserrat-SemiBold;
-  font-size: 18px;
-  color: #555555;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #f8f8f8;
   line-height: 1.2;
   padding-left: 0px ;
   background-color: transparent;
@@ -390,8 +349,6 @@ textarea.input100 {
   right: 0px;
   display: -webkit-box;
   display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -402,29 +359,22 @@ textarea.input100 {
 }
 
 .select2-selection__arrow::before {
-  content: '\f312';
+  content: '↡';
   font-family: 'Roboto', sans serif;
-  font-size: 18px;
-  color: #555555;
+  font-size: 1.3rem;
+  color: #f8f8f8;
 }
 
-
-/*------------------------------------------------------------------
-[ Dropdown option ]*/
+/** Dropdown option */
 .select2-container--open .select2-dropdown {
-  z-index: 1251;
+  z-index: 15;
   width: calc(100% + 2px);
   border: 0px solid transparent;
   border-radius: 10px;
-  overflow: hidden;
-  background-color: white;
+  background-color: #292929;
   left: -24px;
-
+  overflow: hidden;
   box-shadow: 0 3px 10px 0px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0 3px 10px 0px rgba(0, 0, 0, 0.2);
-  -webkit-box-shadow: 0 3px 10px 0px rgba(0, 0, 0, 0.2);
-  -o-box-shadow: 0 3px 10px 0px rgba(0, 0, 0, 0.2);
-  -ms-box-shadow: 0 3px 10px 0px rgba(0, 0, 0, 0.2);
 }
 
 @media (max-width: 576px) {
@@ -449,19 +399,19 @@ textarea.input100 {
 }
 
 .select2-container .select2-results__option[aria-selected="true"] {
-  background: #00ad5f;
-  color: white;
+  background: #00ce71;
+  color: #f8f8f8;
 }
 
 .select2-container .select2-results__option--highlighted[aria-selected] {
-  background: #00ad5f;
-  color: white;
+  background: #00ce71;
+  color: #f8f8f8;
 }
 
 .select2-results__options {
-  font-family: Montserrat-SemiBold;
-  font-size: 14px;
-  color: #555555;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.875rem;
+  color: #f8f8f8;
   line-height: 1.2;
 }
 
@@ -469,8 +419,8 @@ textarea.input100 {
   border: 1px solid #aaa;
   outline: none;
   font-family: 'Roboto', sans-serif;
-  font-size: 15px;
-  color: #333333;
+  font-size: 0.9rem;
+  color: #292929;
   line-height: 1.2;
 }
 
@@ -480,86 +430,4 @@ textarea.input100 {
 
 .wrap-input100 .dropDownSelect2 .select2-dropdown {
   width: calc(100% + 2px) !important;
-}
-
-/** rs NoUI */
-.wrap-contact100-form-range {
-  width: 60%;
-  padding: 20px 25px 57px 25px;
-}
-
-.contact100-form-range-value {
-  font-family: Montserrat-SemiBold;
-  font-size: 18px;
-  color: #555555;
-  line-height: 1.2;
-  padding-top: 10px;
-  padding-bottom: 30px;
-}
-
-.contact100-form-range-value input {
-  display: none;
-}
-
-#filter-bar {
-  height: 20px;
-  border: 1px solid #e6e6e6;
-  border-radius: 9px;
-  background-color: #f7f7f7;
-}
-#filter-bar .noUi-connect {
-  border: 1px solid #e6e6e6;
-  border-radius: 9px;
-  background-color: #00ad5f;
-  box-shadow: none;
-}
-#filter-bar .noUi-handle {
-  width: 40px;
-  height: 36px;
-  border: 1px solid #cccccc;
-  border-radius: 9px;
-  background: #f5f5f5;
-  cursor: pointer;
-  box-shadow: none;
-  outline: none;
-  top: -8px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#filter-bar .noUi-handle.noUi-handle-lower {
-  left: -1px;
-}
-
-#filter-bar .noUi-handle.noUi-handle-upper {
-  left: -39px;
-}
-
-#filter-bar .noUi-handle:before {
-  content: "";
-  display: block;
-  position: unset;
-  height: 12px;
-  width: 9px;
-  background-color: transparent;
-  border-left: 2px solid #cccccc;
-  border-right: 2px solid #cccccc;
-}
-#filter-bar .noUi-handle:after {
-  display: none;
-}
-
-@media (max-width: 576px) {
-  .wrap-contact100-form-range {
-    padding: 20px 0px 57px 0px;
-  }
-
-  .wrap-contact100-form-radio {
-    padding: 15px 0px 0 0px;
-  }
 }

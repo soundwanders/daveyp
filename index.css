@@ -20,9 +20,22 @@ body {
 
 /** header logo's subtext 'music-movies-art' */
 .logo-subtext {
-    font-family: 'Metamorphous', cursive;
+    display: flex;
+    align-items: center;
+    line-height: 1;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     color: #f8f8f8;
+}
+
+svg#film-icon {
+    color: #f8f8f8;
+    width: calc(0.75em + 1vmin);
+}
+
+svg#music-icon {
+    color: #f8f8f8;
+    width: calc(0.75em + 1vmin);
 }
 
 #header-sub {
@@ -64,9 +77,9 @@ body {
 
 /** placeholder borders for columns to help plan out sections" */
 .col {
-    border: 2px solid red;
+    border: 2px solid #ff3a4a;
 }
 
 .col-8 {
-    border: 2px solid red;
+    border: 2px solid #ff3a4a;
 }

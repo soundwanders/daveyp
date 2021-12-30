@@ -56,7 +56,7 @@
   function showValidate(input) {
     let thisAlert = $(input).parent();
     $(thisAlert).addClass('alert-validate');
-    $(thisAlert).append('<span class="btn-hide-validate">&#xf136;</span>');
+    $(thisAlert).append('<span class="btn-hide-validate">&#10006;</span>');
 
     $('.btn-hide-validate').each(function () {
       $(this).on('click', function () {
