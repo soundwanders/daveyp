@@ -115,7 +115,7 @@ iframe {
   width: 100%;
   position: relative;
   border: 1px solid #252525;
-  border-radius: 13px;
+  border-radius: 12px;
   padding: 10px 30px 9px 22px;
   margin-bottom: 20px;
 }
@@ -203,7 +203,7 @@ textarea.input100 {
 }
 
 .contact100-form-btn:hover {
-  background-color: #252525;
+  background-color: #313131;
 }
 
 .contact100-form-btn:hover i {
@@ -217,7 +217,7 @@ textarea.input100 {
 
 .contact100-form-btn:active {
   transform: translateY(3px);
-  background-color: #00ce71;
+  background-color: #00b865;
 }
 /** Responsive */
 
@@ -250,7 +250,7 @@ textarea.input100 {
   position: absolute;
   width: 100%;
   min-height: 40px;
-  background-color: rgb(75, 75, 75);
+  background-color: #4b4b4b;
   top: 40px;
   left: 0px;
   padding: 0 45px 0 22px;
@@ -280,13 +280,13 @@ textarea.input100 {
 }
 
 .rs1-alert-validate.alert-validate::before {
-  background-color: #252525;
+  background: #4b4b4b;
 }
 
 .true-validate::after {
   font-family: 'Roboto', sans serif;
   font-size: 1.125rem;
-  color: #00ce71;
+  color: #00b865;
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
@@ -370,7 +370,7 @@ textarea.input100 {
   z-index: 15;
   width: calc(100% + 2px);
   border: 0px solid transparent;
-  border-radius: 10px;
+  border-radius: 8px;
   background-color: #292929;
   left: -24px;
   overflow: hidden;
@@ -399,13 +399,17 @@ textarea.input100 {
 }
 
 .select2-container .select2-results__option[aria-selected="true"] {
-  background: #00ce71;
+  background: #00b865;
   color: #f8f8f8;
 }
 
 .select2-container .select2-results__option--highlighted[aria-selected] {
-  background: #00ce71;
+  background: #00b865;
   color: #f8f8f8;
+}
+
+.select2-container .select2-results__option--selected {
+  background: #4b4b4b;
 }
 
 .select2-results__options {
@@ -416,7 +420,7 @@ textarea.input100 {
 }
 
 .select2-search--dropdown .select2-search__field {
-  border: 1px solid #aaa;
+  border: 1px solid #5555;
   outline: none;
   font-family: 'Roboto', sans-serif;
   font-size: 0.9rem;

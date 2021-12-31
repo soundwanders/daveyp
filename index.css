@@ -8,7 +8,7 @@ body {
     color: #f8f8f8;
 }
 
-/** Davey png header logo */
+/** Davey png header logo container / img */
 #logo-container {
     background: #5f5f5f;
     padding: 5rem 0 1.5rem 0;
@@ -16,6 +16,11 @@ body {
 
 #dp-logo {
     max-width: 60%;
+}
+
+/** header subtext container */
+#header-sub {
+    background: #5f5f5f;
 }
 
 /** header logo's subtext 'music-movies-art' */
@@ -28,18 +33,16 @@ body {
     color: #f8f8f8;
 }
 
-svg#film-icon {
-    color: #f8f8f8;
+svg#disc-icon , svg#disc-icon2 {
     width: calc(0.75em + 1vmin);
+    color: #f8f8f8;
 }
 
-svg#music-icon {
-    color: #f8f8f8;
-    width: calc(0.75em + 1vmin);
-}
-
-#header-sub {
-    background: #5f5f5f;
+/** black underline bottom of header */
+#header-underline {
+    max-width: 60%;
+    height: 40px;
+    border-top: 4px solid #222;
 }
 
 /** header logo subtext horizontal ul */
@@ -66,20 +69,25 @@ svg#music-icon {
 }
 
 .lead.bio {
-    font-family: 'Rokkitt', serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
     text-align: center;
     color: #f8f8f8;
 }
 
-.cd {
+#spectre {
+    padding: 0;
+}
+
+.cd-img {
     width: 60px;
 }
 
-/** placeholder borders for columns to help plan out sections" */
+/** placeholder borders for intro section columns to help plan out space */
 .col {
-    border: 2px solid #ff3a4a;
+    border: 2px solid yellow;
 }
 
-.col-8 {
+.col-6 {
     border: 2px solid #ff3a4a;
 }
