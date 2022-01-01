@@ -64,9 +64,7 @@ iframe {
 }
 
 /** Utility */
-.bg0 {background-color: #292929;}
-.bg1 {background-color: #252525;}
-
+.bg1 {background-color: #222; }
 
 /** Form */
 .container-contact100 {
@@ -103,8 +101,10 @@ iframe {
 .contact100-form-title {
   display: block;
   width: 100%;
-  font-family: 'Roboto', sans-serif;
-  font-size: 2rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 3rem;
+  letter-spacing: 1px;
   color: #f8f8f8;
   line-height: 1.2;
   text-align: center;
@@ -135,8 +135,8 @@ iframe {
 .input100 {
   display: block;
   width: 100%;
-  background: transparent;
-  font-family: 'Roboto', sans-serif;
+  background: #222;
+  font-family: 'Poppins', sans-serif;
   font-size: 1rem;
   color: #f8f8f8;
   line-height: 1.2;
@@ -183,7 +183,7 @@ textarea.input100 {
   width: 100%;
   height: 50px;
   border-radius: 25px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 1.175rem;
   color: #f8f8f8;
   background-color: #222;
@@ -203,7 +203,7 @@ textarea.input100 {
 }
 
 .contact100-form-btn:hover {
-  background-color: #313131;
+  background-color: #1a1a1a;
 }
 
 .contact100-form-btn:hover i {
@@ -216,7 +216,7 @@ textarea.input100 {
 
 
 .contact100-form-btn:active {
-  transform: translateY(3px);
+  transform: translateY(2px);
   background-color: #00b865;
 }
 /** Responsive */
@@ -250,7 +250,7 @@ textarea.input100 {
   position: absolute;
   width: 100%;
   min-height: 40px;
-  background-color: #4b4b4b;
+  background-color: #222;
   top: 40px;
   left: 0px;
   padding: 0 45px 0 22px;
@@ -277,10 +277,6 @@ textarea.input100 {
   height: 40px;
   top: 35px;
   right: 12px;
-}
-
-.rs1-alert-validate.alert-validate::before {
-  background: #4b4b4b;
 }
 
 .true-validate::after {
@@ -359,9 +355,9 @@ textarea.input100 {
 }
 
 .select2-selection__arrow::before {
-  content: '↡';
+  content: '↓';
   font-family: 'Roboto', sans serif;
-  font-size: 1.3rem;
+  font-size: 1rem;
   color: #f8f8f8;
 }
 

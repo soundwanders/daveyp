@@ -28,7 +28,7 @@ body {
     display: flex;
     align-items: center;
     line-height: 1;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 700;
     color: #f8f8f8;
 }
@@ -64,18 +64,36 @@ svg#disc-icon , svg#disc-icon2 {
 
 /** intro / bio section */
 #intro {
-    padding: 80px 0;
+    padding: 60px 0;
     color: #f8f8f8;
 }
 
 .lead.bio {
-    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
     font-weight: 400;
     text-align: center;
+    line-height: 1.5;
+    padding: 1rem 2rem;
     color: #f8f8f8;
 }
 
+p.lead.bio:last-child {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+#photo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 #spectre {
+    max-height: 70%;
     padding: 0;
 }
 
