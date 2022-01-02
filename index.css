@@ -1,6 +1,7 @@
 body {
     background-color: #292929;
     font-size: calc(0.75em + 1vmin);
+    overflow-x: hidden;
 }
 
 /** hamburger icon for navbar toggling */
@@ -8,10 +9,18 @@ body {
     color: #f8f8f8;
 }
 
+#header-wrapper {
+    background: #5f5f5f;
+    background-image: url('./media/bg2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 /** Davey png header logo container / img */
 #logo-container {
-    background: #5f5f5f;
     padding: 5rem 0 1.5rem 0;
+    background: transparent;
 }
 
 #dp-logo {
@@ -20,7 +29,7 @@ body {
 
 /** header subtext container */
 #header-sub {
-    background: #5f5f5f;
+    background: transparent;
 }
 
 /** header logo's subtext 'music-movies-art' */
@@ -31,6 +40,36 @@ body {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     color: #f8f8f8;
+}
+
+@media (max-width: 960px) {
+    .logo-subtext {
+        font-size: 1.25rem;
+        line-height: 1;
+    }
+}
+
+/** header logo subtext horizontal ul */
+#list-row {
+    margin: 0 auto;
+}
+
+.list-group-horizontal {
+    background: transparent;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.list-group-item {
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+@media (max-width: 960px) {
+    .list-group-item {
+        padding: 0 0.5rem;
+    }
 }
 
 svg#disc-icon , svg#disc-icon2 {
@@ -45,30 +84,23 @@ svg#disc-icon , svg#disc-icon2 {
     border-top: 4px solid #222;
 }
 
-/** header logo subtext horizontal ul */
-#list-row {
-    margin: 0 auto;
-}
-
-.list-group-horizontal {
-    background: #5f5f5f;
-    text-align: center;
-    margin: 0 auto;
-}
-
-.list-group-item {
-    background: #5f5f5f;
-    border: none;
-    outline: none;
+@media (max-width: 960px) {
+    #header-underline {
+        margin-top: 0.5rem;
+        max-width: 80%;
+    }
 }
 
 /** intro / bio section */
 #intro {
     padding: 60px 0;
     color: #f8f8f8;
+    background-color: #292929;
 }
 
-.lead.bio {
+.lead.bio {  
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     align-items: center;
     justify-content: center;

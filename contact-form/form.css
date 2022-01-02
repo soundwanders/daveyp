@@ -71,7 +71,7 @@ iframe {
   width: 100%;  
   min-height: 100vh;
   display: -webkit-box;
-  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -92,7 +92,7 @@ iframe {
 .contact100-form {
   width: 100%;
   display: -webkit-box;
-  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -165,7 +165,7 @@ textarea.input100 {
 /** Button */
 .container-contact100-form-btn {
   display: -webkit-box;
-  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -175,7 +175,7 @@ textarea.input100 {
 
 .contact100-form-btn {
   display: -webkit-box;
-  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -216,6 +216,10 @@ textarea.input100 {
 
 
 .contact100-form-btn:active {
+  -webkit-transform: translateY(2px);
+  -moz-transform: translateY(2px);
+  -ms-transform: translateY(2px);
+  -o-transform: translateY(2px);
   transform: translateY(2px);
   background-color: #00b865;
 }
@@ -244,7 +248,7 @@ textarea.input100 {
 .alert-validate::before {
   content: attr(data-validate);
   display: -webkit-box;
-  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   align-items: center;
   position: absolute;
@@ -268,7 +272,7 @@ textarea.input100 {
   color: #ff3a4a;
   cursor: pointer;
   display: -webkit-box;
-  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -284,7 +288,7 @@ textarea.input100 {
   font-size: 1.125rem;
   color: #00b865;
   display: -webkit-box;
-  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -317,7 +321,7 @@ textarea.input100 {
 
 .select2-container .select2-selection--single {
   display: -webkit-box;
-  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   align-items: center;
   background-color: transparent;
@@ -341,10 +345,14 @@ textarea.input100 {
 .select2-container--default .select2-selection--single .select2-selection__arrow {
   height: 100%;
   top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);;
+  -o-transform: translateY(-50%);
   transform: translateY(-50%);
   right: 0px;
   display: -webkit-box;
-  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   align-items: center;
   justify-content: flex-end;
