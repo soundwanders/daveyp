@@ -11,7 +11,7 @@ body {
 
 #header-wrapper {
     background: #5f5f5f;
-    background-image: url('./media/bg2.png');
+    background-image: url('./media/bg1.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -27,6 +27,12 @@ body {
     max-width: 60%;
 }
 
+@media (max-width: 960px) {
+    #dp-logo {
+        max-width: 90%;
+    }
+}
+
 /** header subtext container */
 #header-sub {
     background: transparent;
@@ -36,7 +42,7 @@ body {
 .logo-subtext {
     display: flex;
     align-items: center;
-    line-height: 1;
+    line-height: 1.25;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     color: #f8f8f8;
@@ -44,8 +50,8 @@ body {
 
 @media (max-width: 960px) {
     .logo-subtext {
-        font-size: 1.25rem;
-        line-height: 1;
+        font-size: 1.1rem;
+        line-height: 1.5;
     }
 }
 
@@ -94,8 +100,12 @@ svg#disc-icon , svg#disc-icon2 {
 /** intro / bio section */
 #intro {
     padding: 60px 0;
-    color: #f8f8f8;
     background-color: #292929;
+}
+
+#bio {
+    color: #f8f8f8;
+    border: 2px solid yellow;
 }
 
 .lead.bio {  
@@ -111,17 +121,26 @@ svg#disc-icon , svg#disc-icon2 {
     padding: 1rem 2rem;
     color: #f8f8f8;
 }
+@media (max-width: 960px) {
+    .lead.bio {
+        font-size: 1rem;
+        line-height: 1.75;
+
+        margin-bottom: 0;
+    }
+}
 
 p.lead.bio:last-child {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 1.33rem;
 }
 
-#photo-container {
+#portrait-container {
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 2px solid #ff3a4a;
 }
 
 #spectre {
@@ -131,13 +150,4 @@ p.lead.bio:last-child {
 
 .cd-img {
     width: 60px;
-}
-
-/** placeholder borders for intro section columns to help plan out space */
-.col {
-    border: 2px solid yellow;
-}
-
-.col-6 {
-    border: 2px solid #ff3a4a;
 }
