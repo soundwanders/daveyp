@@ -60,7 +60,7 @@ button:hover {
 }
 
 iframe {
-	border: none !important;
+	border: none;
 }
 
 /** Utility */
@@ -78,11 +78,10 @@ iframe {
   align-items: center;
   padding: 15px;
   background: #292929;
-  
 }
 
 .wrap-contact100 {
-  width: 920px;
+  width: 800px;
   background: #414141;
   border-radius: 10px;
   overflow: hidden;
@@ -103,12 +102,18 @@ iframe {
   width: 100%;
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
-  font-size: 3rem;
+  font-size: 2.5rem;
   letter-spacing: 1px;
   color: #f8f8f8;
   line-height: 1.2;
   text-align: center;
   padding-bottom: 40px;
+}
+
+@media (max-width: 680px) {
+  .contact100-form-title {
+    font-size: 2rem;
+  }
 }
 
 .wrap-input100 {
@@ -126,7 +131,8 @@ iframe {
 
 .label-input100 {
   font-family: 'Roboto', sans-serif;
-  font-size: 0.625rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.2px;
   color: #f8f8f8;
   line-height: 1.5;
   text-transform: uppercase;

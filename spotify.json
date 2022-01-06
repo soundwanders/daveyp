@@ -1,0 +1,66 @@
+{
+    "ultranightmare": {
+        "albums": [
+            {
+                "id": 0,
+                "name": "The Mark of Cain",
+                "url": "https://open.spotify.com/album/79Pm2J5bMmZ9YIzft9AzoM?si=786e0445999b459d",
+                "released": "2021"
+            },
+            {
+                "id": 1,
+                "name": "Exterminatus Instrumentals",
+                "url": "https://open.spotify.com/album/272uppODmPcrRuu3pRcChE?si=-5ynGirlRCGmGYIswMkaDw",
+                "released": "2021"
+            },
+            {
+                "id": 2,
+                "name": "Exterminatus",
+                "url": "https://open.spotify.com/album/3ESXW7vhhFzV8one29V2v2?si=-m2QkwDlSkudtjJF9_1iKQ",
+                "released": "2021"
+            },
+            {
+                "id": 3,
+                "name": "The Pendulum Swings",
+                "url": "https://open.spotify.com/album/3jzr56h61Lsa5gQfXWBt5u?si=B7mZDVhwQMmHMjz7SBapAA",
+                "released": "2020"
+            },
+            {
+                "id": 4,
+                "name": "Knee Deep in the Dead",
+                "url": "https://open.spotify.com/album/76sS3PD02bv2cRYzuJHlkR?si=1TJjQffiS06gC9s-ExYuAQ",
+                "released": "2020"
+            },
+            {
+                "id": 5,
+                "name": "The Shores of Hell",
+                "url": "https://open.spotify.com/album/6nBMz0jYy0bV35nPzKG0Yi?si=KFF9CkTxSM-QNcewFL4OZw",
+                "released": "2020"
+            },
+            {
+                "id": 6,
+                "name": "Knee Deep in the Dead Instrumentals",
+                "url": "https://open.spotify.com/album/76sS3PD02bv2cRYzuJHlkR?si=1TJjQffiS06gC9s-ExYuAQ",
+                "released": "2020"
+            },
+            {
+                "id": 7,
+                "name": "Nightmare Fuel",
+                "url": "https://open.spotify.com/album/4mxIUAxCWqEk1Xoz5P82Ti?si=q6UMfh50TYGk9NmQBjaa_g",
+                "released": "2020"
+            },
+            {
+                "id": 8,
+                "name": "Zealot",
+                "url": "https://open.spotify.com/album/3h1j4Ap0VK1SeVSNZvOBDz?si=oG2Yt9-TQAKJBHaVC7u46g",
+                "released": "2020"
+            },
+            {
+                "id": 9,
+                "name": "Hatred",
+                "url": "https://open.spotify.com/album/4P79qvqQWheBsU92KU2czD?si=AMDojzuFT6eaP4qHgG1r-A",
+                "released": "2019"
+            }
+        ]
+    }
+}
