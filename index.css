@@ -102,7 +102,7 @@ svg#disc-icon , svg#disc-icon2 {
 
 /** intro / bio section */
 #intro {
-    padding: 60px 0;
+    padding: 40px 0;
     background-color: #292929;
 }
 
@@ -145,14 +145,17 @@ p.lead.bio:last-child {
     padding: 0;
 }
 
-.spotify {
-    max-width: 80%; 
-    padding: 60px 0
+#spotify {
+    padding: 40px 0
 }
 
-.cd-img {
-    width: 60px;
-    padding: 10px 0;
+.carousel-inner {
+    text-align: center;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    margin: 0 -6rem;
 }
 
 .footer {
@@ -188,8 +191,29 @@ p.lead.bio:last-child {
   font-size: 1rem;
 }
 
+@media (min-width: 768px) {
+    .carousel-inner {
+      display: flex;
+    }
+    .carousel-item {
+      margin-right: 0;
+      flex: 0 0 33.333333%;
+      display: block;
+    }
+}
+
 @media (max-width: 940px) {
-    .footer-flex {
+    .carousel-control-prev,
+    .carousel-control-next {
+        margin: 0 auto;
+    }
+    #spectre {
+        grid-row: 1;
+    }
+    #intro {
+        padding: 20px 0;
+    }
+        .footer-flex {
         flex-direction: column;
         text-align: center;
         align-items: center;
