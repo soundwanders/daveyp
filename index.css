@@ -4,7 +4,7 @@ body {
     overflow-x: hidden;
 }
 
-/** hamburger icon for navbar toggling */
+/** Bootstrap Hamburger icon for navbar toggling...unused right now */
 .navbar-toggler {
     color: #f8f8f8;
 }
@@ -34,13 +34,13 @@ body {
     }
 }
 
-/** header subtext container */
+/** Header subtext container */
 #header-sub {
     background: transparent;
     cursor: default;
 }
 
-/** header logo's subtext 'music-movies-art' */
+/** Header logo's subtext 'music-movies-art' */
 .logo-subtext {
     display: flex;
     align-items: center;
@@ -58,7 +58,7 @@ body {
     }
 }
 
-/** header logo subtext horizontal ul */
+/** Header logo subtext horizontal ul */
 #list-row {
     margin: 0 auto;
 }
@@ -100,7 +100,7 @@ svg#disc-icon , svg#disc-icon2 {
     }
 }
 
-/** intro / bio section */
+/** Intro / Bio section */
 #intro {
     padding: 40px 0;
     background-color: #292929;
@@ -121,17 +121,38 @@ svg#disc-icon , svg#disc-icon2 {
     color: #f8f8f8;
     cursor: default;
 }
+
+p.lead.bio:nth-child(2) {
+    width: 80%;
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0 auto;
+    padding: 6px 0;
+}
+
+p.lead.bio:nth-child(3) {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
 @media (max-width: 940px) {
     .lead.bio {
+        font-family: 'Poppins', sans-serif;
         font-size: 1rem;
         line-height: 1.75;
         margin-bottom: 0;
     }
-}
-
-p.lead.bio:last-child {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
+    p.lead.bio:nth-child(2) {
+        width: 80%;
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin: 0 auto;
+        padding: 6px 0;
+    }
+    p.lead.bio:nth-child(3) {
+        font-size: 1.75rem;
+        font-weight: 600;
+    }
 }
 
 #portrait-container {
@@ -145,17 +166,24 @@ p.lead.bio:last-child {
     padding: 0;
 }
 
-#spotify {
+/** Spotify Album Carousel */
+
+#carousel-container {
     padding: 40px 0
 }
 
 .carousel-inner {
     text-align: center;
+    padding: 1rem;
 }
 
 .carousel-control-prev,
 .carousel-control-next {
     margin: 0 -6rem;
+}
+
+iframe {
+    padding: 0 1rem;
 }
 
 .footer {
@@ -176,7 +204,7 @@ p.lead.bio:last-child {
   align-items: flex-end;
   justify-content: space-between;
   width: 100%;
-  padding: 1rem 0;
+  padding: 0.5rem 0;
   color: #f8f8f8;
   background: #222;
   white-space: nowrap;
@@ -184,12 +212,14 @@ p.lead.bio:last-child {
 
 .copyright {
   display: inherit;
-  padding: 1rem 0 0.5rem 0;
+  padding: 0.5rem 0;
   margin: 0 auto;
   overflow: hidden;
   font-family: 'Filson Soft', 'Roboto', Helvetica, sans-serif;
   font-size: 1rem;
 }
+
+/** Media Queries for Responsive Design */
 
 @media (min-width: 768px) {
     .carousel-inner {
@@ -206,9 +236,6 @@ p.lead.bio:last-child {
     .carousel-control-prev,
     .carousel-control-next {
         margin: 0 auto;
-    }
-    #spectre {
-        grid-row: 1;
     }
     #intro {
         padding: 20px 0;

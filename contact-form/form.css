@@ -59,10 +59,6 @@ button:hover {
 	cursor: pointer;
 }
 
-iframe {
-	border: none;
-}
-
 /** Utility */
 .bg1 {background-color: #222; }
 
@@ -75,15 +71,15 @@ iframe {
   justify-content: center;
   align-items: center;
   padding: 10px;
-  background: #292929;
+  background: transparent;
 }
 
 .wrap-contact100 {
-  max-width: 860px;
+  max-width: 900px;
   background: #414141;
   border-radius: 10px;
   overflow: hidden;
-  padding: 28px 36px;
+  padding: 42px 36px;
 }
 
 .contact100-form {
@@ -93,19 +89,6 @@ iframe {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-}
-
-.contact100-form-title {
-  display: block;
-  width: 100%;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 600;
-  font-size: 2.5rem;
-  letter-spacing: 1px;
-  color: #f8f8f8;
-  line-height: 1.2;
-  text-align: center;
-  padding-bottom: 40px;
 }
 
 .wrap-input100 {
@@ -180,7 +163,7 @@ textarea.input100 {
   padding: 0 20px;
   width: 100%;
   height: 50px;
-  border-radius: 25px;
+  border-radius: 12px;
   font-family: 'Poppins', sans-serif;
   font-size: 1.175rem;
   color: #f8f8f8;
@@ -199,10 +182,6 @@ textarea.input100 {
   transition: all 0.4s;
 }
 
-.contact100-form-btn:hover {
-  background-color: #1a1a1a;
-}
-
 .contact100-form-btn:hover i {
   -webkit-transform: translateX(10px);
   -moz-transform: translateX(10px);
@@ -213,12 +192,12 @@ textarea.input100 {
 
 
 .contact100-form-btn:active {
-  -webkit-transform: translateY(2px);
-  -moz-transform: translateY(2px);
-  -ms-transform: translateY(2px);
-  -o-transform: translateY(2px);
-  transform: translateY(2px);
-  background-color: #00b865;
+  -webkit-transform: translateY(1px);
+  -moz-transform: translateY(1px);
+  -ms-transform: translateY(1px);
+  -o-transform: translateY(1px);
+  transform: translateY(1px);
+  background-color: #1a1a1a;
 }
 
 /** Alert validate */
@@ -399,13 +378,6 @@ textarea.input100 {
 
 
 /** Responsive */
-
-@media (max-width: 680px) {
-  .contact100-form-title {
-    font-size: 2rem;
-  }
-}
-
 @media (max-width: 768px) {
   .rs1-wrap-input100 {
     width: 100%;
@@ -414,8 +386,11 @@ textarea.input100 {
 
 @media (max-width: 576px) {
   .wrap-contact100 {
-    padding: 28px 18px;
+    margin: 0 auto;
+    padding: 18px;
+    width: 90%;
   }
+
   .wrap-input100 {
     padding: 6px 10px 4px 10px;
   }
@@ -438,5 +413,8 @@ textarea.input100 {
   }
   .select2-container .select2-results__option[aria-selected] {
     padding-left: 12px;
+  }
+  .contact100-form-btn {
+    font-size: 1rem;
   }
 }

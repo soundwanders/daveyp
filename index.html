@@ -24,7 +24,7 @@
 
 <body class="d-flex flex-column h-100">
 
-  <div class="container-fluid shadow-sm" id="header-wrapper">
+  <div class="container-fluid shadow-reg" id="header-wrapper">
     <div class="container-fluid" id="logo-container">
       <div class="row justify-content-center" id="logo-row">
         <img src="./media/dcropped.png" class="img-fluid" id="dp-logo"/>
@@ -66,7 +66,7 @@
   <main>
     <div class="container-md" id="intro">
       <div class="row" id="bio-row">
-        <div class="col-md-6 sm-12" id="bio-container">
+        <div class="col-md-6 sm-12 order-last order-md-first" id="bio-container">
           <p class="lead bio">
             My name is Davey Perron and I am a composer for music, film and video games, 
             most known for my work in the metal band Ultra Nightmare and the synthwave 
@@ -76,7 +76,9 @@
             to discard ideas that don't work and iterate quickly on the ones that do.
           </p>
           <p class="lead bio">
-            Want to elevate your project to the next level? 
+            Want to elevate your project to the next level?
+          </p>
+          <p class="lead bio">
             Contact me.
           </p>
         </div>
@@ -125,7 +127,7 @@
             </div>
     
             <div class="container-contact100-form-btn">
-              <button class="contact100-form-btn">
+              <button class="contact100-form-btn shadow-sm">
                 <span>
                   Submit
                 </span>
@@ -136,8 +138,8 @@
       </div>
     </div>
 
-    <div class="container-md" id="spotify">
-      <div class="carousel slide" id="spotify-carousel" data-bs-ride="carousel">
+    <div class="container-md" id="carousel-container">
+      <div class="carousel" id="spotify-carousel" data-bs-ride="carousel" data-interval="false">
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="2000">
             <iframe 
