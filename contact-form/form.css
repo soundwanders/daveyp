@@ -28,6 +28,16 @@ textarea:focus, input:focus {
   border-color: transparent !important;
 }
 
+button {
+	outline: none !important;
+	border: none;
+	background: transparent;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
 input:focus::-webkit-input-placeholder { color:transparent; }
 input:focus:-moz-placeholder { color:transparent; }
 input:focus::-moz-placeholder { color:transparent; }
@@ -48,21 +58,11 @@ textarea:-moz-placeholder { color: #adadad;}
 textarea::-moz-placeholder { color: #adadad;}
 textarea:-ms-input-placeholder { color: #adadad;}
 
-/*---------------------------------------------*/
-button {
-	outline: none !important;
-	border: none;
-	background: transparent;
-}
+/*---------------------------------------------------*/
 
-button:hover {
-	cursor: pointer;
-}
-
-/** Utility */
 .bg1 {background-color: #222; }
 
-/** Form */
+/** Form Container */
 .container-md.contact100 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -75,11 +75,11 @@ button:hover {
 }
 
 .wrap-contact100 {
-  max-width: 900px;
-  background: #414141;
+  max-width: 1020px;
+  background: transparent;
   border-radius: 10px;
   overflow: hidden;
-  padding: 42px 36px;
+  padding: 36px 48px;
 }
 
 .contact100-form {
@@ -91,10 +91,11 @@ button:hover {
   justify-content: space-between;
 }
 
+/** Input wrapper */
 .wrap-input100 {
   width: 100%;
   position: relative;
-  border: 1px solid #252525;
+  border: 1px solid #b9b9b9;
   border-radius: 12px;
   padding: 10px 30px 9px 22px;
   margin-bottom: 20px;
@@ -105,23 +106,24 @@ button:hover {
 }
 
 .label-input100 {
+  color: #f9f9f9;
   font-family: 'Roboto', sans-serif;
   font-size: 0.7rem;
   letter-spacing: 0.2px;
-  color: #f8f8f8;
   line-height: 1.5;
   text-transform: uppercase;
 }
 
+/** Input field containers */
 .input100 {
   display: block;
   width: 100%;
   background: #222;
+  color: #f9f9f9;
   font-family: 'Poppins', sans-serif;
   font-size: 1rem;
-  color: #f8f8f8;
   line-height: 1.2;
-  padding-right: 15px;
+  padding-right: 14px;
 }
 
 input.input100 {
@@ -133,7 +135,6 @@ textarea.input100 {
   padding-top: 9px;
   padding-bottom: 13px;
 }
-
 
 .input100:focus + .focus-input100::before {
   width: 100%;
@@ -150,8 +151,8 @@ textarea.input100 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding-top: 20px;
   width: 100%;
+  padding-top: 20px;
 }
 
 .contact100-form-btn {
@@ -160,14 +161,15 @@ textarea.input100 {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 20px;
   width: 100%;
   height: 50px;
+  background-color: #222;
+  color: #f9f9f9;
+  padding: 0 20px;
+  border: 1px solid #b9b9b9;
   border-radius: 12px;
   font-family: 'Poppins', sans-serif;
   font-size: 1.175rem;
-  color: #f8f8f8;
-  background-color: #222;
   line-height: 1.2;
   -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
@@ -214,23 +216,18 @@ textarea.input100 {
   position: absolute;
   width: 100%;
   min-height: 40px;
-  background-color: #222;
   top: 40px;
   left: 0px;
   padding: 0 45px 0 22px;
+  background-color: #222;
+  color: #ff6b77;
   pointer-events: none;
-
   font-family: 'Roboto', sans-serif;
   font-size: 0.875rem;
-  color: #ff3a4a;
   line-height: 1.2;
 }
 
 .btn-hide-validate {
-  font-family: 'Roboto', sans serif;
-  font-size: 0.875rem;
-  color: #ff3a4a;
-  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -241,12 +238,13 @@ textarea.input100 {
   height: 40px;
   top: 35px;
   right: 12px;
+  color: #ff6b77;
+  cursor: pointer;
+  font-family: 'Roboto', sans serif;
+  font-size: 0.875rem;
 }
 
 .true-validate::after {
-  font-family: 'Roboto', sans serif;
-  font-size: 1.125rem;
-  color: #00b865;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -257,6 +255,9 @@ textarea.input100 {
   height: 40px;
   top: 35px;
   right: 10px;
+  font-family: 'Roboto', sans serif;
+  font-size: 1.125rem;
+  color: #00b865;
 }
 
 /** Restyle Select2.js */
@@ -279,31 +280,32 @@ textarea.input100 {
   position: relative;
 }
 
-/* Select2 Dropdown*/
+/* Select2 Dropdown Container overrides for custom style */
+
 .select2-container .select2-selection--single .select2-selection__rendered {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 1rem;
-  color: #f8f8f8;
   line-height: 1.2;
-  padding-left: 0px ;
   background-color: transparent;
+  color: #f9f9f9;
+  padding-left: 0px;
 }
 
 .select2-container--default .select2-selection--single .select2-selection__arrow {
-  height: 100%;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);;
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
-  right: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  height: 100%;
+  top: 50%;
+  right: 0px;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .select2-selection__arrow b {
@@ -314,19 +316,19 @@ textarea.input100 {
   content: '↓';
   font-family: 'Roboto', sans serif;
   font-size: 1rem;
-  color: #f8f8f8;
+  color: #f9f9f9;
 }
 
 /** Dropdown option */
 .select2-container--open .select2-dropdown {
-  z-index: 15;
   width: calc(100% + 2px);
+  left: -24px;
+  background-color: #292929;
   border: 0px solid transparent;
   border-radius: 8px;
-  background-color: #292929;
-  left: -24px;
-  overflow: hidden;
   box-shadow: 0 3px 10px 0px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  z-index: 15;
 }
 
 .select2-dropdown--above {top: -38px;}
@@ -340,12 +342,12 @@ textarea.input100 {
 
 .select2-container .select2-results__option[aria-selected="true"] {
   background: #006eb8;
-  color: #f8f8f8;
+  color: #f9f9f9;
 }
 
 .select2-container .select2-results__option--highlighted[aria-selected] {
   background: #006eb8;
-  color: #f8f8f8;
+  color: #f9f9f9;
 }
 
 .select2-container .select2-results__option--selected {
@@ -355,7 +357,7 @@ textarea.input100 {
 .select2-results__options {
   font-family: 'Roboto', sans-serif;
   font-size: 0.875rem;
-  color: #f8f8f8;
+  color: #f9f9f9;
   line-height: 1.2;
 }
 
@@ -375,9 +377,11 @@ textarea.input100 {
 .wrap-input100 .dropDownSelect2 .select2-dropdown {
   width: calc(100% + 2px) !important;
 }
+/** END of Select2 custom styling */
 
+/*---------------------------------------------------*/
 
-/** Responsive */
+/** Media queries */
 @media (max-width: 768px) {
   .rs1-wrap-input100 {
     width: 100%;
@@ -390,7 +394,6 @@ textarea.input100 {
     padding: 18px;
     width: 90%;
   }
-
   .wrap-input100 {
     padding: 6px 10px 4px 10px;
   }
