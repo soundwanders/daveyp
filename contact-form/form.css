@@ -16,7 +16,7 @@ input[type="number"] {
 
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
-    -webkit-appearance: none;
+  -webkit-appearance: none;
 }
 
 textarea {
@@ -29,7 +29,7 @@ textarea:focus, input:focus {
 }
 
 button {
-	outline: none !important;
+	outline: none;
 	border: none;
 	background: transparent;
 }
@@ -63,7 +63,7 @@ textarea:-ms-input-placeholder { color: #adadad;}
 .bg1 {background-color: #222; }
 
 /** Form Container */
-.container-md.contact100 {
+.container-md.contact {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -74,7 +74,7 @@ textarea:-ms-input-placeholder { color: #adadad;}
   background: transparent;
 }
 
-.wrap-contact100 {
+.wrap-contact {
   max-width: 1020px;
   background: transparent;
   border-radius: 10px;
@@ -82,7 +82,7 @@ textarea:-ms-input-placeholder { color: #adadad;}
   padding: 36px 48px;
 }
 
-.contact100-form {
+.contact-form {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -92,7 +92,7 @@ textarea:-ms-input-placeholder { color: #adadad;}
 }
 
 /** Input wrapper */
-.wrap-input100 {
+.wrap-input {
   width: 100%;
   position: relative;
   border: 1px solid #b9b9b9;
@@ -101,11 +101,13 @@ textarea:-ms-input-placeholder { color: #adadad;}
   margin-bottom: 20px;
 }
 
-.rs1-wrap-input100 {
-  width: calc((100% - 30px) / 2);
-}
+/** rs1-wrap-input available if you need two inputs on same row
+  .rs1-wrap-input {
+    width: calc((100% - 30px) / 2);
+  } 
+*/
 
-.label-input100 {
+.label-input {
   color: #f9f9f9;
   font-family: 'Roboto', sans-serif;
   font-size: 0.7rem;
@@ -115,7 +117,7 @@ textarea:-ms-input-placeholder { color: #adadad;}
 }
 
 /** Input field containers */
-.input100 {
+.input {
   display: block;
   width: 100%;
   background: #222;
@@ -126,26 +128,26 @@ textarea:-ms-input-placeholder { color: #adadad;}
   padding-right: 14px;
 }
 
-input.input100 {
+input.input {
   height: 40px;
 }
 
-textarea.input100 {
+textarea.input {
   min-height: 120px;
   padding-top: 9px;
   padding-bottom: 13px;
 }
 
-.input100:focus + .focus-input100::before {
+.input:focus + .focus-input::before {
   width: 100%;
 }
 
-.has-val.input100 + .focus-input100::before {
+.has-val.input + .focus-input::before {
   width: 100%;
 }
 
 /** Button */
-.container-contact100-form-btn {
+.container-contact-form-btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -155,7 +157,7 @@ textarea.input100 {
   padding-top: 20px;
 }
 
-.contact100-form-btn {
+.contact-form-btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -177,14 +179,14 @@ textarea.input100 {
   transition: all 0.4s;
 }
 
-.contact100-form-btn i {
+.contact-form-btn i {
   -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
   -moz-transition: all 0.4s;
   transition: all 0.4s;
 }
 
-.contact100-form-btn:hover i {
+.contact-form-btn:hover i {
   -webkit-transform: translateX(10px);
   -moz-transform: translateX(10px);
   -ms-transform: translateX(10px);
@@ -193,7 +195,7 @@ textarea.input100 {
 }
 
 
-.contact100-form-btn:active {
+.contact-form-btn:active {
   -webkit-transform: translateY(1px);
   -moz-transform: translateY(1px);
   -ms-transform: translateY(1px);
@@ -261,7 +263,6 @@ textarea.input100 {
 }
 
 /** Restyle Select2.js */
-
 .select2-container {
   display: block;
   max-width: 100% !important;
@@ -370,31 +371,30 @@ textarea.input100 {
   line-height: 1.2;
 }
 
-.wrap-input100 .dropDownSelect2 .select2-container--open {
+.wrap-input .dropDownSelect2 .select2-container--open {
   width: 100% !important;
 }
 
-.wrap-input100 .dropDownSelect2 .select2-dropdown {
+.wrap-input .dropDownSelect2 .select2-dropdown {
   width: calc(100% + 2px) !important;
 }
-/** END of Select2 custom styling */
 
 /*---------------------------------------------------*/
 
 /** Media queries */
 @media (max-width: 768px) {
-  .rs1-wrap-input100 {
+  .rs1-wrap-input {
     width: 100%;
   }
 }
 
 @media (max-width: 576px) {
-  .wrap-contact100 {
+  .wrap-contact {
     margin: 0 auto;
     padding: 18px;
     width: 90%;
   }
-  .wrap-input100 {
+  .wrap-input {
     padding: 6px 10px 4px 10px;
   }
   .alert-validate::before {
@@ -417,7 +417,7 @@ textarea.input100 {
   .select2-container .select2-results__option[aria-selected] {
     padding-left: 12px;
   }
-  .contact100-form-btn {
+  .contact-form-btn {
     font-size: 1rem;
   }
 }
