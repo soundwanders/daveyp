@@ -148,14 +148,14 @@ svg#disc-icon, svg#disc-icon2 {
         line-height: 1.75;
         margin-bottom: 0;
     }
-    p.lead.bio:nth-child(2) {
+    #elevate {
         width: 80%;
         font-size: 1.5rem;
         font-weight: 600;
         margin: 0 auto;
         padding: 6px 0;
     }
-    p.lead.bio:nth-child(3) {
+    #cta {
         font-size: 1.75rem;
         font-weight: 600;
     }
@@ -254,6 +254,9 @@ iframe {
     .carousel-control-prev,
     .carousel-control-next {
         margin: 0 auto;
+    }
+    #logo-container {
+       padding: 4rem 0 1.25rem 0;
     }
     #intro {
         padding: 20px 0;
