@@ -96,7 +96,7 @@ textarea:-ms-input-placeholder { color: #adadad;}
   width: 100%;
   position: relative;
   border: 1px solid #b9b9b9;
-  border-radius: 12px;
+  border-radius: 13px;
   padding: 10px 30px 9px 22px;
   margin-bottom: 20px;
 }
@@ -122,7 +122,7 @@ textarea:-ms-input-placeholder { color: #adadad;}
   width: 100%;
   background: #222;
   color: #f9f9f9;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 1rem;
   line-height: 1.2;
   padding-right: 14px;
@@ -169,9 +169,10 @@ textarea.input {
   color: #f9f9f9;
   padding: 0 20px;
   border: 1px solid #b9b9b9;
-  border-radius: 12px;
-  font-family: 'Poppins', sans-serif;
+  border-radius: 13px;
+  font-family: 'Roboto', sans-serif;
   font-size: 1.175rem;
+  font-weight: 600;
   line-height: 1.2;
   -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;

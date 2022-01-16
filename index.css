@@ -21,7 +21,7 @@ button:hover {
 
 /** Davey png header logo container / img */
 #logo-container {
-    padding: 5rem 0 1.5rem 0;
+    padding: 5rem 0 1.75rem 0;
     background: transparent;
 }
 
@@ -47,10 +47,10 @@ button:hover {
     display: flex;
     align-items: center;
     line-height: 1.1;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Martel', serif;
     font-weight: 700;
     font-size: 2rem;
-    color: #f8f8f8;
+    color: #f9f9f9;
 }
 
 @media (max-width: 940px) {
@@ -66,7 +66,7 @@ button:hover {
 
 svg#disc-icon, svg#disc-icon2 {
     width: calc(0.75em + 1vmin);
-    color: #f8f8f8;
+    color: #f9f9f9;
 }
 
 /** Header logo subtext horizontal ul */
@@ -118,32 +118,32 @@ svg#disc-icon, svg#disc-icon2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Martel', serif;
     font-weight: 400;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     text-align: center;
-    line-height: 1.5;
+    line-height: 1.6;
     padding: 1rem 2rem;
     color: #f9f9f9;
     cursor: default;
 }
 
-p.lead.bio:nth-child(2) {
+#elevate {
     width: 80%;
     font-size: 2rem;
-    font-weight: 600;
+    font-weight: 700;
     margin: 0 auto;
     padding: 6px 0;
 }
 
-p.lead.bio:nth-child(3) {
+#cta {
     font-size: 3rem;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 @media (max-width: 940px) {
     .lead.bio {
-        font-family: 'Poppins', sans-serif;
+        font-family: 'Martel', serif;
         font-size: 1rem;
         line-height: 1.75;
         margin-bottom: 0;
@@ -207,29 +207,34 @@ iframe {
   display: -ms-flexbox;
   display: flex;
   align-items: flex-end;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
-  padding: 0.5rem 0;
+  padding: 1.5rem 0 0.5rem 0;
   color: #f9f9f9;
   background: #222;
-  white-space: nowrap;
+}
+
+.social-links {
+    text-decoration: none;
 }
 
 .list-group-item.footer {
-    padding: 0 1rem;
+    padding: 0 1.5rem;
 }
 
 .footer-logo {
-    height: 1.5rem;
+    width: 1.8rem;
 }
 
 .copyright {
-  display: inherit;
-  padding: 0.5rem 0;
-  margin: 0 auto;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding: 1.5rem 0 1rem 0;
   overflow: hidden;
-  font-family: 'Filson Soft', 'Roboto', Helvetica, sans-serif;
-  font-size: 1rem;
+  font-family: Ubuntu, sans-serif;
+  font-size: 0.875rem;
 }
 
 /** Media Queries for Responsive Design */
@@ -239,9 +244,9 @@ iframe {
       display: flex;
     }
     .carousel-item {
+      display: block;
       margin-right: 0;
       flex: 0 0 33.333333%;
-      display: block;
     }
 }
 
