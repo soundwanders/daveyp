@@ -28,16 +28,6 @@ textarea:focus, input:focus {
   border-color: transparent !important;
 }
 
-button {
-	outline: none;
-	border: none;
-	background: transparent;
-}
-
-button:hover {
-	cursor: pointer;
-}
-
 input:focus::-webkit-input-placeholder { color:transparent; }
 input:focus:-moz-placeholder { color:transparent; }
 input:focus::-moz-placeholder { color:transparent; }
@@ -60,7 +50,7 @@ textarea:-ms-input-placeholder { color: #adadad;}
 
 /*---------------------------------------------------*/
 
-.bg1 {background-color: #222; }
+.bg1 {background-color: #191919; }
 
 /** Form Container */
 .container-md.contact {
@@ -120,7 +110,7 @@ textarea:-ms-input-placeholder { color: #adadad;}
 .input {
   display: block;
   width: 100%;
-  background: #222;
+  background: #191919;
   color: #f9f9f9;
   font-family: 'Roboto', sans-serif;
   font-size: 1rem;
@@ -146,7 +136,7 @@ textarea.input {
   width: 100%;
 }
 
-/** Button */
+/** Submit Button */
 .container-contact-form-btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -165,9 +155,9 @@ textarea.input {
   align-items: center;
   width: 100%;
   height: 50px;
-  background-color: #222;
-  color: #f9f9f9;
   padding: 0 20px;
+  background-color: #191919;
+  color: #f9f9f9;
   border: 1px solid #b9b9b9;
   border-radius: 13px;
   font-family: 'Roboto', sans-serif;
@@ -195,17 +185,16 @@ textarea.input {
   transform: translateX(10px);
 }
 
-
 .contact-form-btn:active {
   -webkit-transform: translateY(1px);
   -moz-transform: translateY(1px);
   -ms-transform: translateY(1px);
   -o-transform: translateY(1px);
   transform: translateY(1px);
-  background-color: #1a1a1a;
+  background-color: #202020;
 }
 
-/** Alert validate */
+/** Form data validation */
 .validate-input {
   position: relative;
 }
@@ -263,7 +252,7 @@ textarea.input {
   color: #00b865;
 }
 
-/** Restyle Select2.js */
+/** Restyle Select2.js dropdown */
 .select2-container {
   display: block;
   max-width: 100% !important;
@@ -281,8 +270,6 @@ textarea.input {
   outline: none;
   position: relative;
 }
-
-/* Select2 Dropdown Container overrides for custom style */
 
 .select2-container .select2-selection--single .select2-selection__rendered {
   font-family: 'Roboto', sans-serif;
@@ -359,6 +346,7 @@ textarea.input {
 .select2-results__options {
   font-family: 'Roboto', sans-serif;
   font-size: 0.875rem;
+  font-weight: 600;
   color: #f9f9f9;
   line-height: 1.2;
 }

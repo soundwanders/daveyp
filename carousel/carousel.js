@@ -27,4 +27,4 @@ if (window.matchMedia('(min-width: 768px)').matches) {
   });
 } else {
   $(albumCarousel).addClass('slide');
-};
+}

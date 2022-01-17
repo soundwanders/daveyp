@@ -1,4 +1,3 @@
-
 //  {albums.map(({ id, name, url }) => (
 //      <iframe
 //        key={id}

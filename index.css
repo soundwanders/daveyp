@@ -5,7 +5,7 @@ body {
 }
 
 button {
-	outline: none !important;
+	outline: none;
 	border: none;
 	background: transparent;
 }
@@ -14,12 +14,12 @@ button:hover {
 	cursor: pointer;
 }
 
+/** Header section */
 #header-wrapper {
     background-color: #222;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23373737' fill-opacity='0.13' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
 }
 
-/** Davey png header logo container / img */
 #logo-container {
     padding: 5rem 0 1.75rem 0;
     background: transparent;
@@ -30,41 +30,43 @@ button:hover {
 }
 
 @media (max-width: 940px) {
+    #logo-container {
+        padding: 4rem 0 1.25rem 0;
+    }
     #dp-logo {
         max-width: 90%;
     }
 }
 
-/** Header subtext nav links */
-
-#header-sub {
+/** Header subtext > anchor links */
+#header-anchor {
     background: transparent;
     cursor: default;
 }
 
-/** Header logo's subtext 'music-movies-art' */
-.logo-subtext {
+.anchors {
     display: flex;
     align-items: center;
     line-height: 1.1;
-    font-family: 'Martel', serif;
+    font-family: 'Roboto Slab', serif;
     font-weight: 700;
     font-size: 2rem;
     color: #f9f9f9;
 }
 
 @media (max-width: 940px) {
-    .logo-subtext {
+    .anchors {
         font-size: 1.1rem;
         line-height: 1.5;
     }
 }
 
+/** remove default style from <a> elements */
 .nav-links {
     text-decoration: none;
 }
 
-svg#disc-icon, svg#disc-icon2 {
+svg.disc-icon {
     width: calc(0.75em + 1vmin);
     color: #f9f9f9;
 }
@@ -96,7 +98,7 @@ svg#disc-icon, svg#disc-icon2 {
 #header-underline {
     max-width: 55%;
     height: 40px;
-    border-top: 4px solid #222;
+    border-top: 3px solid #f9f9f9;
 }
 
 @media (max-width: 940px) {
@@ -112,13 +114,19 @@ svg#disc-icon, svg#disc-icon2 {
     background-color: #0e0e0e;
 }
 
+@media (max-width: 940px) {
+    #intro {
+        padding: 20px 0;
+    }
+}
+
 .lead.bio {  
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'Martel', serif;
+    font-family: 'Roboto Slab', serif;
     font-weight: 400;
     font-size: 1.3rem;
     text-align: center;
@@ -126,6 +134,15 @@ svg#disc-icon, svg#disc-icon2 {
     padding: 1rem 2rem;
     color: #f9f9f9;
     cursor: default;
+}
+
+@media (max-width: 940px) {
+    .lead.bio {
+        font-family: 'Roboto Slab', serif;
+        font-size: 1rem;
+        line-height: 1.75;
+        margin-bottom: 0;
+    }
 }
 
 #elevate {
@@ -136,18 +153,7 @@ svg#disc-icon, svg#disc-icon2 {
     padding: 6px 0;
 }
 
-#cta {
-    font-size: 3rem;
-    font-weight: 700;
-}
-
 @media (max-width: 940px) {
-    .lead.bio {
-        font-family: 'Martel', serif;
-        font-size: 1rem;
-        line-height: 1.75;
-        margin-bottom: 0;
-    }
     #elevate {
         width: 80%;
         font-size: 1.5rem;
@@ -155,7 +161,15 @@ svg#disc-icon, svg#disc-icon2 {
         margin: 0 auto;
         padding: 6px 0;
     }
-    #cta {
+}
+
+#contact-me {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+@media (max-width: 940px) {
+    #contact-me {
         font-size: 1.75rem;
         font-weight: 600;
     }
@@ -172,47 +186,28 @@ svg#disc-icon, svg#disc-icon2 {
     padding: 0;
 }
 
-/** Spotify Album Carousel */
-#music {
-    padding: 40px 0
-}
-
-.carousel-inner {
-    text-align: center;
-    padding: 1rem;
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-    margin: 0 -6rem;
-}
-
-iframe {
-    padding: 0 1rem;
-}
-
-.footer {
+footer {
   display: block;
   bottom: 0;
   margin: 0 auto;
   width: 100%;
   padding: 0;
+  background: #222;
+  color: #f9f9f9;
+  border-top: 1px solid #f9f9f9;
   overflow: hidden;
 }
 
 .footer-flex {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -moz-box;
   display: -ms-flexbox;
   display: flex;
-  align-items: flex-end;
+  align-content: center;
   flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
-  padding: 1.5rem 0 0.5rem 0;
-  color: #f9f9f9;
-  background: #222;
+  padding: 2rem 0 0.5rem 0;
 }
 
 .social-links {
@@ -220,54 +215,36 @@ iframe {
 }
 
 .list-group-item.footer {
-    padding: 0 1.5rem;
+    padding: 0 1.4rem;
 }
 
 .footer-logo {
-    width: 1.8rem;
+    width: 2rem;
+}
+
+@media (max-width: 940px) {
+    .footer-logo {
+        width: 1.8rem;
+    }
 }
 
 .copyright {
   display: flex;
   width: 100%;
   justify-content: center;
-  padding: 1.5rem 0 1rem 0;
+  padding: 1.75rem 0;
   overflow: hidden;
   font-family: Ubuntu, sans-serif;
   font-size: 0.875rem;
 }
 
-/** Media Queries for Responsive Design */
-
-@media (min-width: 768px) {
-    .carousel-inner {
-      display: flex;
-    }
-    .carousel-item {
-      display: block;
-      margin-right: 0;
-      flex: 0 0 33.333333%;
-    }
-}
-
 @media (max-width: 940px) {
-    .carousel-control-prev,
-    .carousel-control-next {
-        margin: 0 auto;
-    }
-    #logo-container {
-       padding: 4rem 0 1.25rem 0;
-    }
-    #intro {
-        padding: 20px 0;
-    }
-        .footer-flex {
+    .footer-flex {
         flex-direction: column;
         text-align: center;
         align-items: center;
     }
     .copyright {
-        padding: 1rem 0;
         font-size: 0.875rem;
     }
 }

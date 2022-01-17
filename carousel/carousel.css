@@ -1,0 +1,43 @@
+/** Spotify Album Carousel */
+#music {
+    padding: 40px 0 60px 0;
+}
+
+.carousel-inner {
+    text-align: center;
+    padding: 1rem;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    margin: 0 -6rem;
+}
+
+iframe {
+    padding: 0 1rem;
+}
+
+@media (min-width: 768px) {
+    .carousel-inner {
+      display: flex;
+    }
+    .carousel-item {
+      display: block;
+      margin-right: 0;
+      flex: 0 0 33.333333%;
+    }
+}
+
+@media (max-width: 568px) {
+    iframe {
+        height: 340px;
+        width: 260px;
+    }
+}
+
+@media (max-width: 940px) {
+    .carousel-control-prev,
+    .carousel-control-next {
+        margin: 0 auto;
+    }
+}
