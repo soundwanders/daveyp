@@ -276,7 +276,7 @@ textarea.input {
   font-weight: 700;
   font-size: 1rem;
   line-height: 1.2;
-  background-color: transparent;
+  background-color: #191919;
   color: #f9f9f9;
   padding-left: 0px;
 }
@@ -296,7 +296,6 @@ textarea.input {
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-
 .select2-selection__arrow b {
   display: none;
 }
@@ -368,15 +367,7 @@ textarea.input {
   width: calc(100% + 2px) !important;
 }
 
-/*---------------------------------------------------*/
-
 /** Media queries */
-@media (max-width: 768px) {
-  .rs1-wrap-input {
-    width: 100%;
-  }
-}
-
 @media (max-width: 576px) {
   .wrap-contact {
     margin: 0 auto;

@@ -32,5 +32,8 @@
   "homepage": "https://github.com/soundwanders/ultranightmare#readme",
   "devDependencies": {
     "prettier": "2.5.1"
+  },
+  "dependencies": {
+    "mdb-ui-kit": "^3.10.2"
   }
 }

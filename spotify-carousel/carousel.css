@@ -17,6 +17,11 @@ iframe {
     padding: 0 1rem;
 }
 
+/** Hide duplicate carousel navigation arrows due to MDB */
+.carousel-control-prev-icon::after, .carousel-control-next-icon::after {
+    display: none;
+}
+
 @media (min-width: 768px) {
     .carousel-inner {
       display: flex;
