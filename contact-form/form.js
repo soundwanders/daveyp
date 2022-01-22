@@ -1,4 +1,4 @@
-// jquery
+// jquery for contact form validation
 
 (function ($) {
   'use strict';
