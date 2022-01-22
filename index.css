@@ -48,7 +48,7 @@ button:hover {
     display: flex;
     align-items: center;
     line-height: 1.1;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Martel', serif;
     font-weight: 700;
     font-size: 2rem;
     color: #f9f9f9;
@@ -126,7 +126,7 @@ svg.disc-icon {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Martel', serif;
     font-weight: 400;
     font-size: 1.3rem;
     text-align: center;
@@ -138,7 +138,7 @@ svg.disc-icon {
 
 @media (max-width: 940px) {
     .lead.bio {
-        font-family: 'Roboto Slab', serif;
+        font-family: 'Martel', serif;
         font-size: 1rem;
         line-height: 1.75;
         margin-bottom: 0;
