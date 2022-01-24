@@ -258,6 +258,10 @@ footer {
     transform: translateY(-1.75rem);
 }
 
+@media (max-width:940px) {
+    transform: none;
+}
+
 .list-group-item.footer {
     padding: 0 1.4rem;
 }
