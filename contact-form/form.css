@@ -65,7 +65,7 @@ textarea:-ms-input-placeholder { color: #adadad;}
 }
 
 .wrap-contact {
-  max-width: 1020px;
+  max-width: 940px;
   background: transparent;
   border-radius: 10px;
   overflow: hidden;
@@ -101,7 +101,7 @@ textarea:-ms-input-placeholder { color: #adadad;}
   color: #f9f9f9;
   font-family: 'Roboto', sans-serif;
   font-size: 0.7rem;
-  letter-spacing: 0.2px;
+  letter-spacing: 1px;
   line-height: 1.5;
   text-transform: uppercase;
 }
@@ -163,6 +163,7 @@ textarea.input {
   font-family: 'Roboto', sans-serif;
   font-size: 1.175rem;
   font-weight: 600;
+  letter-spacing: 1px;
   line-height: 1.2;
   -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
@@ -329,12 +330,12 @@ textarea.input {
 }
 
 .select2-container .select2-results__option[aria-selected="true"] {
-  background: #006eb8;
+  background: #005a95;
   color: #f9f9f9;
 }
 
 .select2-container .select2-results__option--highlighted[aria-selected] {
-  background: #006eb8;
+  background: #005a95;
   color: #f9f9f9;
 }
 

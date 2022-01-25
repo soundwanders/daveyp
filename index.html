@@ -102,7 +102,6 @@
       </div>
     </div>
 
-
     <div class="container-md contact justify-content-flex-start">
       <div class="row">
         <div class="wrap-contact">
@@ -147,14 +146,18 @@
       </div>
     </div>
 
+    <!-- Background Image Container, Ends After Youtube Embeds -->
+    <div class="background-image container-fluid w-100 px-0">
+
+    <!-- Spotify Album Carousel -->
     <div class="container-md" id="music">
       <div class="carousel" id="spotify-carousel" data-bs-ride="carousel" data-bs-interval="false">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
+        <div class="album carousel-inner">
+          <div class="album carousel-item active">
             <iframe 
               class="music-gallery" 
               src="https://open.spotify.com/embed/album/79Pm2J5bMmZ9YIzft9AzoM?si=786e0445999b459d?utm_source=generator" 
-              name="The Mark of Cain" 
+
               scrolling="no" 
               frameborder="0" 
               marginheight="0px" 
@@ -167,10 +170,10 @@
             </iframe>
           </div>
 
-          <div class="carousel-item">
+          <div class="album carousel-item">
             <iframe 
               class="music-gallery" src="https://open.spotify.com/embed/album/3ESXW7vhhFzV8one29V2v2?si=-m2QkwDlSkudtjJF9_1iKQ?utm_source=generator"
-              name="Exterminatus"
+
               scrolling="no" 
               frameborder="0" 
               marginheight="0px" 
@@ -183,7 +186,7 @@
             </iframe>
           </div>
 
-          <div class="carousel-item">
+          <div class="album carousel-item">
             <iframe 
               class="music-gallery" 
               src="https://open.spotify.com/embed/album/76sS3PD02bv2cRYzuJHlkR?si=1TJjQffiS06gC9s-ExYuAQ?utm_source=generator"
@@ -200,7 +203,7 @@
             </iframe>
           </div>
 
-          <div class="carousel-item">
+          <div class="album carousel-item">
             <iframe 
               class="music-gallery" 
               src="https://open.spotify.com/embed/album/6nBMz0jYy0bV35nPzKG0Yi?si=KFF9CkTxSM-QNcewFL4OZw?utm_source=generator"
@@ -217,7 +220,7 @@
             </iframe>
           </div>
 
-          <div class="carousel-item">
+          <div class="album carousel-item">
             <iframe 
               class="music-gallery" 
               src="https://open.spotify.com/embed/album/4mxIUAxCWqEk1Xoz5P82Ti?si=q6UMfh50TYGk9NmQBjaa_g?utm_source=generator"
@@ -234,7 +237,7 @@
             </iframe>
           </div>
 
-          <div class="carousel-item">
+          <div class="album carousel-item">
             <iframe 
               class="music-gallery" 
               src="https://open.spotify.com/embed/album/3M7GbtFLKvJqBqctlxhaxP?utm_source=generator"
@@ -251,7 +254,7 @@
             </iframe>
           </div>
 
-          <div class="carousel-item">
+          <div class="album carousel-item">
             <iframe 
               class="music-gallery" 
               src="https://open.spotify.com/embed/album/272uppODmPcrRuu3pRcChE?si=-5ynGirlRCGmGYIswMkaDw?utm_source=generator"
@@ -280,7 +283,7 @@
         </button>
       </div>
     </div>
-    <!-- End Carousel -->
+    <!-- End Spotify Carousel -->
 
     <!-- Lightbox Image Gallery -->
     <div class="container-md" id="art">
@@ -292,8 +295,8 @@
         >
           <img
             src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(75).webp"
-            class="img-fluid"
-            alt="Boat on the Water"
+            class="img-fluid rounded mb-4" 
+            alt="Snowscape"
           />
         </a>
 
@@ -304,8 +307,8 @@
         >
           <img
             src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(78).webp"
-            class="img-fluid w-100 rounded mb-4"
-            alt="Waves at Sea"
+            class="img-fluid rounded mb-4"
+            alt="Open Water"
           />
         </a>
 
@@ -316,7 +319,7 @@
         >
           <img
             src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(18).webp"
-            class="img-fluid w-100 rounded mb-4"
+            class="img-fluid rounded mb-4"
             alt="Waves at Sea"
           />
         </a>
@@ -381,7 +384,7 @@
             aria-labelledby="MEGA ARMOR by Ultra Nightmare"
             aria-hidden="true"
           >
-            <div class="modal-dialog modal-fullscreen-md-down modal-dialog-centered">
+            <div class="modal-dialog modal-dialog-centered">
               <div class="modal-content">
                 <div class="iframe-wrapper">
                   <iframe 
@@ -471,6 +474,7 @@
         </section>
       </section>
     </div>
+  </div>
   </main>
 
   <footer>
@@ -498,19 +502,21 @@
             </a>
           </li>
         </ul>
+
         <p class="copyright justify-content-center"> © <script> {new Date().getFullYear()};</script> Davey Perron </p>
+        
       </div>
     </div>
   </footer>
 
-  <!-- Bootstrap5 Bundle -->
+  <!-- Bootstrap Bundle -->
   <script 
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
     crossorigin="anonymous">
   </script>
 
-  <!-- Bootstrap5 Lightbox -->
+  <!-- Bootstrap Lightbox -->
   <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.7.7/dist/index.bundle.min.js"></script>
 
   <!-- JQuery -->

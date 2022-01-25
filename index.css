@@ -1,7 +1,29 @@
-body {
+/** 
+    PRESERVE ORIGINAL REQUEST of bg color ...
     background-color: #0e0e0e;
+
+    Current Body background color is set to match site-background image's black
+**/
+
+body {
+    background-color: #070707;
     font-size: calc(0.75em + 1vmin);
     overflow-x: hidden;
+}
+
+table {
+    overflow: hidden;
+    scrollbar-base-color: black;
+}
+
+.background-image {
+    background: transparent;
+    background-image: url(./media/site-background.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: 0.7;
 }
 
 button {
@@ -62,6 +84,10 @@ button {
     text-decoration: none;
 }
 
+.anchors:hover {
+    color: #909090;
+}
+
 svg.disc-icon {
     width: calc(0.75em + 1vmin);
     color: #f9f9f9;
@@ -92,7 +118,7 @@ svg.disc-icon {
 
 /** black underline underneath of header */
 #header-underline {
-    max-width: 55%;
+    max-width: 50%;
     height: 40px;
     border-top: 3px solid #f9f9f9;
 }
@@ -107,7 +133,7 @@ svg.disc-icon {
 /** Intro / Bio section */
 #intro {
     padding: 40px 0 5px 0;
-    background-color: #0e0e0e;
+    background-color: transparent;
 }
 
 @media (max-width: 940px) {
@@ -186,11 +212,14 @@ svg.disc-icon {
     padding: 40px 0;
 }
 
-.modal.fade .modal-dialog {
-    -webkit-transition: -webkit-transform 0.3s ease-out;
-    -moz-transition: -moz-transform 0.3s ease-out;
-    -o-transition: -o-transform 0.3s ease-out;
-    transition: transform 0.3s ease-out;
+.section-break {
+    display: none;
+    max-height: 0;
+    width: 50%;
+    border-bottom: 1px solid #909090;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    opacity: 0.6;
 }
 
 .iframe-wrapper {
@@ -213,15 +242,6 @@ svg.disc-icon {
     border: 2px solid transparent;
 }
 
-.section-break {
-    max-height: 0;
-    width: 60%;
-    border-bottom: 1px solid #909090;
-    margin-top: 1rem;
-    margin-bottom: 3rem;
-    opacity: 0.6;
-}
-
 footer {
   display: block;
   bottom: 0;
@@ -241,7 +261,7 @@ footer {
   flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
-  padding: 2rem 0 0.5rem 0;
+  padding: 2rem 0 2rem 0;
   justify-content: flex-end;
 }
 
@@ -250,17 +270,27 @@ footer {
 }
 
 .copyright {
+    position: absolute;
+    display: inline-block;
     width: 100%;
     text-align: center;
     overflow: hidden;
-    font-family: Ubuntu, sans-serif;
-    font-size: 0.875rem;
-    transform: translateY(-1.75rem);
+    font-family: 'Roboto Slab', serif;
+    font-size: 0.8rem;
+    padding: 2rem 0 1rem 0;
 }
 
 @media (max-width:940px) {
-    transform: none;
+    .footer-flex {
+        padding: 2rem 0;
+    }
+    .copyright {
+        position: initial;
+        padding: 1.5rem 0 0 0;
+  
+    }
 }
+
 
 .list-group-item.footer {
     padding: 0 1.4rem;
