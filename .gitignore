@@ -90,7 +90,7 @@ package-lock.json
 # local files
 .vscode
 NAVBAR-HELP.html
-navbar-placehldr.html
+MODAL.html
 
 # prettier
 .prettierrc

@@ -3,7 +3,7 @@
     padding: 40px 0 60px 0;
 }
 
-.carousel-inner {
+.album-wrapper.carousel-inner {
     text-align: center;
     padding: 1rem;
 }
@@ -13,7 +13,7 @@
     margin: 0 -6rem;
 }
 
-iframe {
+iframe.music-gallery {
     padding: 0 1rem;
     overflow: hidden;
 }
@@ -24,7 +24,7 @@ iframe {
 }
 
 @media (min-width: 768px) {
-    .album.carousel-inner {
+    .album-wrapper.carousel-inner {
       display: flex;
     }
     .album.carousel-item {
@@ -35,7 +35,7 @@ iframe {
 }
 
 @media (max-width: 568px) {
-    iframe {
+    iframe.music-gallery  {
         height: 340px;
         width: 260px;
     }

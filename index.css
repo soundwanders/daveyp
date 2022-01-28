@@ -11,45 +11,20 @@ body {
     overflow-x: hidden;
 }
 
-table {
-    overflow: hidden;
-    scrollbar-base-color: black;
-}
-
-.background-image {
-    position: relative;
-}
-
-.background-image::after {
-    content: "";
-    position: absolute;
-    background: url(./media/site-background.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    opacity: 0.6;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: -1;   
-}
-
 button {
 	outline: none;
 	border: none;
 	background: transparent;
 }
 
-/** Header section */
+/** Hero Section */
 #header-wrapper {
     background-color: #222;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23373737' fill-opacity='0.13' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
 }
 
 #logo-container {
-    padding: 5rem 0 1.75rem 0;
+    padding: 5rem 0 2rem 0;
     background: transparent;
 }
 
@@ -66,7 +41,7 @@ button {
     }
 }
 
-/** Header subtext > anchor links */
+/** Hero Section + Anchor Links */
 #header-anchor {
     background: transparent;
     cursor: default;
@@ -76,22 +51,10 @@ button {
     display: flex;
     align-items: center;
     line-height: 1.1;
-    font-family: 'Martel', serif;
+    font-family: 'Patua One', serif;
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 2.75rem;
     color: #f9f9f9;
-}
-
-@media (max-width: 940px) {
-    .anchors {
-        font-size: 1.1rem;
-        line-height: 1.5;
-    }
-}
-
-/** remove default style from <a> elements */
-.nav-links {
-    text-decoration: none;
 }
 
 .anchors:hover {
@@ -99,8 +62,26 @@ button {
 }
 
 svg.disc-icon {
-    width: calc(0.75em + 1vmin);
+    width: calc(0.9em + 1vmin);
     color: #f9f9f9;
+    padding: 14px 0 0 0;
+}
+
+@media (max-width: 940px) {
+    .anchors {
+        font-size: 1.1rem;
+        line-height: 1.5;
+    }
+    svg.disc-icon {
+        width: calc(0.75em + 1vmin);
+        color: #f9f9f9;
+    }
+}
+
+
+/** remove default style from <a> elements */
+.nav-links {
+    text-decoration: none;
 }
 
 /** Header logo subtext horizontal ul */
@@ -140,7 +121,12 @@ svg.disc-icon {
     }
 }
 
-/** Intro / Bio section */
+/** Section Containers */
+#music, #movies, #art {
+    padding: 40px 0;
+}
+
+/** Bio section */
 #intro {
     padding: 40px 0 5px 0;
     background-color: transparent;
@@ -218,20 +204,56 @@ svg.disc-icon {
     padding: 0;
 }
 
-#music, #movies, #art {
-    padding: 40px 0;
+/** Background Image, Begins at Spotify Album Embeds */
+.background-image {
+    position: relative;
 }
 
-.section-break {
-    display: none;
-    max-height: 0;
-    width: 50%;
-    border-bottom: 1px solid #909090;
-    margin-top: 1rem;
-    margin-bottom: 3rem;
-    opacity: 0.6;
+.background-image::after {
+    content: "";
+    position: absolute;
+    background: url(./media/site-background.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    box-shadow: 0px -10px 14px 0px rgba(0,0,0,0.8);
+    -webkit-box-shadow: 0px -10px 14px 0px rgba(0,0,0,0.8);
+    -moz-box-shadow: 0px -10px 14px 0px rgba(0,0,0,0.8);
+    opacity: 0.4;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;   
 }
 
+/** Image Gallery */
+.art-gallery {
+    padding: 0 1.5rem;
+}
+
+.art-gallery:hover {
+    opacity: 0.9;
+    border: 2px solid transparent;
+}
+
+
+/** Youtube Embed Section */
+#movies {
+    padding-bottom: 5%;
+}
+
+@media (max-width: 940px) {
+    #movies {
+        padding: 0 0 80px 0;
+    }
+    .youtube-iframe {
+        padding: 0 2rem;
+    }
+}
+
+/** iFrame centered wrapper */
 .iframe-wrapper {
     position: relative;
     overflow: hidden;
@@ -244,12 +266,8 @@ svg.disc-icon {
     left: 0;
     width: 100%;
     height: 100%;
+    max-width: 1040px;
     border: 0;
-}
-
-.album-art:hover {
-    opacity: 0.9;
-    border: 2px solid transparent;
 }
 
 footer {
@@ -285,7 +303,7 @@ footer {
     width: 100%;
     text-align: center;
     overflow: hidden;
-    font-family: 'Roboto Slab', serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
     font-size: 0.8rem;
     padding: 2rem 0 1rem 0;
 }
@@ -300,7 +318,6 @@ footer {
   
     }
 }
-
 
 .list-group-item.footer {
     padding: 0 1.4rem;
