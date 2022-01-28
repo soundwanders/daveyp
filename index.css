@@ -75,6 +75,7 @@ svg.disc-icon {
     svg.disc-icon {
         width: calc(0.75em + 1vmin);
         color: #f9f9f9;
+        padding: 0;
     }
 }
 
