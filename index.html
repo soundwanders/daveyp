@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="theme-color" content="#191919"/>
   <meta name="description" content="Davey Perron's website"/>
-  <!-- Fonts (Martel, Roboto, Patua One) -->
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&family=Martel:wght@400;700&family=Patua+One&display=swap" rel="stylesheet"/>
@@ -275,11 +275,11 @@
         </div>
 
         <!-- End of carousel inner, nav buttons below ... -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#spotify-carousel" data-bs-slide="prev">
+        <button class="spotify-buttons carousel-control-prev" type="button" data-bs-target="#spotify-carousel" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden"> Previous </span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#spotify-carousel" data-bs-slide="next">
+        <button class="spotify-buttons carousel-control-next" type="button" data-bs-target="#spotify-carousel" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden"> Next </span>
         </button>
@@ -360,6 +360,12 @@
           data-src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(28).webp" 
           data-title="Hidden item 3"
         >
+        <div 
+          data-toggle="lightbox" 
+          data-gallery="image-gallery" 
+          data-src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(28).webp" 
+          data-title="Hidden item 3"
+        >
         </div>
       </div>
     </div>
@@ -371,7 +377,8 @@
         <div class="iframe-wrapper h-100 d-flex justify-content-center align-items-center">
           <iframe 
             class="youtube-iframe rounded"
-            src="https://www.youtube.com/embed/yJbLNlGMBlE" 
+            src="https://www.youtube.com/embed/yJbLNlGMBlE"
+            width="1040" 
             title="MEGA ARMOR by Ultra Nightmare" 
             frameborder="0" 
             allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" 
@@ -422,7 +429,7 @@
     crossorigin="anonymous">
   </script>
   <!-- Bootstrap Lightbox -->
-  <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.7.7/dist/index.bundle.min.js"></script>
+  <script src="./index.bundle.min.js"></script>
   <!-- JQuery -->
   <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <!-- Select2 (used in contact form dropdown list) -->
@@ -430,7 +437,6 @@
 
   <script src="./contact-form/form.js"></script>
   <script src="./spotify-carousel/carousel.js"></script>
-  <script src="./index.js"></script>
 
 </body>
 

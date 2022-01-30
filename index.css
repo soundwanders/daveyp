@@ -88,7 +88,7 @@ svg.disc-icon {
     text-decoration: none;
 }
 
-/** Header logo subtext horizontal ul */
+/** Header logo anchor links  */
 #nav-list-row {
     margin: 0 auto;
 }
@@ -116,6 +116,7 @@ svg.disc-icon {
     max-width: 50%;
     height: 40px;
     border-top: 3px solid #f9f9f9;
+    opacity: 0.7;
 }
 
 @media (max-width: 940px) {
@@ -162,7 +163,7 @@ svg.disc-icon {
 @media (max-width: 940px) {
     .lead.bio {
         font-family: 'Martel', serif;
-        font-size: 1rem;
+        font-size: 0.875rem;
         line-height: 1.75;
         margin-bottom: 0;
     }
@@ -179,7 +180,7 @@ svg.disc-icon {
 @media (max-width: 940px) {
     #elevate {
         width: 80%;
-        font-size: 1.5rem;
+        font-size: 1.33rem;
         font-weight: 600;
         margin: 0 auto;
         padding: 6px 0;
@@ -193,7 +194,7 @@ svg.disc-icon {
 
 @media (max-width: 940px) {
     #contact-me {
-        font-size: 1.75rem;
+        font-size: 1.9rem;
         font-weight: 600;
     }
 }
