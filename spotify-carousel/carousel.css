@@ -43,7 +43,17 @@ iframe.music-gallery {
     }
 }
 
-/** Image Gallery Carousel */
+
+/** Image Gallery + Carousel */
+.art-gallery {
+    padding: 0 1.5rem;
+}
+
+.art-gallery:hover {
+    opacity: 0.9;
+    border: 2px solid transparent;
+}
+
 .image-buttons {
     transform: translateX(-2rem);
 }
