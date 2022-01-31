@@ -11,7 +11,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&family=Martel:wght@400;700&family=Patua+One&display=swap" rel="stylesheet"/>
   <!-- Preloads -->
-  <link rel="preload" href="https://www.youtube.com/embed/yJbLNlGMBlE"/>
+  <link rel="preload" href="https://www.youtube.com/embed/yJbLNlGMBlE" as="video"/>
+  <link rel="preload" href="./media/grey.png" as="image"/>
   <link rel="preload" href="./media/site-background.png" as="image"/>
   <link rel="preload" href="./media/dplogo.png" as="image"/>
   <link rel="preload" href="./media/spectre.png" as="image"/>
@@ -149,242 +150,251 @@
       </div>
     </div>
 
-    <!-- Background Image Container, Ends After Youtube Embeds -->
+    <!-- Background Image Container, covers Spotify embeds to end of page Youtube video -->
     <div class="background-image container-fluid w-100 d-block px-0">
 
-    <!-- Spotify Album Carousel -->
-    <div class="container-md" id="music">
-      <div class="carousel" id="spotify-carousel" data-bs-ride="carousel" data-bs-interval="false">
-        <div class="album-wrapper carousel-inner">
-          <div class="album carousel-item active">
-            <iframe 
-              class="music-gallery" 
-              src="https://open.spotify.com/embed/album/79Pm2J5bMmZ9YIzft9AzoM?si=786e0445999b459d?utm_source=generator" 
-              scrolling="no" 
-              frameborder="0" 
-              marginheight="0px" 
-              marginwidth="0px" 
-              height="380px" 
-              width="320px" 
-              allowtransparency="true"
-              allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen>
-            </iframe>
+      <!-- Spotify Album Carousel -->
+      <div class="container-md" id="music">
+        <div class="carousel" id="spotify-carousel" data-bs-ride="carousel" data-bs-interval="false">
+          <div class="album-wrapper carousel-inner">
+            <div class="album carousel-item active">
+              <iframe 
+                class="music-gallery" 
+                src="https://open.spotify.com/embed/album/79Pm2J5bMmZ9YIzft9AzoM?si=786e0445999b459d?utm_source=generator" 
+                scrolling="no" 
+                frameborder="0" 
+                marginheight="0px" 
+                marginwidth="0px" 
+                height="380px" 
+                width="320px" 
+                allowtransparency="true"
+                allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+              </iframe>
+            </div>
+
+            <div class="album carousel-item">
+              <iframe 
+                class="music-gallery" 
+                src="https://open.spotify.com/embed/album/3ESXW7vhhFzV8one29V2v2?si=-m2QkwDlSkudtjJF9_1iKQ?utm_source=generator"
+                scrolling="no" 
+                frameborder="0" 
+                marginheight="0px" 
+                marginwidth="0px" 
+                height="380px" 
+                width="320px" 
+                allowtransparency="true"
+                allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+              </iframe>
+            </div>
+
+            <div class="album carousel-item">
+              <iframe 
+                class="music-gallery" 
+                src="https://open.spotify.com/embed/album/76sS3PD02bv2cRYzuJHlkR?si=1TJjQffiS06gC9s-ExYuAQ?utm_source=generator"
+                name="Knee Deep in the Dead" 
+                scrolling="no" 
+                frameborder="0" 
+                marginheight="0px" 
+                marginwidth="0px" 
+                height="380px" 
+                width="320px" 
+                allowtransparency="true"
+                allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+              </iframe>
+            </div>
+
+            <div class="album carousel-item">
+              <iframe 
+                class="music-gallery" 
+                src="https://open.spotify.com/embed/album/6nBMz0jYy0bV35nPzKG0Yi?si=KFF9CkTxSM-QNcewFL4OZw?utm_source=generator"
+                name="The Shores of Hell" 
+                scrolling="no" 
+                frameborder="0" 
+                marginheight="0px" 
+                marginwidth="0px" 
+                height="380px" 
+                width="320px" 
+                allowtransparency="true"
+                allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+              </iframe>
+            </div>
+
+            <div class="album carousel-item">
+              <iframe 
+                class="music-gallery" 
+                src="https://open.spotify.com/embed/album/4mxIUAxCWqEk1Xoz5P82Ti?si=q6UMfh50TYGk9NmQBjaa_g?utm_source=generator"
+                name="Nightmare Fuel" 
+                scrolling="no" 
+                frameborder="0" 
+                marginheight="0px" 
+                marginwidth="0px" 
+                height="380px" 
+                width="320px" 
+                allowtransparency="true"
+                allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+              </iframe>
+            </div>
+
+            <div class="album carousel-item">
+              <iframe 
+                class="music-gallery" 
+                src="https://open.spotify.com/embed/album/3M7GbtFLKvJqBqctlxhaxP?utm_source=generator"
+                name="Knee Deep in the Dead Instrumentals" 
+                scrolling="no" 
+                frameborder="0" 
+                marginheight="0px" 
+                marginwidth="0px" 
+                height="380px" 
+                width="320px" 
+                allowtransparency="true"
+                allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+              </iframe>
+            </div>
+
+            <div class="album carousel-item">
+              <iframe 
+                class="music-gallery" 
+                src="https://open.spotify.com/embed/album/272uppODmPcrRuu3pRcChE?si=-5ynGirlRCGmGYIswMkaDw?utm_source=generator"
+                name="Exterminatus Instrumentals" 
+                scrolling="no" 
+                frameborder="0" 
+                marginheight="0px" 
+                marginwidth="0px" 
+                height="380px" 
+                width="320px" 
+                allowtransparency="true"
+                allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+              </iframe>
+            </div>
           </div>
 
-          <div class="album carousel-item">
-            <iframe 
-              class="music-gallery" 
-              src="https://open.spotify.com/embed/album/3ESXW7vhhFzV8one29V2v2?si=-m2QkwDlSkudtjJF9_1iKQ?utm_source=generator"
-              scrolling="no" 
-              frameborder="0" 
-              marginheight="0px" 
-              marginwidth="0px" 
-              height="380px" 
-              width="320px" 
-              allowtransparency="true"
-              allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen>
-            </iframe>
-          </div>
-
-          <div class="album carousel-item">
-            <iframe 
-              class="music-gallery" 
-              src="https://open.spotify.com/embed/album/76sS3PD02bv2cRYzuJHlkR?si=1TJjQffiS06gC9s-ExYuAQ?utm_source=generator"
-              name="Knee Deep in the Dead" 
-              scrolling="no" 
-              frameborder="0" 
-              marginheight="0px" 
-              marginwidth="0px" 
-              height="380px" 
-              width="320px" 
-              allowtransparency="true"
-              allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen>
-            </iframe>
-          </div>
-
-          <div class="album carousel-item">
-            <iframe 
-              class="music-gallery" 
-              src="https://open.spotify.com/embed/album/6nBMz0jYy0bV35nPzKG0Yi?si=KFF9CkTxSM-QNcewFL4OZw?utm_source=generator"
-              name="The Shores of Hell" 
-              scrolling="no" 
-              frameborder="0" 
-              marginheight="0px" 
-              marginwidth="0px" 
-              height="380px" 
-              width="320px" 
-              allowtransparency="true"
-              allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen>
-            </iframe>
-          </div>
-
-          <div class="album carousel-item">
-            <iframe 
-              class="music-gallery" 
-              src="https://open.spotify.com/embed/album/4mxIUAxCWqEk1Xoz5P82Ti?si=q6UMfh50TYGk9NmQBjaa_g?utm_source=generator"
-              name="Nightmare Fuel" 
-              scrolling="no" 
-              frameborder="0" 
-              marginheight="0px" 
-              marginwidth="0px" 
-              height="380px" 
-              width="320px" 
-              allowtransparency="true"
-              allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen>
-            </iframe>
-          </div>
-
-          <div class="album carousel-item">
-            <iframe 
-              class="music-gallery" 
-              src="https://open.spotify.com/embed/album/3M7GbtFLKvJqBqctlxhaxP?utm_source=generator"
-              name="Knee Deep in the Dead Instrumentals" 
-              scrolling="no" 
-              frameborder="0" 
-              marginheight="0px" 
-              marginwidth="0px" 
-              height="380px" 
-              width="320px" 
-              allowtransparency="true"
-              allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen>
-            </iframe>
-          </div>
-
-          <div class="album carousel-item">
-            <iframe 
-              class="music-gallery" 
-              src="https://open.spotify.com/embed/album/272uppODmPcrRuu3pRcChE?si=-5ynGirlRCGmGYIswMkaDw?utm_source=generator"
-              name="Exterminatus Instrumentals" 
-              scrolling="no" 
-              frameborder="0" 
-              marginheight="0px" 
-              marginwidth="0px" 
-              height="380px" 
-              width="320px" 
-              allowtransparency="true"
-              allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen>
-            </iframe>
-          </div>
-        </div>
-
-        <!-- End of carousel inner, nav buttons below ... -->
-        <button class="spotify-buttons carousel-control-prev" type="button" data-bs-target="#spotify-carousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden"> Previous </span>
-        </button>
-        <button class="spotify-buttons carousel-control-next" type="button" data-bs-target="#spotify-carousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden"> Next </span>
-        </button>
-      </div>
-    </div>
-    <!-- End Spotify Carousel -->
-
-    <!-- Lightbox Image Gallery -->
-    <div class="container-md" id="art">
-      <div class="row mb-2">
-        <a href="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(75).webp" 
-          class="col-sm-6"
-          data-toggle="lightbox" 
-          data-gallery="image-gallery" 
-        >
-          <img
-            src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(75).webp"
-            class="art-gallery img-fluid rounded mb-4" 
-            alt="Snowscape"
-          />
-        </a>
-
-        <a href="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(78).webp"
-          class="col-sm-6"
-          data-toggle="lightbox" 
-          data-gallery="image-gallery"
-        >
-          <img
-            src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(78).webp"
-            class="art-gallery img-fluid rounded mb-4"
-            alt="Open Water"
-          />
-        </a>
-
-        <a href="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(18).webp"
-          class="col-sm-6"
-          data-toggle="lightbox" 
-          data-gallery="image-gallery"
-        >
-          <img
-            src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(18).webp"
-            class="art-gallery img-fluid rounded mb-4"
-            alt="Waves at Sea"
-          />
-        </a>
-
-        <a href="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(36).webp"
-          class="col-sm-6"
-          data-toggle="lightbox" 
-          data-gallery="image-gallery"
-        >
-          <img
-            src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(36).webp"
-            class="art-gallery img-fluid rounded mb-4"
-            alt="Desert Tree"
-          />
-        </a>
-
-        <!-- elements not showing, use data-remote or data-src-->
-        <div 
-          data-toggle="lightbox" 
-          data-gallery="image-gallery" 
-          data-src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(24).webp" 
-          data-title="Hidden item 1"
-        >
-        </div>
-
-        <div 
-          data-toggle="lightbox" 
-          data-gallery="image-gallery"
-          data-src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(26).webp" 
-          data-title="Hidden item 2"
-        >
-        </div>
-        <div 
-          data-toggle="lightbox" 
-          data-gallery="image-gallery" 
-          data-src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(28).webp" 
-          data-title="Hidden item 3"
-        >
-        <div 
-          data-toggle="lightbox" 
-          data-gallery="image-gallery" 
-          data-src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(28).webp" 
-          data-title="Hidden item 3"
-        >
+          <!-- End of carousel inner, nav buttons below ... -->
+          <button class="spotify-buttons carousel-control-prev" type="button" data-bs-target="#spotify-carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden"> Previous </span>
+          </button>
+          <button class="spotify-buttons carousel-control-next" type="button" data-bs-target="#spotify-carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden"> Next </span>
+          </button>
         </div>
       </div>
-    </div>
-    <!-- End Image Gallery -->
+      <!-- End Spotify Carousel -->
 
-    <!-- Youtube Embed -->
-    <div class="container-md" id="movies">
-      <div class="row">
-        <div class="iframe-wrapper h-100 d-flex justify-content-center align-items-center">
-          <iframe 
-            class="youtube-iframe rounded"
-            src="https://www.youtube.com/embed/yJbLNlGMBlE"
-            width="1040" 
-            title="MEGA ARMOR by Ultra Nightmare" 
-            frameborder="0" 
-            allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen
+      <!-- Lightbox Images Art Gallery -->
+      <!-- Optional section title...
+         <div class="row mb-4">
+          <div class="art-title col-sm-12 d-flex justify-content-center">
+            <h2 class="art-header">Art</h2>
+          </div>
+        </div> 
+      -->
+
+      <div class="container-md" id="art">
+        <div class="row mb-2">
+          <a href="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(75).webp" 
+            class="photos col-sm-6"
+            data-toggle="lightbox" 
+            data-gallery="image-gallery" 
           >
-          </iframe>
+            <img
+              src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(75).webp"
+              class="art-gallery img-fluid rounded mb-4" 
+              alt="Snowscape"
+            />
+          </a>
+
+          <a href="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(78).webp"
+            class="photos col-sm-6"
+            data-toggle="lightbox" 
+            data-gallery="image-gallery"
+          >
+            <img
+              src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(78).webp"
+              class="art-gallery img-fluid rounded mb-4"
+              alt="Open Water"
+            />
+          </a>
+
+          <a href="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(18).webp"
+            class="photos col-sm-6"
+            data-toggle="lightbox" 
+            data-gallery="image-gallery"
+          >
+            <img
+              src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(18).webp"
+              class="art-gallery img-fluid rounded mb-4"
+              alt="Waves at Sea"
+            />
+          </a>
+
+          <a href="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(36).webp"
+            class="photos col-sm-6"
+            data-toggle="lightbox" 
+            data-gallery="image-gallery"
+          >
+            <img
+              src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(36).webp"
+              class="art-gallery img-fluid rounded mb-4"
+              alt="Desert Tree"
+            />
+          </a>
+
+          <!-- Hidden Elements, show in slideshow but not on screen -->
+          <div 
+            data-toggle="lightbox" 
+            data-gallery="image-gallery" 
+            data-src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(24).webp" 
+            data-title="Hidden item 1"
+          >
+          </div>
+
+          <div 
+            data-toggle="lightbox" 
+            data-gallery="image-gallery"
+            data-src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(26).webp" 
+            data-title="Hidden item 2"
+          >
+          </div>
+          <div 
+            data-toggle="lightbox" 
+            data-gallery="image-gallery" 
+            data-src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(28).webp" 
+            data-title="Hidden item 3"
+          >
+          <div 
+            data-toggle="lightbox" 
+            data-gallery="image-gallery" 
+            data-src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(28).webp" 
+            data-title="Hidden item 3"
+          >
+          </div>
+        </div>
+      </div>
+      <!-- End Image Gallery -->
+
+      <!-- Youtube Embed -->
+      <div class="container-md" id="movies">
+        <div class="row">
+          <div class="iframe-wrapper h-100 d-flex justify-content-center">
+            <iframe 
+              class="youtube-iframe rounded"
+              src="https://www.youtube.com/embed/yJbLNlGMBlE"
+              width="1040" 
+              title="MEGA ARMOR by Ultra Nightmare" 
+              frameborder="0" 
+              allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen
+            >
+            </iframe>
+          </div>
         </div>
       </div>
     </div>
@@ -417,7 +427,6 @@
         </ul>
 
         <p class="copyright justify-content-center"> © <script> {new Date().getFullYear()};</script> Davey Perron </p>
-        
       </div>
     </div>
   </footer>
