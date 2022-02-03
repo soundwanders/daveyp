@@ -71,7 +71,7 @@ button {
 svg.disc-icon {
     width: calc(0.9em + 1vmin);
     color: #f9f9f9;
-    padding: 14px 0 0 0;
+    padding: 0.875rem 0 0 0;
 }
 
 @media (max-width: 940px) {
@@ -110,8 +110,8 @@ svg.disc-icon {
 }
 
 @media (max-width: 940px) {
-    .list-group-item {
-        padding: 0 0.5rem;
+    .list-group-item.nav {
+        padding: 0 0.3rem;
     }
 }
 
@@ -126,7 +126,7 @@ svg.disc-icon {
 @media (max-width: 940px) {
     #header-underline {
         margin-top: 0.5rem;
-        max-width: 77%;
+        max-width: 60%;
     }
 }
 
@@ -191,7 +191,7 @@ svg.disc-icon {
 }
 
 #contact-me {
-    font-size: 3.33rem;
+    font-size: 3.4rem;
     font-weight: 700;
 }
 
@@ -217,11 +217,11 @@ svg.disc-icon {
 }
 
 /** Background Image, Begins at Spotify Album Embeds */
-.background-image {
+.site-background {
     position: relative;
 }
 
-.background-image::after {
+.site-background::after {
     content: "";
     position: absolute;
     top: 0;
@@ -233,7 +233,7 @@ svg.disc-icon {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    opacity: 0.4;
+    opacity: 0.2;
     z-index: -1;   
 }
 
@@ -244,13 +244,13 @@ svg.disc-icon {
 
 @media (max-width: 940px) {
     #movies {
-        padding: 0 0 80px 0;
+        padding: 0 0 60px 0;
     }
 }
 
 /* Image Gallery */
 .art-gallery {
-    padding: 0 1.5rem;
+    padding: 0.75rem;
 }
 
 .art-gallery:hover {
@@ -268,6 +268,9 @@ svg.disc-icon {
 @media (max-width: 940px) {
     .art-header {
         font-size: 2rem;
+    }
+    .art-gallery {
+        padding: 0.5rem 1.5rem;
     }
 }
 
@@ -288,7 +291,7 @@ svg.disc-icon {
 
 @media (max-width: 940px) {
     .youtube-iframe {
-        padding: 0 2rem;
+        padding: 0 2.25rem;
     }
 }
 

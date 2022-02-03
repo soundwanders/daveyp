@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&family=Martel:wght@400;700&family=Patua+One&display=swap" rel="stylesheet"/>
   <!-- Preloads -->
-  <link rel="preload" href="https://www.youtube.com/embed/yJbLNlGMBlE" as="video"/>
+  <link rel="preload" href="https://www.youtube.com/embed/yJbLNlGMBlE" as="document"/>
   <link rel="preload" href="./media/grey.png" as="image"/>
   <link rel="preload" href="./media/site-background.png" as="image"/>
   <link rel="preload" href="./media/dplogo.png" as="image"/>
@@ -43,31 +43,31 @@
     <div class="container-fluid mb-4" id="header-sub">
       <div class="row justify-content-center" id="nav-list-row">
         <ul class="list-group nav list-group-horizontal justify-content-center">
-          <li class="list-group-item">
+          <li class="list-group-item nav">
             <a href="#music" class="nav-links">
               <h3 class="anchors">MUSIC</h3>
             </a>
           </li> 
-          <li class="list-group-item">
+          <li class="list-group-item nav">
             <span>
               <svg class="disc-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="#f9f9f9" xml:space="preserve" stroke="#f9f9f9">
                 <path d="M16 28.458C9.131 28.458 3.542 22.87 3.542 16S9.131 3.542 16 3.542 28.458 9.13 28.458 16 22.869 28.458 16 28.458zm0-23.916C9.682 4.542 4.542 9.682 4.542 16S9.682 27.458 16 27.458 27.458 22.319 27.458 16 22.318 4.542 16 4.542z"/><path d="M11.583 25.185a.488.488 0 0 1-.182-.036.611.611 0 0 1-.128-.07c-3.376-1.714-5.518-5.213-5.518-9.086 0-1.616.373-3.173 1.109-4.625a.5.5 0 1 1 .893.451 9.15 9.15 0 0 0-1.002 4.174 9.209 9.209 0 0 0 5.045 8.24.506.506 0 0 1 .234.655.497.497 0 0 1-.451.297zm13.099-4.265a.5.5 0 0 1-.446-.727 9.14 9.14 0 0 0 1.008-4.186 9.21 9.21 0 0 0-5.045-8.241l.444-.896-.243.438.247-.435a10.207 10.207 0 0 1 5.597 9.135c0 1.623-.376 3.184-1.117 4.639a.498.498 0 0 1-.445.273zM16 11.963a4.037 4.037 0 1 0 0 8.074 4.037 4.037 0 0 0 0-8.074zm0 4.749a.712.712 0 1 1 0-1.425.712.712 0 0 1 0 1.425z"/>
               </svg>
             </span>
           </li>
-          <li class="list-group-item">
+          <li class="list-group-item nav">
             <a href="#movies" class="nav-links">
               <h3 class="anchors">MOVIES</h3>
             </a>
           </li>
-          <li class="list-group-item">
+          <li class="list-group-item nav">
           <span>
             <svg class="disc-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="#f9f9f9" xml:space="preserve" stroke="#f9f9f9">
               <path d="M16 28.458C9.131 28.458 3.542 22.87 3.542 16S9.131 3.542 16 3.542 28.458 9.13 28.458 16 22.869 28.458 16 28.458zm0-23.916C9.682 4.542 4.542 9.682 4.542 16S9.682 27.458 16 27.458 27.458 22.319 27.458 16 22.318 4.542 16 4.542z"/><path d="M11.583 25.185a.488.488 0 0 1-.182-.036.611.611 0 0 1-.128-.07c-3.376-1.714-5.518-5.213-5.518-9.086 0-1.616.373-3.173 1.109-4.625a.5.5 0 1 1 .893.451 9.15 9.15 0 0 0-1.002 4.174 9.209 9.209 0 0 0 5.045 8.24.506.506 0 0 1 .234.655.497.497 0 0 1-.451.297zm13.099-4.265a.5.5 0 0 1-.446-.727 9.14 9.14 0 0 0 1.008-4.186 9.21 9.21 0 0 0-5.045-8.241l.444-.896-.243.438.247-.435a10.207 10.207 0 0 1 5.597 9.135c0 1.623-.376 3.184-1.117 4.639a.498.498 0 0 1-.445.273zM16 11.963a4.037 4.037 0 1 0 0 8.074 4.037 4.037 0 0 0 0-8.074zm0 4.749a.712.712 0 1 1 0-1.425.712.712 0 0 1 0 1.425z"/>
             </svg>
           </span>
           </li> 
-          <li class="list-group-item">
+          <li class="list-group-item nav">
             <a href="#art" class="nav-links">
               <h3 class="anchors">ART</h3>
             </a>
@@ -151,7 +151,7 @@
     </div>
 
     <!-- Background Image Container, covers Spotify embeds to end of page Youtube video -->
-    <div class="background-image container-fluid w-100 d-block px-0">
+    <div class="site-background container-fluid w-100 d-block px-0">
 
       <!-- Spotify Album Carousel -->
       <div class="container-md" id="music">
@@ -303,6 +303,7 @@
             class="photos col-sm-6"
             data-toggle="lightbox" 
             data-gallery="image-gallery" 
+            data-caption="This is an optional caption that describes the image"
           >
             <img
               src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(75).webp"
@@ -369,6 +370,7 @@
             data-src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(28).webp" 
             data-title="Hidden item 3"
           >
+          </div>
           <div 
             data-toggle="lightbox" 
             data-gallery="image-gallery" 
