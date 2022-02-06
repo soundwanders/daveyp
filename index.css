@@ -41,7 +41,8 @@ button {
         padding: 4rem 0 1.25rem 0;
     }
     #dp-logo {
-        max-width: 90%;
+        max-width: 100%;
+        padding: 0 2rem;
     }
 }
 
@@ -126,27 +127,37 @@ svg.disc-icon {
 @media (max-width: 940px) {
     #header-underline {
         margin-top: 0.5rem;
-        max-width: 80%;
+        max-width: 85%;
     }
 }
 
 /** Section Containers */
-#music, #movies, #art {
-    padding: 40px 0;
+#intro {
+    padding: 40px 0 0 0;
+    background-color: transparent;
 }
 
-/** Bio section */
-#intro {
-    padding: 40px 0 5px 0;
+#music, #movies, #art {
+    padding: 40px 0;
     background-color: transparent;
 }
 
 @media (max-width: 940px) {
     #intro {
-        padding: 20px 0;
+        padding: 20px 0 0 0;
+    }
+    #music {
+        padding: 40px 0 0 0;
+    }
+    #art { 
+        padding: 40px 0 0 0;
+    }
+    #movies {
+        padding: 40px 0 60px 0;
     }
 }
 
+/** Intro Section */
 .lead.bio {  
     display: -webkit-box;
     display: -moz-box;
@@ -236,22 +247,12 @@ svg.disc-icon {
     z-index: -1;   
 }
 
+/** Art Image Gallery */
 .art-header {
     font-family: 'Martel', serif;
     font-size: 4rem;
     color: #f9f9f9;
     text-align: center;
-}
-
-/** Youtube Embed Section */
-#movies {
-    padding: 20px 0;
-}
-
-@media (max-width: 940px) {
-    #movies {
-        padding: 0 0 80px 0;
-    }
 }
 
 .art-gallery:hover {
@@ -267,12 +268,12 @@ svg.disc-icon {
     .art-header {
         font-size: 2rem;
     }
-    .art-gallery {
+    .photos {
         padding: 0 2.2rem;
     }
 }
 
-/** iFrame centered wrapper */
+/** Youtube Embedded iFrame */
 .iframe-wrapper {
     position: relative;
     overflow: hidden;
@@ -316,6 +317,15 @@ footer {
     justify-content: flex-end;
     width: 100%;
     padding: 60px 0;
+}
+
+@media (max-width: 940px) {
+    .footer-flex {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding: 40px 0 0 0;
+    }
 }
 
 .social-links {
@@ -367,14 +377,5 @@ footer {
 @media (max-width: 940px) {
     .footer-logo {
         width: 1.8rem;
-    }
-}
-
-@media (max-width: 940px) {
-    .footer-flex {
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-        padding: 2rem 0;
     }
 }
