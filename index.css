@@ -60,7 +60,7 @@ button {
     line-height: 1.1;
     font-family: 'Balthazar', serif;
     font-weight: 700;
-    font-size: 2.75rem;
+    font-size: 2.8rem;
     color: #d8d8d8;
 }
 
@@ -76,7 +76,7 @@ svg.disc-icon {
 
 @media (max-width: 940px) {
     .anchors {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
         line-height: 1.5;
     }
     svg.disc-icon {
@@ -192,13 +192,12 @@ svg.disc-icon {
 
 #contact-me {
     font-size: 3.4rem;
-    font-weight: 700;
+    font-weight: 900;
 }
 
 @media (max-width: 940px) {
     #contact-me {
         font-size: 1.9rem;
-        font-weight: 600;
     }
 }
 
