@@ -58,19 +58,19 @@ button {
     display: flex;
     align-items: center;
     line-height: 1.1;
-    font-family: 'Patua One', 'Martel', serif;
+    font-family: 'Balthazar', serif;
     font-weight: 700;
     font-size: 2.75rem;
-    color: #f9f9f9;
+    color: #d8d8d8;
 }
 
 .anchors:hover {
-    color: #d4d4d4;
+    color: #f9f9f9;
 }
 
 svg.disc-icon {
     width: calc(0.9em + 1vmin);
-    color: #f9f9f9;
+    color: #d8d8d8;
     padding: 0.875rem 0 0 0;
 }
 
