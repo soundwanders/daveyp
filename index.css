@@ -1,8 +1,7 @@
 /** 
-    PRESERVE ORIGINAL REQUEST of bg color ...
+    PRESERVE ORIGINAL bg color ...
     background-color: #0e0e0e;
-
-    Current Body background color is set to match site-background image's black
+    Current Body background color is set to match site-background image's shade of black
 **/
 
 body {
@@ -53,20 +52,24 @@ button {
 }
 
 .anchors {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: flex;
     align-items: center;
     line-height: 1.1;
     font-family: 'Balthazar', serif;
     font-weight: 700;
     font-size: 2.8rem;
-    color: #d8d8d8;
+    color: #e2e2e2;
+    text-shadow: 2px 2px 3px #070707;
 }
 
 .anchors:hover {
     color: #f9f9f9;
+}
+
+@media (max-width: 940px) {
+    .anchors {
+        font-size: 1.2rem;
+        line-height: 1.5;
+    }
 }
 
 svg.disc-icon {
@@ -76,10 +79,6 @@ svg.disc-icon {
 }
 
 @media (max-width: 940px) {
-    .anchors {
-        font-size: 1.2rem;
-        line-height: 1.5;
-    }
     svg.disc-icon {
         width: calc(0.75em + 1vmin);
         color: #f9f9f9;
@@ -87,9 +86,8 @@ svg.disc-icon {
     }
 }
 
-
-/** remove default style from <a> elements */
-.nav-links {
+/** Remove the default link style from <a> elements */
+.nav-links, .contact-anchor {
     text-decoration: none;
 }
 
@@ -118,7 +116,7 @@ svg.disc-icon {
 
 /** black underline underneath of header */
 #header-underline {
-    max-width: 45%;
+    max-width: 40%;
     height: 40px;
     border-top: 3px solid #f9f9f9;
     opacity: 0.9;
@@ -134,12 +132,23 @@ svg.disc-icon {
 /** Section Containers */
 #intro {
     padding: 40px 0 0 0;
+    margin-bottom: -20px;
     background-color: transparent;
 }
 
-#music, #movies, #art {
-    padding: 40px 0;
+#music, #movies {
+    padding: 40px 0 20px 0;
     background-color: transparent;
+}
+
+#art {
+    padding: 0 0 40px 0;
+    background-color: transparent;
+}
+
+#action {
+    color: #f9f9f9;
+    padding: 20px 0 60px 0;
 }
 
 @media (max-width: 940px) {
@@ -149,22 +158,20 @@ svg.disc-icon {
     #music {
         padding: 40px 0 0 0;
     }
-    #art { 
+    #movies {
         padding: 40px 0 0 0;
     }
-    #movies {
+    #art {
+        padding: 40px 0 0 0;
+    }
+    #action { 
         padding: 40px 0 60px 0;
     }
 }
 
 /** Intro Section */
 .lead.bio {  
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: flex;
     align-items: center;
-    justify-content: center;
     font-family: 'Martel', serif;
     font-weight: 400;
     font-size: 1.175rem;
@@ -234,7 +241,7 @@ svg.disc-icon {
 .site-background::after {
     content: "";
     position: absolute;
-    top: 0;
+    top: 60px;
     left: 0;
     bottom: 0;
     right: 0;
@@ -258,6 +265,7 @@ svg.disc-icon {
 .art-gallery:hover {
     opacity: 0.9;
     border: 1px solid transparent;
+    transition-delay: 50ms;
 }
 
 .photos {
@@ -296,8 +304,28 @@ svg.disc-icon {
     }
 }
 
+/** Anchor Link to contact form */
+p.d-inline-block, .contact-anchor {
+    color: #f9f9f9;
+    font-family: 'Martel', serif;
+    font-weight: 900;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.contact-anchor:hover {
+    color: #d8d8d8;
+}
+
+.pointer-image {
+    background: transparent;
+    transform: rotateZ(-45deg);
+    max-width: 2.25rem;
+    margin-top: 1.25rem;
+}
+
+/** Page Footer */
 footer {
-  display: block;
   bottom: 0;
   width: 100%;
   padding: 0;
@@ -345,6 +373,7 @@ footer {
     -webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);
     filter: grayscale(100%);
+    transition: all 0.5s ease;
 }
 
 .copyright {

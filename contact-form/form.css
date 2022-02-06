@@ -192,8 +192,8 @@ textarea.input {
   -ms-transform: translateY(1px);
   -o-transform: translateY(1px);
   transform: translateY(1px);
-  background-color: #111;
-}
+  background-color: #070707;
+} 
 
 /** Form data validation */
 .validate-input {

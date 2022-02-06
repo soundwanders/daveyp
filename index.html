@@ -46,7 +46,7 @@
         <ul class="list-group nav list-group-horizontal justify-content-center">
           <li class="list-group-item nav">
             <a href="#music" class="nav-links">
-              <h3 class="anchors">MUSIC</h3>
+              <h3 class="anchors d-flex">MUSIC</h3>
             </a>
           </li> 
           <li class="list-group-item nav">
@@ -58,7 +58,7 @@
           </li>
           <li class="list-group-item nav">
             <a href="#movies" class="nav-links">
-              <h3 class="anchors">MOVIES</h3>
+              <h3 class="anchors d-flex">MOVIES</h3>
             </a>
           </li>
           <li class="list-group-item nav">
@@ -70,7 +70,7 @@
           </li> 
           <li class="list-group-item nav">
             <a href="#art" class="nav-links">
-              <h3 class="anchors">ART</h3>
+              <h3 class="anchors d-flex">ART</h3>
             </a>
           </li>
         </ul>
@@ -83,21 +83,21 @@
     <div class="container-md" id="intro">
       <div class="row" id="bio-row">
         <div class="col-md-6 sm-12 order-last order-md-first" id="bio-container">
-          <p class="lead bio">
+          <p class="lead bio d-flex justify-content-center">
             My name is Davey Perron and I am a composer for music, film and video games, 
             most known for my work in the metal band Ultra Nightmare and the synthwave 
             band NeoNeoN.
           </p> 
-          <p class="lead bio">
+          <p class="lead bio d-flex justify-content-center">
             I specialize in darker themes, running the gamut from 
             industrial, epic, heavy to haunting, somber and melancholic.
             A fast-paced workflow allows me to prioritize quality above all-else, never afraid
             to discard ideas that don't work and iterate quickly on the ones that do.
           </p>
-          <p class="lead bio" id="elevate">
+          <p class="lead bio d-flex justify-content-center" id="elevate">
             Want to elevate your project to the next level?
           </p>
-          <p class="lead bio" id="contact-me">
+          <p class="lead bio d-flex justify-content-center" id="contact-me">
             Contact me.
           </p>
         </div>
@@ -107,9 +107,9 @@
       </div>
     </div>
 
-    <div class="container-md contact justify-content-flex-start">
+    <div class="container-md contact d-flex justify-content-flex-start">
       <div class="row">
-        <div class="wrap-contact">
+        <div class="wrap-contact" id="contact-form">
           <form class="contact-form validate-form">
             <div class="wrap-input validate-input bg1" data-validate="Please Type Your Name">
               <span class="label-input">Name *</span>
@@ -140,7 +140,9 @@
             </div>
     
             <div class="container-contact-form-btn">
-              <button class="contact-form-btn shadow-sm">
+              <a href=# class="contact-form-animation">
+                <button class="contact-form-btn shadow-sm">
+              </a>
                 <span>
                   Submit
                 </span>
@@ -289,7 +291,6 @@
       </div>
       <!-- End Spotify Carousel -->
 
-      <!-- Lightbox Images Art Gallery -->
       <!-- Optional section title...
          <div class="row mb-4">
           <div class="art-title col-sm-12 d-flex justify-content-center">
@@ -298,8 +299,27 @@
         </div> 
       -->
 
+      <!-- Youtube Embed -->
+      <div class="container-md" id="movies">
+        <div class="row">
+          <div class="iframe-wrapper h-100 d-flex justify-content-center">
+            <iframe 
+              class="youtube-iframe rounded"
+              src="https://www.youtube.com/embed/yJbLNlGMBlE"
+              width="940" 
+              title="MEGA ARMOR by Ultra Nightmare" 
+              frameborder="0" 
+              allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen
+            >
+            </iframe>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lightbox Image Gallery -->
       <div class="container-md" id="art">
-        <div class="row mb-2">
+        <div class="row">
           <a href="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(75).webp" 
             class="photos col-sm-6"
             data-toggle="lightbox" 
@@ -352,7 +372,7 @@
             />
           </a>
 
-          <!-- Hidden Elements, show in slideshow but not on screen -->
+          <!-- Hidden photos, show in slideshow but not on screen -->
           <div 
             data-toggle="lightbox" 
             data-gallery="image-gallery" 
@@ -379,28 +399,19 @@
             data-toggle="lightbox" 
             data-gallery="image-gallery" 
             data-src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(28).webp" 
-            data-title="Hidden item 3"
+            data-title="Hidden item 4"
           >
           </div>
         </div>
       </div>
-      <!-- End Image Gallery -->
 
-      <!-- Youtube Embed -->
-      <div class="container-md" id="movies">
+      <!-- Call to action, with anchor link to Contact Form -->
+      <div class="container-md" id="action">
         <div class="row">
-          <div class="iframe-wrapper h-100 d-flex justify-content-center">
-            <iframe 
-              class="youtube-iframe rounded"
-              src="https://www.youtube.com/embed/yJbLNlGMBlE"
-              width="940" 
-              title="MEGA ARMOR by Ultra Nightmare" 
-              frameborder="0" 
-              allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" 
-              allowfullscreen
-            >
-            </iframe>
-          </div>
+          <p class="d-inline-block">
+            Interested in working with me? <a href="#contact-form" class="contact-anchor">Contact me</a>
+            <span class="pointer d-inline-block"><img src="./media/pointer.png" class="pointer-image" alt="Points to Contact Anchor Link"></span>
+          </p>
         </div>
       </div>
     </div>
@@ -412,27 +423,26 @@
         <ul class="footer list-group list-group-horizontal">
           <li class="list-group-item footer">
             <a href="https://www.youtube.com/daveyperron" class="social-links" target="_blank" rel="noopener noreferral">
-              <img class="footer-logo" src="media/youtube.png" alt="Youtube Logo" title="Youtube"/>
+              <img class="footer-logo" src="media/socials/youtube.png" alt="Youtube Logo" title="Youtube"/>
             </a>
           </li>
           <li class="list-group-item footer">
             <a href="https://twitter.com/DaveyPerron" class="social-links" target="_blank" rel="noopener noreferral">
-              <img class="footer-logo" src="media/twitter.png" alt="Twitter Logo" title="Twitter"/>
+              <img class="footer-logo" src="media/socials/twitter.png" alt="Twitter Logo" title="Twitter"/>
             </a>
           </li>
           <li class="list-group-item footer">
             <a href="https://daveyperron.bandcamp.com/" class="social-links" target="_blank" rel="noopener noreferral">
-              <img class="footer-logo" src="media/bandcamp-B.png" alt="Bandcamp Logo" title="Bandcamp"/>
+              <img class="footer-logo" src="media/socials/bandcamp-B.png" alt="Bandcamp Logo" title="Bandcamp"/>
             </a>
           </li>
           <li class="list-group-item footer">
             <a href="https://www.artstation.com/daveyperron" class="social-links" target="_blank" rel="noopener noreferral">
-              <img class="footer-logo" src="media/artstation.png" alt="Artstation Logo" title="Artstation"/>
+              <img class="footer-logo" src="media/socials/artstation.png" alt="Artstation Logo" title="Artstation"/>
             </a>
           </li>
         </ul>
-        
-        <p class="copyright justify-content-center"> © <script> {new Date().getFullYear()};</script> Davey Perron </p>
+        <p class="copyright"> © <script> {new Date().getFullYear()};</script> Davey Perron </p>
       </div>
     </div>
   </footer>
