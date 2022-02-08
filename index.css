@@ -130,26 +130,17 @@ svg.disc-icon {
 }
 
 /** Decorative dividing line */
-.dividing-line.one {
+.dividing-line {
     display: inline-block;
     width: 25%;
     margin: -5.5rem 0 -6rem 0;
     opacity: 0.9;
 }
-.dividing-line.two {
-    display: inline-block;
-    width: 25%;
-    margin: -6.5rem 0 -3.5rem 0;
-    opacity: 0.9;
-}
 
 @media (max-width: 940px) {
     .dividing-line.one {
-        margin: -2rem 0 -3.5rem 0;
-        width: 82%;
-    }
-    .dividing-line.two {
-        display: none;
+        margin: -2.5rem 0 -4rem 0;
+        width: 85%;
     }
 }
 
@@ -179,11 +170,11 @@ svg.disc-icon {
     #intro {
         padding: 0;
     }
-    #music, #art {
+    #music, #art, movies {
         padding: 40px 0 0 0;
     }
     #movies {
-        padding: 30px 0 0 0;
+        padding: 40px 0 0 0;
     }
     #action { 
         padding: 20px 0;
