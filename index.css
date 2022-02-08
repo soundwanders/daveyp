@@ -82,7 +82,7 @@ svg.disc-icon {
     svg.disc-icon {
         width: calc(0.75em + 1vmin);
         color: #f9f9f9;
-        padding: 0;
+        padding: 4px 0 0 0;
     }
 }
 
@@ -174,7 +174,7 @@ svg.disc-icon {
         padding: 40px 0 0 0;
     }
     #movies {
-        padding: 40px 0 0 0;
+        padding: 40px 0 20px 0;
     }
     #action { 
         padding: 20px 0;
