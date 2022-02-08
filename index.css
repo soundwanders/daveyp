@@ -19,7 +19,7 @@ button {
 /** Hero Section */
 #header-wrapper {
     background-color: #222;
-    background: url(./media/grey.png);
+    background: url(./media/grey.webp);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -57,7 +57,7 @@ button {
     font-family: 'Balthazar', serif;
     font-weight: 700;
     font-size: 2.8rem;
-    color: #e2e2e2;
+    color: #ebebeb;
     text-shadow: 2px 2px 3px #070707;
 }
 
@@ -114,9 +114,9 @@ svg.disc-icon {
     }
 }
 
-/** black underline underneath of header */
+/** Black line under header */
 #header-underline {
-    max-width: 40%;
+    max-width: 38%;
     height: 40px;
     border-top: 3px solid #f9f9f9;
     opacity: 0.9;
@@ -126,6 +126,30 @@ svg.disc-icon {
     #header-underline {
         margin-top: 0.5rem;
         max-width: 85%;
+    }
+}
+
+/** Decorative dividing line */
+.dividing-line.one {
+    display: inline-block;
+    width: 25%;
+    margin: -5.5rem 0 -6rem 0;
+    opacity: 0.9;
+}
+.dividing-line.two {
+    display: inline-block;
+    width: 25%;
+    margin: -6.5rem 0 -3.5rem 0;
+    opacity: 0.9;
+}
+
+@media (max-width: 940px) {
+    .dividing-line.one {
+        margin: -2rem 0 -3.5rem 0;
+        width: 82%;
+    }
+    .dividing-line.two {
+        display: none;
     }
 }
 
@@ -153,19 +177,16 @@ svg.disc-icon {
 
 @media (max-width: 940px) {
     #intro {
-        padding: 20px 0 0 0;
+        padding: 0;
     }
-    #music {
+    #music, #art {
         padding: 40px 0 0 0;
     }
     #movies {
-        padding: 40px 0 0 0;
-    }
-    #art {
-        padding: 40px 0 0 0;
+        padding: 30px 0 0 0;
     }
     #action { 
-        padding: 40px 0 60px 0;
+        padding: 20px 0;
     }
 }
 
@@ -209,7 +230,7 @@ svg.disc-icon {
 }
 
 #contact-me {
-    font-size: 3.4rem;
+    font-size: 3.3rem;
     font-weight: 900;
 }
 
@@ -293,8 +314,8 @@ svg.disc-icon {
     top: 0;
     width: 100%;
     height: 100%;
-    max-width: 800px;
-    max-height: 600px;
+    max-width: 840px;
+    max-height: 630px;
     box-shadow: 0 4px 8px 0 rgba(73, 73, 73, 0.15), 0 6px 18px 0 rgba(32, 32, 32, 0.15);
 }
 
@@ -309,19 +330,34 @@ p.d-inline-block, .contact-anchor {
     color: #f9f9f9;
     font-family: 'Martel', serif;
     font-weight: 900;
-    font-size: 2rem;
+    font-size: 2.3rem;
     text-align: center;
 }
 
+@media (max-width: 940px) {
+    p.d-inline-block {
+        padding: 0 2.2rem;
+    }
+    p.d-inline-block, .contact-anchor {
+        font-size: 1.75rem;
+    }
+}
+
 .contact-anchor:hover {
-    color: #d8d8d8;
+    color: #fff;
+}
+
+.contact-anchor:hover {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    transition: all 0.9s;
 }
 
 .pointer-image {
     background: transparent;
     transform: rotateZ(-45deg);
     max-width: 2.25rem;
-    margin-top: 1.25rem;
+    margin-top: 1.4rem;
 }
 
 /** Page Footer */
