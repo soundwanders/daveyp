@@ -127,7 +127,7 @@ svg.disc-icon {
 }
 
 @keyframes slideLeft {
-    0% {max-width: 5%}
+    0% {max-width: 0%}
     100% {max-width: 48%}
 }
 
@@ -136,14 +136,15 @@ svg.disc-icon {
         margin-top: 0.5rem;
         max-width: 85%;
         height: 20px;
-        animation-name: slideLeftMOBILE;
-        animation: 1.5s;
+        -webkit-animation: animation: slideLeftMOBILE 1.5s ease-in;
+        -moz-animation: animation: slideLeftMOBILE 1.5s ease-in;
+        -o-animation: animation: slideLeftMOBILE 1.5s ease-in;
         animation-delay: 1s;
     }
 }
 
 @keyframes slideLeftMOBILE {
-    0% {max-width: 25%}
+    0% {max-width: 0%}
     100% {max-width: 85%}
 }
 
