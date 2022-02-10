@@ -19,7 +19,7 @@ button {
 /** Hero Section */
 #header-wrapper {
     background-color: #222;
-    background: url(./media/grey.webp);
+    background: url(./media/grey-dark.webp);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -41,7 +41,7 @@ button {
     }
     #dp-logo {
         max-width: 100%;
-        padding: 0 2rem;
+        padding: 0 1.5rem;
     }
 }
 
@@ -56,7 +56,7 @@ button {
     line-height: 1.1;
     font-family: 'Balthazar', serif;
     font-weight: 700;
-    font-size: 2.8rem;
+    font-size: 3.875rem;
     color: #ebebeb;
     text-shadow: 2px 2px 3px #070707;
 }
@@ -67,22 +67,22 @@ button {
 
 @media (max-width: 940px) {
     .anchors {
-        font-size: 1.33rem;
+        font-size: 1.4rem;
         line-height: 1.5;
     }
 }
 
 svg.disc-icon {
-    width: calc(0.9em + 1vmin);
+    width: calc(1.5em + 1vmin);
     color: #d8d8d8;
-    padding: 0.875rem 0 0 0;
+    padding: 1rem 0 0 0;
 }
 
 @media (max-width: 940px) {
     svg.disc-icon {
         width: calc(0.75em + 1vmin);
         color: #f9f9f9;
-        padding: 4px 0 0 0;
+        padding: 10px 0 0 0;
     }
 }
 
@@ -116,54 +116,72 @@ svg.disc-icon {
 
 /** Black line under header */
 #header-underline {
-    max-width: 38%;
+    max-width: 48%;
     height: 40px;
     border-top: 3px solid #f9f9f9;
-    opacity: 0.9;
+    animation-name: slideLeft;
+    animation: 1.5s;
+    animation-delay: 1s;
+    transition: ease-in;
+}
+
+@keyframes slideLeft {
+    0% {max-width: 5%}
+    100% {max-width: 48%}
+}
+
+@keyframes slideLeftMOBILE {
+    0% {max-width: 25%}
+    100% {max-width: 85%}
 }
 
 @media (max-width: 940px) {
     #header-underline {
         margin-top: 0.5rem;
         max-width: 85%;
+        height: 20px;
+        animation-name: slideLeftMOBILE;
+        animation: 1.5s;
+        animation-delay: 1s;
     }
 }
 
 /** Decorative dividing line */
 .dividing-line {
     display: inline-block;
-    width: 25%;
-    margin: -5.5rem 0 -6rem 0;
+    width: 50%;
     opacity: 0.9;
+    padding: 0;
+    margin: 0 auto;
+    margin-bottom: -1rem;
 }
 
 @media (max-width: 940px) {
     .dividing-line.one {
-        margin: -2.5rem 0 -4rem 0;
         width: 85%;
+        margin-top: 0.875rem;
     }
 }
 
 /** Section Containers */
+#intro, #music, #movies, #art, #call-to-action {
+    background: transparent;
+}
+
 #intro {
     padding: 40px 0 0 0;
-    margin-bottom: -20px;
-    background-color: transparent;
 }
 
-#music, #movies {
-    padding: 40px 0 20px 0;
-    background-color: transparent;
+#music {
+    padding: 40px 0 0 0;
 }
 
-#art {
-    padding: 0 0 40px 0;
-    background-color: transparent;
+#movies {
+    padding: 40px 0 40px 0;
 }
 
-#action {
-    color: #f9f9f9;
-    padding: 20px 0 60px 0;
+#call-to-action, #art {
+    padding: 0px 0 40px 0;
 }
 
 @media (max-width: 940px) {
@@ -174,9 +192,9 @@ svg.disc-icon {
         padding: 40px 0 0 0;
     }
     #movies {
-        padding: 40px 0 20px 0;
+        padding: 20px 0 0px 0;
     }
-    #action { 
+    #call-to-action { 
         padding: 20px 0;
     }
 }
@@ -191,6 +209,7 @@ svg.disc-icon {
     line-height: 1.6;
     padding: 1rem 2rem;
     color: #f9f9f9;
+    text-shadow: 1px 1px 2px #070707;
     cursor: default;
 }
 
@@ -204,7 +223,7 @@ svg.disc-icon {
 }
 
 #elevate {
-    width: 75%;
+    width: 90%;
     font-size: 2.25rem;
     font-weight: 700;
     margin: 0 auto;
@@ -348,7 +367,7 @@ p.d-inline-block, .contact-anchor {
     background: transparent;
     transform: rotateZ(-45deg);
     max-width: 2.25rem;
-    margin-top: 1.4rem;
+    margin-top: 1.25rem;
 }
 
 /** Page Footer */
@@ -379,7 +398,7 @@ footer {
         flex-direction: column;
         text-align: center;
         align-items: center;
-        padding: 40px 0 0 0;
+        padding: 40px 0;
     }
 }
 

@@ -75,9 +75,9 @@
 })(jQuery);
 
 /** JS Select Dropdown, required to maintain custom styles */
-$(".js-select2").each(function(){
+$('.js-select2').each(function () {
   $(this).select2({
     minimumResultsForSearch: 10,
     dropdownParent: $(this).next('.dropDownSelect2'),
-  })
+  });
 });

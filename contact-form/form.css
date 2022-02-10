@@ -330,12 +330,12 @@ textarea.input {
 }
 
 .select2-container .select2-results__option[aria-selected="true"] {
-  background: #005a95;
+  background: #580000;
   color: #f9f9f9;
 }
 
 .select2-container .select2-results__option--highlighted[aria-selected] {
-  background: #005a95;
+  background: #580000;
   color: #f9f9f9;
 }
 
