@@ -123,7 +123,7 @@ svg.disc-icon {
     -moz-animation: animation: slideLeft 1.5s ease-in;
     -o-animation: animation: slideLeft 1.5s ease-in;
     animation: slideLeft 1.5s ease-in;
-    animation-delay: 1s;
+    animation-delay: 0.5s;
 }
 
 @keyframes slideLeft {
@@ -139,7 +139,7 @@ svg.disc-icon {
         -webkit-animation: animation: slideLeftMOBILE 1.5s ease-in;
         -moz-animation: animation: slideLeftMOBILE 1.5s ease-in;
         -o-animation: animation: slideLeftMOBILE 1.5s ease-in;
-        animation-delay: 1s;
+        animation-delay: 0.5s;
     }
 }
 
