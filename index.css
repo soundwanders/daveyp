@@ -19,7 +19,7 @@ button {
 /** Hero Section */
 #header-wrapper {
     background-color: #222;
-    background: url(./media/grey-dark.webp);
+    background: url(./media/background/grey-overlay.webp);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -45,6 +45,12 @@ button {
     }
 }
 
+@media only screen and (max-height: 575.98px) and (orientation: landscape) {
+    #dp-logo {
+        max-width: 80%;
+    }
+    }
+
 /** Hero Section + Anchor Links */
 #header-anchor {
     background: transparent;
@@ -56,7 +62,7 @@ button {
     line-height: 1.1;
     font-family: 'Balthazar', serif;
     font-weight: 700;
-    font-size: 3.875rem;
+    font-size: 3.75rem;
     color: #ebebeb;
     text-shadow: 2px 2px 3px #070707;
 }
@@ -119,11 +125,15 @@ svg.disc-icon {
     max-width: 48%;
     height: 40px;
     border-top: 3px solid #f9f9f9;
-    -webkit-animation: animation: slideLeft 1.5s ease-in;
-    -moz-animation: animation: slideLeft 1.5s ease-in;
-    -o-animation: animation: slideLeft 1.5s ease-in;
-    animation: slideLeft 1.5s ease-in;
+    -webkit-animation: slideLeft 1.2s ease-in-out;
+    -moz-animation: slideLeft 1.2s ease-in-out;
+    -o-animation: slideLeft 1.2s ease-in-out;
+    animation: slideLeft 1.2s ease-in-out;
     animation-delay: 0.5s;
+}
+
+#header-underline::after {
+    max-width: 48%;
 }
 
 @keyframes slideLeft {
@@ -136,9 +146,10 @@ svg.disc-icon {
         margin-top: 0.5rem;
         max-width: 85%;
         height: 20px;
-        -webkit-animation: animation: slideLeftMOBILE 1.5s ease-in;
-        -moz-animation: animation: slideLeftMOBILE 1.5s ease-in;
-        -o-animation: animation: slideLeftMOBILE 1.5s ease-in;
+        -webkit-animation: slideLeftMOBILE 1.5s ease-in-out;
+        -moz-animation: slideLeftMOBILE 1.5s ease-in-out;
+        -o-animation: slideLeftMOBILE 1.5s ease-in-out;
+        animation: slideLeftMOBILE 1.5s ease-in-out;
         animation-delay: 0.5s;
     }
 }
@@ -152,10 +163,10 @@ svg.disc-icon {
 .dividing-line {
     display: inline-block;
     width: 50%;
-    opacity: 0.9;
     padding: 0;
     margin: 0 auto;
     margin-bottom: -1rem;
+    opacity: 0.6;
 }
 
 @media (max-width: 940px) {
@@ -172,10 +183,11 @@ svg.disc-icon {
 
 #intro {
     padding: 40px 0 0 0;
+    box-shadow: 0 0 0px black;
 }
 
 #music {
-    padding: 40px 0 0 0;
+    padding: 40px 0 20px 0;
 }
 
 #movies {
@@ -211,7 +223,6 @@ svg.disc-icon {
     line-height: 1.6;
     padding: 1rem 2rem;
     color: #f9f9f9;
-    text-shadow: 1px 1px 2px #070707;
     cursor: default;
 }
 
