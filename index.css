@@ -19,7 +19,7 @@ button {
 /** Hero Section */
 #header-wrapper {
     background-color: #222;
-    background: url(./media/background/grey-overlay.webp);
+    background: url(./media/background/grey-original.webp);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -146,11 +146,11 @@ svg.disc-icon {
         margin-top: 0.5rem;
         max-width: 85%;
         height: 20px;
-        -webkit-animation: slideLeftMOBILE 1.5s ease-in-out;
-        -moz-animation: slideLeftMOBILE 1.5s ease-in-out;
-        -o-animation: slideLeftMOBILE 1.5s ease-in-out;
-        animation: slideLeftMOBILE 1.5s ease-in-out;
-        animation-delay: 0.5s;
+        -webkit-animation: slideLeftMOBILE 1.2s ease-in-out;
+        -moz-animation: slideLeftMOBILE 1.2s ease-in-out;
+        -o-animation: slideLeftMOBILE 1.2s ease-in-out;
+        animation: slideLeftMOBILE 1.2s ease-in-out;
+        animation-delay: 0.3s;
     }
 }
 
