@@ -45,7 +45,6 @@ iframe.music-gallery {
 
 
 /** Image Gallery Carousel Control Buttons */
-
 .image-buttons {
     transform: translateX(-2rem);
 }
@@ -54,7 +53,7 @@ iframe.music-gallery {
     transform: translateX(-2rem);
 }
 
-.image-buttons.carousel-control-next{
+.image-buttons.carousel-control-next {
     transform: translateX(2rem);
 }
 

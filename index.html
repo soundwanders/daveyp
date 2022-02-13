@@ -4,6 +4,9 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta http-equiv="cache-control" content="no-cache" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="-1" />
   <meta name="theme-color" content="#191919"/>
   <meta name="description" content="Davey Perron's website"/>
   <!-- Fonts -->
@@ -26,7 +29,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"/>
    <!-- Stylesheets --> 
   <link rel="stylesheet" type="text/css" href="./contact-form/form.css"/>
-  <link rel="stylesheet" href="./spotify-carousel/carousel.css"/>
+  <link rel="stylesheet" href="./bootstrap-carousel/carousel.css"/>
   <link rel="stylesheet" href="./index.css"/>
   
   <title>Davey Perron</title>
@@ -164,7 +167,7 @@
       <div class="container-md" id="music">
         <div class="carousel" id="spotify-carousel" data-bs-ride="carousel" data-bs-interval="false">
           <div class="album-wrapper carousel-inner">
-            <div class="album carousel-item active">
+            <div class="album carousel-item active" aria-current="true" aria-label="Mark of Cain">
               <iframe 
                 class="music-gallery" 
                 src="https://open.spotify.com/embed/album/79Pm2J5bMmZ9YIzft9AzoM?si=786e0445999b459d?utm_source=generator" 
@@ -324,7 +327,7 @@
           >
             <img
               src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(75).webp"
-              class="art-gallery img-fluid rounded mt-2 mb-4" 
+              class="art-gallery d-block w-100 rounded mt-2 mb-4" 
               alt="Snowscape"
             />
           </a>
@@ -337,7 +340,7 @@
           >
             <img
               src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(78).webp"
-              class="art-gallery img-fluid rounded mt-2 mb-4"
+              class="art-gallery d-block w-100 rounded mt-2 mb-4"
               alt="Open Water"
             />
           </a>
@@ -350,7 +353,7 @@
           >
             <img
               src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(18).webp"
-              class="art-gallery img-fluid rounded mt-2 mb-4"
+              class="art-gallery d-block w-100 rounded mt-2 mb-4"
               alt="Waves at Sunset"
             />
           </a>
@@ -363,7 +366,7 @@
           >
             <img
               src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(36).webp"
-              class="art-gallery img-fluid rounded mt-2 mb-4"
+              class="art-gallery d-block w-100 rounded mt-2 mb-4"
               alt="Desert Tree"
             />
           </a>
@@ -461,7 +464,7 @@
   <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 
   <script src="./contact-form/form.js"></script>
-  <script src="./spotify-carousel/carousel.js"></script>
+  <script src="./bootstrap-carousel/carousel.js"></script>
 
 </body>
 

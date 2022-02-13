@@ -58,14 +58,19 @@ button {
 }
 
 .anchors {
+    color: #ebebeb;
     align-items: center;
     line-height: 1.1;
     font-family: 'Balthazar', serif;
     font-weight: 700;
     font-size: 3.75rem;
-    color: #ebebeb;
-    text-shadow: 2px 2px 3px #070707;
+    text-rendering: optimizeLegibility;
+    text-shadow: 1px 1px 1px #919191,
+    1px 2px 1px #919191,
+    1px 12px 6px rgba(16,16,16,0.4),
+    1px 18px 14px rgba(16,16,16,0.2);
 }
+
 
 .anchors:hover {
     color: #f9f9f9;
@@ -206,7 +211,7 @@ svg.disc-icon {
         padding: 40px 0 0 0;
     }
     #movies {
-        padding: 20px 0 0px 0;
+        padding: 20px 0 0 0;
     }
     #call-to-action { 
         padding: 20px 0;
@@ -220,6 +225,7 @@ svg.disc-icon {
     font-weight: 400;
     font-size: 1.175rem;
     text-align: center;
+    text-rendering: optimizeLegibility;
     line-height: 1.6;
     padding: 1rem 2rem;
     color: #f9f9f9;
@@ -288,7 +294,7 @@ svg.disc-icon {
     left: 0;
     bottom: 0;
     right: 0;
-    background: url(./media/site-bg.png);
+    background: url(./media/background/site-bg.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -365,14 +371,14 @@ p.d-inline-block, .contact-anchor {
     }
 }
 
-.contact-anchor:hover {
-    color: #fff;
+.contact-anchor {
+    text-decoration: underline;
+    text-underline-offset: 3px;
 }
 
 .contact-anchor:hover {
-    text-decoration: underline;
-    text-underline-offset: 4px;
-    transition: all 0.9s;
+    color: #fff;
+    transform: scaleX(1.2);
 }
 
 .pointer-image {
@@ -441,7 +447,7 @@ footer {
     overflow: hidden;
     font-family: 'Permanent Marker', cursive;
     font-size: 2rem;
-    padding: 1rem 0 0 0;
+    top: 33%;
 }
 
 @media (max-width: 940px) {
