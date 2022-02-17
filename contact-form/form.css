@@ -28,16 +28,6 @@ textarea:focus, input:focus {
   border-color: transparent !important;
 }
 
-input:focus::-webkit-input-placeholder { color:transparent; }
-input:focus:-moz-placeholder { color:transparent; }
-input:focus::-moz-placeholder { color:transparent; }
-input:focus:-ms-input-placeholder { color:transparent; }
-
-textarea:focus::-webkit-input-placeholder { color:transparent; }
-textarea:focus:-moz-placeholder { color:transparent; }
-textarea:focus::-moz-placeholder { color:transparent; }
-textarea:focus:-ms-input-placeholder { color:transparent; }
-
 input::-webkit-input-placeholder { color: #adadad;}
 input:-moz-placeholder { color: #adadad;}
 input::-moz-placeholder { color: #adadad;}
@@ -47,6 +37,16 @@ textarea::-webkit-input-placeholder { color: #adadad;}
 textarea:-moz-placeholder { color: #adadad;}
 textarea::-moz-placeholder { color: #adadad;}
 textarea:-ms-input-placeholder { color: #adadad;}
+
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; }
+input:focus::-moz-placeholder { color:transparent; }
+input:focus:-ms-input-placeholder { color:transparent; }
+
+textarea:focus::-webkit-input-placeholder { color:transparent; }
+textarea:focus:-moz-placeholder { color:transparent; }
+textarea:focus::-moz-placeholder { color:transparent; }
+textarea:focus:-ms-input-placeholder { color:transparent; }
 
 /*---------------------------------------------------*/
 
@@ -212,7 +212,6 @@ textarea.input {
   top: 40px;
   left: 0px;
   padding: 0 45px 0 22px;
-  background-color: #222;
   color: #ff6b77;
   pointer-events: none;
   font-family: 'Roboto', sans-serif;
@@ -231,10 +230,10 @@ textarea.input {
   height: 40px;
   top: 35px;
   right: 12px;
-  color: #ff6b77;
-  cursor: pointer;
   font-family: 'Roboto', sans serif;
   font-size: 0.875rem;
+  color: #ff5f6c;
+  cursor: pointer;
 }
 
 .true-validate::after {
@@ -253,7 +252,11 @@ textarea.input {
   color: #00b865;
 }
 
-/** Restyle Select2.js dropdown */
+/** 
+Restyle Select2.js dropdown
+*******************************
+*/
+
 .select2-container {
   display: block;
   max-width: 100% !important;
