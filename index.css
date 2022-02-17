@@ -126,10 +126,10 @@ svg.list-item-divider {
     max-width: 42%;
     height: 40px;
     border-top: 4px solid #f9f9f9;
-    -webkit-animation: slideLeft 1.2s ease-in-out;
-    -moz-animation: slideLeft 1.2s ease-in-out;
-    -o-animation: slideLeft 1.2s ease-in-out;
-    animation: slideLeft 1.2s ease-in-out;
+    -webkit-animation: slideLeft 1s ease-in-out;
+    -moz-animation: slideLeft 1s ease-in-out;
+    -o-animation: slideLeft 1s ease-in-out;
+    animation: slideLeft 1s ease-in-out;
     animation-delay: 0.5s;
     opacity: 0.8;
 }
@@ -144,11 +144,11 @@ svg.list-item-divider {
         margin-top: 0.5rem;
         max-width: 85%;
         height: 20px;
-        -webkit-animation: slideLeftMOBILE 1.2s ease-in-out;
-        -moz-animation: slideLeftMOBILE 1.2s ease-in-out;
-        -o-animation: slideLeftMOBILE 1.2s ease-in-out;
-        animation: slideLeftMOBILE 1.2s ease-in-out;
-        animation-delay: 0.3s;
+        -webkit-animation: slideLeftMOBILE 1s ease-in-out;
+        -moz-animation: slideLeftMOBILE 1s ease-in-out;
+        -o-animation: slideLeftMOBILE 1s ease-in-out;
+        animation: slideLeftMOBILE 1s ease-in-out;
+        animation-delay: 0.5s;
     }
 }
 
@@ -462,6 +462,6 @@ footer {
 
 @media (max-width: 940px) {
     .footer-logo {
-        width: 1.8rem;
+        width: 1.675rem;
     }
 }
