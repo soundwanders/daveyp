@@ -90,6 +90,7 @@ svg.list-item-divider {
     svg.list-item-divider {
         width: 0.75rem;
         height: 100%;
+        padding: 0 0 1rem 0;
     }
 }
 
