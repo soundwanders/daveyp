@@ -83,14 +83,14 @@ button {
 svg.list-item-divider {
     width: 1.4rem;
     height: 100%;
-    fill: #f9f9f9;
+    fill: #cacaca;
 }
 
 @media (max-width: 940px) {
     svg.list-item-divider {
-        width: 0.75rem;
+        max-width: 0.75rem;
         height: 100%;
-        padding: 0 0 1rem 0;
+        padding: 0 0 0.5rem 0;
     }
 }
 
