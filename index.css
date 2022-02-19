@@ -61,7 +61,7 @@ button {
 .anchors {
     align-items: center;
     line-height: 1.1;
-    color: #e1e1e1;
+    color: #cacaca;
     font-family: 'Balthazar', serif;
     font-weight: 700;
     font-size: 3.6rem;
@@ -69,7 +69,7 @@ button {
 }
 
 .anchors:hover {
-    filter: brightness(130%);
+    filter: brightness(120%);
 }
 
 @media (max-width: 940px) {
@@ -124,7 +124,7 @@ svg.list-item-divider {
 
 /** Line under header */
 #header-underline {
-    max-width: 42%;
+    max-width: 45%;
     height: 40px;
     border-top: 2px solid #f9f9f9;
     -webkit-animation: slideLeft 1.7s ease-in-out;
@@ -136,8 +136,8 @@ svg.list-item-divider {
 }
 
 @keyframes slideLeft {
-    0% {max-width: 0%}
-    100% {max-width: 42%}
+    0% {max-width: 0}
+    100% {max-width: 45%}
 }
 
 @media (max-width: 940px) {
@@ -154,7 +154,7 @@ svg.list-item-divider {
 }
 
 @keyframes slideLeftMOBILE {
-    0% {max-width: 0%}
+    0% {max-width: 0}
     100% {max-width: 90%}
 }
 
@@ -191,7 +191,11 @@ svg.list-item-divider {
 }
 
 #movies {
-    padding: 40px 0 40px 0;
+    padding: 40px 0 20px 0;
+}
+
+#art {
+    max-width: 1200px;
 }
 
 #call-to-action, #art {
@@ -313,7 +317,7 @@ svg.list-item-divider {
 }
 
 .photos {
-    padding: 0 1rem;
+    padding: 0.5rem 1.5rem;
 }
 
 @media (max-width: 940px) {
