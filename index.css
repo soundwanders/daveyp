@@ -13,10 +13,6 @@
     src: url('./media/fonts/Avigea.ttf') format('truetype');
 }
 
-@font-face {
-    font-family: 'Camar';
-    src: url('./media/fonts/Camar.otf');
-}
 
 @font-face {
     font-family: 'Cattedrale';
@@ -26,11 +22,6 @@
 @font-face {
     font-family: 'Choir';
     src: url('./media/fonts/Choir.otf');
-}
-
-@font-face {
-    font-family: 'DarkMagic';
-    src: url('./media/fonts/DarkMagic.otf');
 }
 
 @font-face {
@@ -189,9 +180,9 @@ button {
     align-items: center;
     line-height: 1.1;
     color: #cecece;
-    font-family: 'Balthazar, Serif;
+    font-family: 'Balthazar', serif;
     font-size: 3.75rem;
-    text-rendering: optimizeLegibility;
+    text-rendering: optimizeSpeed;
 }
 
 .nav-anchors:hover {
@@ -337,7 +328,7 @@ svg.list-item-divider {
         padding: 40px 0 0 0;
     }
     #movies {
-        padding: 20px 0 0 0;
+        padding: 40px 0 20px 0;
     }
     #call-to-action { 
         padding: 20px 0;
@@ -454,8 +445,10 @@ svg.list-item-divider {
         font-size: 2rem;
     }
     .photos {
-        padding: 0 2.2rem;
+        padding: 0.2rem 2.2rem;
     }
+    photos:nth-child(1) {
+        padding: 0 2.2rem;
 }
 
 /** Youtube Embedded iFrame */
