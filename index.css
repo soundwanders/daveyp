@@ -94,7 +94,6 @@
     src: url('./media/fonts/Tenebrae.otf');
 }
 
-
 @font-face {
     font-family: 'Brown';
     src: url('./media/fonts/TheBrown.otf');
@@ -110,7 +109,6 @@
     font-family: 'Vhiena';
     src: url('./media/fonts/Vhiena.otf');
 }
-
 
 @font-face {
     font-family: 'Warden-Rough';
@@ -447,7 +445,7 @@ svg.list-item-divider {
     .photos {
         padding: 0.2rem 2.2rem;
     }
-    photos:nth-child(1) {
+    .photos:nth-child(1) {
         padding: 0 2.2rem;
 }
 
