@@ -1,8 +1,135 @@
-/** 
-    PRESERVE ORIGINAL bg color ...
-    background-color: #0e0e0e;
-    Current Body background color is set to match site-background image's shade of black
-**/
+@font-face {
+    font-family: 'Acherus';
+    src: url('./media/fonts/Acherus.otf');
+}
+
+@font-face {
+    font-family: 'Avestrava';
+    src: url('./media/fonts/Avestrava.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Avigea';
+    src: url('./media/fonts/Avigea.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Camar';
+    src: url('./media/fonts/Camar.otf');
+}
+
+@font-face {
+    font-family: 'Cattedrale';
+    src: url('./media/fonts/Cattedrale.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Choir';
+    src: url('./media/fonts/Choir.otf');
+}
+
+@font-face {
+    font-family: 'DarkMagic';
+    src: url('./media/fonts/DarkMagic.otf');
+}
+
+@font-face {
+    font-family: 'DreamBeach';
+    src: url('./media/fonts/DreamBeach.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Gerimist';
+    src: url('./media/fonts/Gerimist.otf');
+}
+
+@font-face {
+    font-family: 'LeOsler-Light';
+    src: url('./media/fonts/LeOsler-Light.otf');
+}
+
+@font-face {
+    font-family: 'LeOsler';
+    src: url('./media/fonts/LeOsler.otf');
+}
+
+@font-face {
+    font-family: 'Lordish';
+    src: url('./media/fonts/Lordish.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Mariana';
+    src: url('./media/fonts/Mariana-Script.otf');
+}
+
+@font-face {
+    font-family: 'Medio-Italic';
+    src: url('./media/fonts/Medio-italic.otf');
+}
+
+@font-face {
+    font-family: 'Medio';
+    src: url('./media/fonts/Medio.otf');
+}
+
+@font-face {
+    font-family: 'Mideltone';
+    src: url('./media/fonts/Mideltone.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Obituary';
+    src: url('./media/fonts/Obituary.otf');
+}
+
+@font-face {
+    font-family: 'Proxemic';
+    src: url('./media/fonts/Proxemic.otf');
+}
+
+@font-face {
+    font-family: 'Quittance';
+    src: url('./media/fonts/Quittance.otf');
+}
+
+@font-face {
+    font-family: 'Samberia';
+    src: url('./media/fonts/Samberia.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Tenebrae';
+    src: url('./media/fonts/Tenebrae.otf');
+}
+
+
+@font-face {
+    font-family: 'Brown';
+    src: url('./media/fonts/TheBrown.otf');
+}
+
+
+@font-face {
+    font-family: 'Vhiena-Shadow';
+    src: url('./media/fonts/Vhiena-Shadow.otf');
+}
+
+@font-face {
+    font-family: 'Vhiena';
+    src: url('./media/fonts/Vhiena.otf');
+}
+
+
+@font-face {
+    font-family: 'Warden-Rough';
+    src: url('./media/fonts/Warden-Rough.otf');
+}
+
+@font-face {
+    font-family: 'Warden';
+    src: url('./media/fonts/Warden.otf');
+}
 
 body {
     background-color: #070707;
@@ -58,22 +185,21 @@ button {
     cursor: default;
 }
 
-.anchors {
+.nav-anchors {
     align-items: center;
     line-height: 1.1;
-    color: #cacaca;
-    font-family: 'Balthazar', serif;
-    font-weight: 700;
-    font-size: 3.6rem;
+    color: #cecece;
+    font-family: 'Warden-Rough';
+    font-size: 4.2rem;
     text-rendering: optimizeLegibility;
 }
 
-.anchors:hover {
+.nav-anchors:hover {
     filter: brightness(120%);
 }
 
 @media (max-width: 940px) {
-    .anchors {
+    .nav-anchors {
         font-size: 1.4rem;
         line-height: 1.5;
         text-shadow: none;
@@ -124,9 +250,9 @@ svg.list-item-divider {
 
 /** Line under header */
 #header-underline {
-    max-width: 45%;
+    max-width: 52%;
     height: 40px;
-    border-top: 2px solid #f9f9f9;
+    border-top: 3px solid #f9f9f9;
     -webkit-animation: slideLeft 1.7s ease-in-out;
     -moz-animation: slideLeft 1.7s ease-in-out;
     -o-animation: slideLeft 1.7 ease-in-out;
@@ -135,22 +261,23 @@ svg.list-item-divider {
     opacity: 0.8;
 }
 
-@keyframes slideLeft {
-    0% {max-width: 0}
-    100% {max-width: 45%}
-}
-
 @media (max-width: 940px) {
     #header-underline {
-        margin-top: 0.5rem;
+        margin-top: 0.25rem;
         max-width: 90%;
         height: 20px;
+        border-top: 2px solid #f9f9f9;
         -webkit-animation: slideLeftMOBILE 1.7s ease-in-out;
         -moz-animation: slideLeftMOBILE 1.7s ease-in-out;
         -o-animation: slideLeftMOBILE 1.7s ease-in-out;
         animation: slideLeftMOBILE 1.7s ease-in-out;
         animation-delay: 0.5s;
     }
+}
+
+@keyframes slideLeft {
+    0% {max-width: 0}
+    100% {max-width: 52%}
 }
 
 @keyframes slideLeftMOBILE {
@@ -168,7 +295,7 @@ svg.list-item-divider {
 }
 
 @media (max-width: 940px) {
-    .dividing-line.one {
+    .dividing-line {
         width: 85%;
         padding: 0;
         margin-bottom: -1rem;
@@ -279,6 +406,8 @@ svg.list-item-divider {
 #spectre {
     max-height: 70%;
     padding: 0;
+    user-select: none;
+    pointer-events: none;
 }
 
 /** Background Image, Begins at Spotify Album Embeds */
