@@ -138,7 +138,7 @@ button {
 /** Hero Section */ 
 #header-wrapper {
     background-color: rgb(0, 0, 0);
-    background: url(./media/background/grey-2.webp);
+    background: url(./media/background/grey-bg.webp);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -311,10 +311,10 @@ svg.list-item-divider {
         #0f0f0f,
         #0f0f0f,
         #101010,
-        #101010,
-        #111111,
         #111111,
         #121212,
+        #131313,
+	#131313
     );
 }
 
