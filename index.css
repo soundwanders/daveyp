@@ -392,7 +392,7 @@ svg.list-item-divider {
 }
 
 #spectre {
-    max-height: 70%;
+    max-height: 80%;
     padding: 0;
     user-select: none;
     pointer-events: none;
