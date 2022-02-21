@@ -120,7 +120,6 @@
 
 body {
     background-color: #070707;
-background: linear-gradient(0deg, #070707 0%, #070707 60%, #0c0c0c 70%, #0f0f0f 85%, #151515 90%, #1f1f1f 100%);
     font-size: calc(0.75em + 1vmin);
     overflow-x: hidden;
 }
@@ -131,10 +130,15 @@ button {
 	background: transparent;
 }
 
-/** Hero Section */
+#overlay {
+    width: 100%;
+    height: 100%;
+}
+
+/** Hero Section */ 
 #header-wrapper {
     background-color: rgb(0, 0, 0);
-    background: url(./media/background/grey-bg.webp);
+    background: url(./media/background/grey-2.webp);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -178,7 +182,7 @@ button {
     line-height: 1.1;
     color: #cecece;
     font-family: 'Balthazar', serif;
-    font-size: 3.75rem;
+    font-size: 4rem;
     text-rendering: optimizeSpeed;
 }
 
@@ -195,16 +199,15 @@ button {
 }
 
 svg.list-item-divider {
-    width: 1.4rem;
+    width: 1.5rem;
     height: 100%;
+    padding: 0 0 0.5rem 0;
     fill: #cacaca;
 }
 
 @media (max-width: 940px) {
     svg.list-item-divider {
-        max-width: 0.75rem;
-        height: 100%;
-        padding: 0 0 0.5rem 0;
+        width: 0.75rem;
     }
 }
 
@@ -238,13 +241,13 @@ svg.list-item-divider {
 
 /** Line under header */
 #header-underline {
-    max-width: 52%;
+    max-width: 50%;
     height: 40px;
     border-top: 3px solid #f9f9f9;
-    -webkit-animation: slideLeft 1.7s ease-in-out;
-    -moz-animation: slideLeft 1.7s ease-in-out;
-    -o-animation: slideLeft 1.7 ease-in-out;
-    animation: slideLeft 1.7s ease-in-out;
+    -webkit-animation: slideLeft 1s linear;
+    -moz-animation: slideLeft 1s linear;
+    -o-animation: slideLeft 1s linear;
+    animation: slideLeft 1s linear;
     animation-delay: 0.5s;
     opacity: 0.8;
 }
@@ -255,22 +258,17 @@ svg.list-item-divider {
         max-width: 90%;
         height: 20px;
         border-top: 2px solid #f9f9f9;
-        -webkit-animation: slideLeftMOBILE 1.7s ease-in-out;
-        -moz-animation: slideLeftMOBILE 1.7s ease-in-out;
-        -o-animation: slideLeftMOBILE 1.7s ease-in-out;
-        animation: slideLeftMOBILE 1.7s ease-in-out;
+        -webkit-animation: slideLeft 1s linear;
+        -moz-animation: slideLeft 1s linear;
+        -o-animation: slideLeft 1s linear;
+        animation: slideLeft 1s linear;
         animation-delay: 0.5s;
     }
 }
 
 @keyframes slideLeft {
-    0% {max-width: 0}
-    100% {max-width: 52%}
-}
-
-@keyframes slideLeftMOBILE {
-    0% {max-width: 0}
-    100% {max-width: 90%}
+    0% {transform: scaleX(0)} 
+    100% {transform: scaleX(1)}
 }
 
 /** Decorative dividing line */
@@ -294,6 +292,30 @@ svg.list-item-divider {
 /** Section Containers */
 #intro, #music, #movies, #art, #call-to-action {
     background: transparent;
+}
+
+#gradient-wrapper {
+    background-color: #070707;
+    background-image: linear-gradient(
+        #070707,
+        #080808,
+        #090909,
+        #090909,
+        #0a0a0a,
+        #0b0b0b,
+        #0c0c0c,
+        #0c0c0c,
+        #0d0d0d,
+        #0d0d0d,
+        #0e0e0e,
+        #0f0f0f,
+        #0f0f0f,
+        #101010,
+        #101010,
+        #111111,
+        #111111,
+        #121212,
+    );
 }
 
 #intro {
