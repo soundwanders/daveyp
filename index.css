@@ -13,7 +13,6 @@
     src: url('./media/fonts/Avigea.ttf') format('truetype');
 }
 
-
 @font-face {
     font-family: 'Cattedrale';
     src: url('./media/fonts/Cattedrale.ttf') format('truetype');
@@ -99,7 +98,6 @@
     src: url('./media/fonts/TheBrown.otf');
 }
 
-
 @font-face {
     font-family: 'Vhiena-Shadow';
     src: url('./media/fonts/Vhiena-Shadow.otf');
@@ -122,6 +120,7 @@
 
 body {
     background-color: #070707;
+background: linear-gradient(0deg, #070707 0%, #070707 60%, #0c0c0c 70%, #0f0f0f 85%, #151515 90%, #1f1f1f 100%);
     font-size: calc(0.75em + 1vmin);
     overflow-x: hidden;
 }
@@ -307,7 +306,7 @@ svg.list-item-divider {
 }
 
 #movies {
-    padding: 40px 0 20px 0;
+    padding: 40px 0;
 }
 
 #art {
@@ -322,7 +321,7 @@ svg.list-item-divider {
     #intro {
         padding: 0;
     }
-    #music, #art, movies {
+    #music, #art {
         padding: 40px 0 0 0;
     }
     #movies {
@@ -447,6 +446,7 @@ svg.list-item-divider {
     }
     .photos:nth-child(1) {
         padding: 0 2.2rem;
+    }
 }
 
 /** Youtube Embedded iFrame */
