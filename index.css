@@ -274,7 +274,7 @@ svg.list-item-divider {
 /** Decorative dividing line */
 .dividing-line {
     display: inline-block;
-    width: 50%;
+    width: 52%;
     padding: 20px 0 0 0;
     margin: 0 auto;
     opacity: 0.6;
