@@ -109,7 +109,7 @@
 }
 
 @font-face {
-    font-family: 'Warden-Rough';
+    font-family: 'WardenRough';
     src: url('./media/fonts/Warden-Rough.otf');
 }
 
@@ -137,7 +137,7 @@ button {
 
 /** Hero Section */ 
 #header-wrapper {
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(5, 5, 5);
     background: url(./media/background/grey-bg.webp);
     background-position: center;
     background-size: cover;
@@ -297,24 +297,24 @@ svg.list-item-divider {
 #gradient-wrapper {
     background-color: #070707;
     background-image: radial-gradient(
-    #141414.
-    #131313,
-    #121212,
-    #101010,
-    #0f0f0f,
-    #0f0f0f,
-    #0e0e0e,
-    #0e0e0e,
-    #0c0c0c,
-    #0b0b0b,
-    #0b0b0b,
-    #0a0a0a,
-    #0a0a0a,
-    #090909,
-    #080808,
-    #070707,
-    #070707,
-    #060606
+        #141414.
+        #131313,
+        #121212,
+        #101010,
+        #0f0f0f,
+        #0f0f0f,
+        #0e0e0e,
+        #0e0e0e,
+        #0c0c0c,
+        #0b0b0b,
+        #0b0b0b,
+        #0a0a0a,
+        #0a0a0a,
+        #090909,
+        #080808,
+        #070707,
+        #070707,
+        #060606
     );
 }
 
@@ -362,6 +362,8 @@ svg.list-item-divider {
     font-size: 1.175rem;
     text-align: center;
     text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: auto;
+    font-smoothing: auto;
     line-height: 1.6;
     padding: 1rem 2rem;
     color: #f9f9f9;
@@ -414,7 +416,7 @@ svg.list-item-divider {
 }
 
 #spectre {
-    max-height: 80%;
+    max-height: 78%;
     padding: 0;
     user-select: none;
     pointer-events: none;
