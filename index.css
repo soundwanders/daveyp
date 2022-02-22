@@ -244,10 +244,10 @@ svg.list-item-divider {
     max-width: 50%;
     height: 40px;
     border-top: 3px solid #f9f9f9;
-    -webkit-animation: slideLeft 1s linear;
-    -moz-animation: slideLeft 1s linear;
-    -o-animation: slideLeft 1s linear;
-    animation: slideLeft 1s linear;
+    -webkit-animation: expand 1s linear;
+    -moz-animation: expand 1s linear;
+    -o-animation: expand 1s linear;
+    animation: expand 1s linear;
     animation-delay: 0.5s;
     opacity: 0.8;
 }
@@ -258,15 +258,15 @@ svg.list-item-divider {
         max-width: 90%;
         height: 20px;
         border-top: 2px solid #f9f9f9;
-        -webkit-animation: slideLeft 1s linear;
-        -moz-animation: slideLeft 1s linear;
-        -o-animation: slideLeft 1s linear;
-        animation: slideLeft 1s linear;
+        -webkit-animation: expand 1s linear;
+        -moz-animation: expand 1s linear;
+        -o-animation: expand 1s linear;
+        animation: expand 1s linear;
         animation-delay: 0.5s;
     }
 }
 
-@keyframes slideLeft {
+@keyframes expand {
     0% {transform: scaleX(0)} 
     100% {transform: scaleX(1)}
 }
@@ -296,18 +296,19 @@ svg.list-item-divider {
 
 #gradient-wrapper {
     background-color: #070707;
-    background-image: linear-gradient(
+    background-image: radial-gradient(
+    #141414.
+    #131313,
     #121212,
-    #111111,
-    #111111,
-    #101010,
     #101010,
     #0f0f0f,
     #0f0f0f,
     #0e0e0e,
-    #0d0d0d,
+    #0e0e0e,
     #0c0c0c,
     #0b0b0b,
+    #0b0b0b,
+    #0a0a0a,
     #0a0a0a,
     #090909,
     #080808,
