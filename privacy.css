@@ -1,0 +1,33 @@
+body {
+    background-color: #cecece;
+    color: #222;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.return {
+    margin: 0 0 20px 0;
+    font-size: 1.5rem;
+}
+
+.privacypolicy {
+    padding: 1rem 0;
+    margin: 0 auto;
+    max-width: 97%;
+}
+
+@media (max-width:940px) {
+    .policy-block {
+        text-align: center;
+        max-width: 92%;
+    }
+}

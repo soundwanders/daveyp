@@ -65,7 +65,7 @@ textarea:focus:-ms-input-placeholder { color:transparent; }
 }
 
 .wrap-contact {
-  max-width: 820px;
+  max-width: 940px;
   background: transparent;
   border-radius: 10px;
   overflow: hidden;
@@ -85,8 +85,8 @@ textarea:focus:-ms-input-placeholder { color:transparent; }
 .wrap-input {
   width: 100%;
   position: relative;
-  border: 1px solid #c0c0c0;
-  border-radius: 12px;
+  border: 1px solid #b9b9b9;
+  border-radius: 13px;
   padding: 10px 30px 9px 22px;
   margin-bottom: 20px;
 }

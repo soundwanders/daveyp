@@ -3,24 +3,10 @@
     src: url('./media/fonts/Acherus.otf');
 }
 
-@font-face {
-    font-family: 'Avestrava';
-    src: url('./media/fonts/Avestrava.ttf') format('truetype');
-}
 
 @font-face {
     font-family: 'Avigea';
     src: url('./media/fonts/Avigea.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Cattedrale';
-    src: url('./media/fonts/Cattedrale.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Choir';
-    src: url('./media/fonts/Choir.otf');
 }
 
 @font-face {
@@ -29,33 +15,8 @@
 }
 
 @font-face {
-    font-family: 'Gerimist';
-    src: url('./media/fonts/Gerimist.otf');
-}
-
-@font-face {
     font-family: 'LeOsler-Light';
     src: url('./media/fonts/LeOsler-Light.otf');
-}
-
-@font-face {
-    font-family: 'LeOsler';
-    src: url('./media/fonts/LeOsler.otf');
-}
-
-@font-face {
-    font-family: 'Lordish';
-    src: url('./media/fonts/Lordish.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Mariana';
-    src: url('./media/fonts/Mariana-Script.otf');
-}
-
-@font-face {
-    font-family: 'Medio-Italic';
-    src: url('./media/fonts/Medio-italic.otf');
 }
 
 @font-face {
@@ -68,39 +29,11 @@
     src: url('./media/fonts/Mideltone.ttf') format('truetype');
 }
 
-@font-face {
-    font-family: 'Obituary';
-    src: url('./media/fonts/Obituary.otf');
-}
 
-@font-face {
-    font-family: 'Proxemic';
-    src: url('./media/fonts/Proxemic.otf');
-}
-
-@font-face {
-    font-family: 'Quittance';
-    src: url('./media/fonts/Quittance.otf');
-}
-
-@font-face {
-    font-family: 'Samberia';
-    src: url('./media/fonts/Samberia.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Tenebrae';
-    src: url('./media/fonts/Tenebrae.otf');
-}
 
 @font-face {
     font-family: 'Brown';
     src: url('./media/fonts/TheBrown.otf');
-}
-
-@font-face {
-    font-family: 'Vhiena-Shadow';
-    src: url('./media/fonts/Vhiena-Shadow.otf');
 }
 
 @font-face {
@@ -109,13 +42,8 @@
 }
 
 @font-face {
-    font-family: 'WardenRough';
+    font-family: 'Warden-Rough';
     src: url('./media/fonts/Warden-Rough.otf');
-}
-
-@font-face {
-    font-family: 'Warden';
-    src: url('./media/fonts/Warden.otf');
 }
 
 body {
@@ -137,11 +65,11 @@ button {
 
 /** Hero Section */ 
 #header-wrapper {
-    background-color: rgb(5, 5, 5);
-    background: url(./media/background/grey-bg.webp);
+    background-color: #050505;
+    background: url(./media/background/grey.webp);
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: repeat-x;
     background-attachment: fixed;
 }
 
@@ -244,10 +172,10 @@ svg.list-item-divider {
     max-width: 50%;
     height: 40px;
     border-top: 3px solid #f9f9f9;
-    -webkit-animation: expand 1s linear;
-    -moz-animation: expand 1s linear;
-    -o-animation: expand 1s linear;
-    animation: expand 1s linear;
+    -webkit-animation: slideLeft 1s linear;
+    -moz-animation: slideLeft 1s linear;
+    -o-animation: slideLeft 1s linear;
+    animation: slideLeft 1s linear;
     animation-delay: 0.5s;
     opacity: 0.8;
 }
@@ -258,15 +186,15 @@ svg.list-item-divider {
         max-width: 90%;
         height: 20px;
         border-top: 2px solid #f9f9f9;
-        -webkit-animation: expand 1s linear;
-        -moz-animation: expand 1s linear;
-        -o-animation: expand 1s linear;
-        animation: expand 1s linear;
+        -webkit-animation: slideLeft 1s linear;
+        -moz-animation: slideLeft 1s linear;
+        -o-animation: slideLeft 1s linear;
+        animation: slideLeft 1s linear;
         animation-delay: 0.5s;
     }
 }
 
-@keyframes expand {
+@keyframes slideLeft {
     0% {transform: scaleX(0)} 
     100% {transform: scaleX(1)}
 }
@@ -274,7 +202,7 @@ svg.list-item-divider {
 /** Decorative dividing line */
 .dividing-line {
     display: inline-block;
-    width: 52%;
+    width: 50%;
     padding: 20px 0 0 0;
     margin: 0 auto;
     opacity: 0.6;
@@ -296,31 +224,30 @@ svg.list-item-divider {
 
 #gradient-wrapper {
     background-color: #070707;
-    background-image: radial-gradient(
-        #141414.
-        #131313,
-        #121212,
-        #101010,
-        #0f0f0f,
-        #0f0f0f,
-        #0e0e0e,
-        #0e0e0e,
-        #0c0c0c,
-        #0b0b0b,
-        #0b0b0b,
-        #0a0a0a,
-        #0a0a0a,
-        #090909,
+    background-image: linear-gradient(
+        #070707,
         #080808,
-        #070707,
-        #070707,
-        #060606
+        #090909,
+        #090909,
+        #0a0a0a,
+        #0b0b0b,
+        #0c0c0c,
+        #0c0c0c,
+        #0d0d0d,
+        #0d0d0d,
+        #0e0e0e,
+        #0f0f0f,
+        #0f0f0f,
+        #101010,
+        #101010,
+        #111111,
+        #111111,
+        #121212,
     );
 }
 
 #intro {
     padding: 40px 0 0 0;
-    box-shadow: 0 0 0px black;
 }
 
 #music {
@@ -362,8 +289,6 @@ svg.list-item-divider {
     font-size: 1.175rem;
     text-align: center;
     text-rendering: optimizeLegibility;
-    -moz-osx-font-smoothing: auto;
-    font-smoothing: auto;
     line-height: 1.6;
     padding: 1rem 2rem;
     color: #f9f9f9;
@@ -416,7 +341,7 @@ svg.list-item-divider {
 }
 
 #spectre {
-    max-height: 78%;
+    max-height: 80%;
     padding: 0;
     user-select: none;
     pointer-events: none;
@@ -521,7 +446,6 @@ p.d-inline-block, .contact-anchor {
 
 .contact-anchor:hover {
     color: #fff;
-    transform: scaleX(1.2);
 }
 
 .pointer-image {
@@ -612,5 +536,25 @@ footer {
 @media (max-width: 940px) {
     .footer-logo {
         width: 1.675rem;
+    }
+}
+
+.policy-block {
+    font-size: 12px;
+    width: 100%;
+    text-align: right;
+    padding: 0 1rem 0.5rem 0;
+}
+
+.policy-block a {
+    text-decoration: none;
+    color: #fff;
+}
+
+@media (max-width:940px) {
+    .policy-block {
+        text-align: center;
+        padding: 0 0 0.5rem 0;
+        font-size: 10px;
     }
 }
