@@ -3,7 +3,6 @@
     src: url('./media/fonts/Acherus.otf');
 }
 
-
 @font-face {
     font-family: 'Avigea';
     src: url('./media/fonts/Avigea.ttf') format('truetype');
@@ -29,8 +28,6 @@
     src: url('./media/fonts/Mideltone.ttf') format('truetype');
 }
 
-
-
 @font-face {
     font-family: 'Brown';
     src: url('./media/fonts/TheBrown.otf');
@@ -45,6 +42,7 @@
     font-family: 'Warden-Rough';
     src: url('./media/fonts/Warden-Rough.otf');
 }
+
 
 body {
     background-color: #070707;
@@ -66,10 +64,10 @@ button {
 /** Hero Section */ 
 #header-wrapper {
     background-color: #050505;
-    background: url(./media/background/grey.webp);
-    background-position: center;
+    background: url(./media/background/greybg.png), url(./media/background/greybg.webp);
+    background-position: bottom;
     background-size: cover;
-    background-repeat: repeat-x;
+    background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
@@ -109,8 +107,9 @@ button {
     align-items: center;
     line-height: 1.1;
     color: #cecece;
-    font-family: 'Balthazar', serif;
-    font-size: 4rem;
+    font-family: 'Mideltone', serif;
+    font-size: 5.1rem;
+    letter-spacing: 1px;
     text-rendering: optimizeSpeed;
 }
 
@@ -120,7 +119,7 @@ button {
 
 @media (max-width: 940px) {
     .nav-anchors {
-        font-size: 1.4rem;
+        font-size: 1.5rem;
         line-height: 1.5;
         text-shadow: none;
     }
@@ -130,7 +129,7 @@ svg.list-item-divider {
     width: 1.5rem;
     height: 100%;
     padding: 0 0 0.5rem 0;
-    fill: #cacaca;
+    fill: #e7e7e7;
 }
 
 @media (max-width: 940px) {
