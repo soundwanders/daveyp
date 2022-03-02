@@ -61,7 +61,12 @@ button {
     height: 100%;
 }
 
-/** Hero Section */ 
+/**
+********************************
+    Header/Hero Section 
+********************************
+*/ 
+
 #header-wrapper {
     background-color: #050505;
     background: url(./media/background/greybg.png), url(./media/background/greybg.webp);
@@ -97,7 +102,7 @@ button {
     }
 }
 
-/** Hero Section + Anchor Links */
+/** Header Navigation -- Anchor Links */
 #header-anchor {
     background: transparent;
     cursor: default;
@@ -108,8 +113,7 @@ button {
     line-height: 1.1;
     color: #cecece;
     font-family: 'Mideltone', serif;
-    font-size: 5.1rem;
-    letter-spacing: 1px;
+    font-size: 5rem;
     text-rendering: optimizeSpeed;
 }
 
@@ -128,7 +132,7 @@ button {
 svg.list-item-divider {
     width: 1.5rem;
     height: 100%;
-    padding: 0 0 0.5rem 0;
+    padding: 0 0 0.6rem 0;
     fill: #e7e7e7;
 }
 
@@ -138,12 +142,12 @@ svg.list-item-divider {
     }
 }
 
-/** Remove the default link style from <a> elements */
+/** Remove the default link style from navigation <a> elements */
 .nav-links, .contact-anchor {
     text-decoration: none;
 }
 
-/** Header logo anchor links  */
+/** Header UL  */
 #nav-list-row {
     margin: 0 auto;
 }
@@ -166,7 +170,7 @@ svg.list-item-divider {
     }
 }
 
-/** Line under header */
+/** Animated Header Nav Underline  */
 #header-underline {
     max-width: 50%;
     height: 40px;
@@ -198,13 +202,14 @@ svg.list-item-divider {
     100% {transform: scaleX(1)}
 }
 
-/** Decorative dividing line */
+/** Decorative dividing line image*/
 .dividing-line {
     display: inline-block;
     width: 50%;
     padding: 20px 0 0 0;
     margin: 0 auto;
     opacity: 0.6;
+    transform:scaleX(1.05);
 }
 
 @media (max-width: 940px) {
@@ -213,14 +218,15 @@ svg.list-item-divider {
         padding: 0;
         margin-bottom: -1rem;
         margin-top: 0.875rem;
+        transform:scaleX(1);
     }
 }
 
-/** Section Containers */
-#intro, #music, #movies, #art, #call-to-action {
-    background: transparent;
-}
-
+/**
+********************************
+    Section Containers
+********************************
+*/ 
 #gradient-wrapper {
     background-color: #070707;
     background-image: linear-gradient(
@@ -245,6 +251,10 @@ svg.list-item-divider {
     );
 }
 
+#intro, #music, #movies, #art, #call-to-action {
+    background: transparent;
+}
+
 #intro {
     padding: 40px 0 0 0;
 }
@@ -253,16 +263,13 @@ svg.list-item-divider {
     padding: 40px 0 20px 0;
 }
 
-#movies {
+#movies, #art {
     padding: 40px 0;
-}
-
-#art {
     max-width: 1200px;
 }
 
-#call-to-action, #art {
-    padding: 0px 0 40px 0;
+#call-to-action {
+    padding: 10px 0 60px 0;
 }
 
 @media (max-width: 940px) {
@@ -280,7 +287,11 @@ svg.list-item-divider {
     }
 }
 
-/** Intro Section */
+/**
+********************************
+    Intro / About Me Section
+********************************
+*/ 
 .lead.bio {  
     align-items: center;
     font-family: 'Martel', serif;
@@ -346,7 +357,7 @@ svg.list-item-divider {
     pointer-events: none;
 }
 
-/** Background Image, Begins at Spotify Album Embeds */
+/** Background Image, Begins at Spotify Album Embed container */
 .site-background {
     position: relative;
 }
@@ -364,7 +375,7 @@ svg.list-item-divider {
     background-repeat: no-repeat;
     background-attachment: fixed;
     opacity: 0.3;
-    z-index: -1;   
+    z-index: -1;
 }
 
 /** Art Image Gallery */
@@ -409,9 +420,8 @@ svg.list-item-divider {
     top: 0;
     width: 100%;
     height: 100%;
-    max-width: 840px;
-    max-height: 630px;
-    box-shadow: 0 4px 8px 0 rgba(73, 73, 73, 0.15), 0 6px 18px 0 rgba(32, 32, 32, 0.15);
+    max-width: 940px;
+    box-shadow: 0 3px 6px 0 rgba(73, 73, 73, 0.2), 0 6px 12px 0 rgba(32, 32, 32, 0.15);
 }
 
 @media (max-width: 940px) {
@@ -421,7 +431,7 @@ svg.list-item-divider {
 }
 
 /** Anchor Link to contact form */
-p.d-inline-block, .contact-anchor {
+p.d-inline-block, .contact-redirect-anchor {
     color: #f9f9f9;
     font-family: 'Martel', serif;
     font-weight: 900;
@@ -433,17 +443,17 @@ p.d-inline-block, .contact-anchor {
     p.d-inline-block {
         padding: 0 2.2rem;
     }
-    p.d-inline-block, .contact-anchor {
+    p.d-inline-block, .contact-redirect-anchor {
         font-size: 1.75rem;
     }
 }
 
-.contact-anchor {
+.contact-redirect-anchor {
     text-decoration: underline;
     text-underline-offset: 0.25rem;
 }
 
-.contact-anchor:hover {
+.contact-redirect-anchor:hover {
     color: #fff;
 }
 
@@ -539,7 +549,8 @@ footer {
 }
 
 .policy-block {
-    font-size: 12px;
+    font-family: monospace;
+    font-size: 10px;
     width: 100%;
     text-align: right;
     padding: 0 1rem 0.5rem 0;
@@ -547,13 +558,12 @@ footer {
 
 .policy-block a {
     text-decoration: none;
-    color: #fff;
+    color: #f9f9f9;
 }
 
 @media (max-width:940px) {
     .policy-block {
         text-align: center;
         padding: 0 0 0.5rem 0;
-        font-size: 10px;
     }
 }
