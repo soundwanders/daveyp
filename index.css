@@ -214,11 +214,10 @@ svg.list-item-divider {
 
 @media (max-width: 940px) {
     .dividing-line {
-        width: 85%;
+        width: 88%;
         padding: 0;
         margin-bottom: -1rem;
         margin-top: 0.875rem;
-        transform:scaleX(1);
     }
 }
 
