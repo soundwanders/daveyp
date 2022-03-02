@@ -378,7 +378,12 @@ svg.list-item-divider {
     z-index: -1;
 }
 
-/** Art Image Gallery */
+/**
+********************************
+    Art Photo Gallery Section
+********************************
+*/
+
 .art-header {
     font-family: 'Martel', serif;
     font-size: 4rem;
@@ -408,7 +413,12 @@ svg.list-item-divider {
     }
 }
 
-/** Youtube Embedded iFrame */
+/**
+********************************
+ Movie Section (Youtube iFrame)
+********************************
+*/ 
+
 .iframe-wrapper {
     position: relative;
     overflow: hidden;
@@ -430,7 +440,7 @@ svg.list-item-divider {
     }
 }
 
-/** Anchor Link to contact form */
+/** Anchor Link Redirects back to contact form */
 p.d-inline-block, .contact-redirect-anchor {
     color: #f9f9f9;
     font-family: 'Martel', serif;
@@ -464,7 +474,12 @@ p.d-inline-block, .contact-redirect-anchor {
     margin-top: 1.25rem;
 }
 
-/** Page Footer */
+/**
+********************************
+	Page Footer
+********************************
+*/ 
+
 footer {
   bottom: 0;
   width: 100%;
