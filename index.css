@@ -69,8 +69,8 @@ button {
 
 #header-wrapper {
     background-color: #050505;
-    background: url(./media/background/greybg.png), url(./media/background/greybg.webp);
-    background-position: bottom;
+    background: url(./media/background/dark-circle3.png);
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -109,9 +109,10 @@ button {
 }
 
 .nav-anchors {
+    padding: 1rem 0 0 0;
     align-items: center;
     line-height: 1.1;
-    color: #cecece;
+    color: #b9b9b9;
     font-family: 'Mideltone', serif;
     font-size: 5rem;
     text-rendering: optimizeSpeed;
@@ -132,7 +133,7 @@ button {
 svg.list-item-divider {
     width: 1.5rem;
     height: 100%;
-    padding: 0 0 0.6rem 0;
+    padding: 0 0 0.5rem 0;
     fill: #e7e7e7;
 }
 
@@ -174,13 +175,13 @@ svg.list-item-divider {
 #header-underline {
     max-width: 50%;
     height: 40px;
-    border-top: 3px solid #f9f9f9;
+    border-top: 4px solid #e7e7e7;
     -webkit-animation: slideLeft 1s linear;
     -moz-animation: slideLeft 1s linear;
     -o-animation: slideLeft 1s linear;
     animation: slideLeft 1s linear;
     animation-delay: 0.5s;
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 @media (max-width: 940px) {
@@ -188,7 +189,7 @@ svg.list-item-divider {
         margin-top: 0.25rem;
         max-width: 90%;
         height: 20px;
-        border-top: 2px solid #f9f9f9;
+        border-top: 2px solid #e7e7e7;
         -webkit-animation: slideLeft 1s linear;
         -moz-animation: slideLeft 1s linear;
         -o-animation: slideLeft 1s linear;
