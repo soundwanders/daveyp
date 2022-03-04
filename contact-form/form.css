@@ -50,7 +50,7 @@ textarea:focus:-ms-input-placeholder { color:transparent; }
 
 /*---------------------------------------------------*/
 
-.bg1 {background-color: #1f1f1f; }
+.bg1 { background-color: #1c1c1c; }
 
 /** Form Container */
 .container-md.contact {
@@ -65,7 +65,7 @@ textarea:focus:-ms-input-placeholder { color:transparent; }
 }
 
 .wrap-contact {
-  max-width: 940px;
+  max-width: 960px;
   background: transparent;
   border-radius: 10px;
   overflow: hidden;
@@ -110,7 +110,7 @@ textarea:focus:-ms-input-placeholder { color:transparent; }
 .input {
   display: block;
   width: 100%;
-  background: #1f1f1f;
+  background: #1c1c1c;
   color: #f9f9f9;
   font-family: 'Roboto', sans-serif;
   font-size: 1rem;
@@ -156,7 +156,7 @@ textarea.input {
   width: 100%;
   height: 50px;
   padding: 0 20px;
-  background-color: #1f1f1f;
+  background-color: #1c1c1c;
   color: #f9f9f9;
   border: 1px solid #b9b9b9;
   border-radius: 13px;
@@ -192,7 +192,7 @@ textarea.input {
   -ms-transform: translateY(1px);
   -o-transform: translateY(1px);
   transform: translateY(1px);
-  background-color: #070707;
+  background-color: #181818;
 } 
 
 /** Form data validation */
@@ -280,7 +280,7 @@ Restyle Select2.js dropdown
   font-weight: 700;
   font-size: 1.1rem;
   line-height: 1.2;
-  background-color: #1f1f1f;
+  background-color: #1c1c1c;
   color: #f9f9f9;
   padding-left: 0px;
 }
@@ -315,7 +315,7 @@ Restyle Select2.js dropdown
 .select2-container--open .select2-dropdown {
   width: calc(100% + 2px);
   left: -24px;
-  background-color: #292929;
+  background-color: #181818;
   border: 0px solid transparent;
   border-radius: 8px;
   box-shadow: 0 3px 10px 0px rgba(0, 0, 0, 0.2);
