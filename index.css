@@ -69,7 +69,7 @@ button {
 
 #header-wrapper {
     background-color: #050505;
-    background: url(./media/background/dark-circle3.png);
+    background: url(./media/background/greybg-dark.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -134,7 +134,7 @@ svg.list-item-divider {
     width: 1.5rem;
     height: 100%;
     padding: 0 0 0.5rem 0;
-    fill: #e7e7e7;
+    fill: #b9b9b9;
 }
 
 @media (max-width: 940px) {
@@ -175,7 +175,7 @@ svg.list-item-divider {
 #header-underline {
     max-width: 50%;
     height: 40px;
-    border-top: 4px solid #e7e7e7;
+    border-top: 4px solid #b9b9b9;
     -webkit-animation: slideLeft 1s linear;
     -moz-animation: slideLeft 1s linear;
     -o-animation: slideLeft 1s linear;
@@ -189,12 +189,7 @@ svg.list-item-divider {
         margin-top: 0.25rem;
         max-width: 90%;
         height: 20px;
-        border-top: 2px solid #e7e7e7;
-        -webkit-animation: slideLeft 1s linear;
-        -moz-animation: slideLeft 1s linear;
-        -o-animation: slideLeft 1s linear;
-        animation: slideLeft 1s linear;
-        animation-delay: 0.5s;
+        border-top: 2px solid #b9b9b9;
     }
 }
 
@@ -264,12 +259,12 @@ svg.list-item-divider {
 }
 
 #movies, #art {
-    padding: 40px 0;
+    padding: 60px 0 40px 0;
     max-width: 1200px;
 }
 
 #call-to-action {
-    padding: 10px 0 60px 0;
+    padding: 10px 0 70px 0;
 }
 
 @media (max-width: 940px) {
@@ -369,7 +364,7 @@ svg.list-item-divider {
     left: 0;
     bottom: 0;
     right: 0;
-    background: url(./media/background/site-bg.png);
+    background: url(./media/background/content-bg.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -430,7 +425,7 @@ svg.list-item-divider {
     top: 0;
     width: 100%;
     height: 100%;
-    max-width: 940px;
+    max-width: 960px;
     box-shadow: 0 3px 6px 0 rgba(73, 73, 73, 0.2), 0 6px 12px 0 rgba(32, 32, 32, 0.15);
 }
 
