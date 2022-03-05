@@ -133,14 +133,13 @@ button {
 svg.list-item-divider {
     width: 1.5rem;
     height: 100%;
-    padding: 0 0 0.4rem 0;
+    padding: 6px 0 0 0;
     fill: #b9b9b9;
 }
 
 @media (max-width: 940px) {
     svg.list-item-divider {
         width: 0.75rem;
-        padding: 6px 0 0 0;
     }
 }
 
