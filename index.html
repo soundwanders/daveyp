@@ -29,8 +29,8 @@
   <!-- Select2 CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"/>
    <!-- Stylesheets --> 
-  <link rel="stylesheet" type="text/css" href="./contact-form/form.css"/>
-  <link rel="stylesheet" href="./spotify-carousel/carousel.css"/>
+  <link rel="stylesheet" href="./sections/contact-form/form.css"/>
+  <link rel="stylesheet" href="./sections/spotify-carousel/carousel.css"/>
   <link rel="stylesheet" href="./index.css"/>
   
   <title>Davey Perron</title>
@@ -320,17 +320,47 @@
       <div class="container-md" id="art">
         <div class="row justify-content-center">
           <a href="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(63).webp" 
-            class="photos col-sm-12"
-            data-toggle="lightbox" 
-            data-gallery="image-gallery" 
-            data-caption="This is an optional caption that describes the image"
-          >
-            <img
-              src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(63).webp"
-              class="art-gallery d-block w-100 rounded mt-2 mb-4"
-              alt="Snowscape"
-            />
-          </a>
+          class="photos col-sm-12"
+          data-toggle="lightbox" 
+          data-gallery="image-gallery" 
+          data-caption="This is an optional caption that describes the image"
+        >
+          <img
+            src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(63).webp"
+            class="art-gallery d-block w-100 rounded mt-2 mb-4"
+            alt="Snowscape"
+          />
+        </a>
+            <!-- Replace <a> above with this comment block to go back to 2x2 photo grid
+
+              <a href="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(68).webp" 
+                class="photos col-sm-6"
+                data-toggle="lightbox" 
+                data-gallery="image-gallery" 
+                data-caption="This is an optional caption that describes the image"
+              >
+                <img
+                  src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(68).webp"
+                  class="art-gallery d-block w-100 rounded mt-2 mb-4" 
+                  alt="Windswept Mountain"
+                  loading="lazy" 
+                />
+              </a>
+
+              <a href="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(58).webp" 
+                class="photos col-sm-6"
+                data-toggle="lightbox" 
+                data-gallery="image-gallery" 
+                data-caption="This is an optional caption that describes the image"
+              >
+                <img
+                  src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(58).webp"
+                  class="art-gallery d-block w-100 rounded mt-2 mb-4" 
+                  alt="Starry Night"
+                  loading="lazy" 
+                />
+              </a>
+            -->
 
           <a href="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(75).webp" 
             class="photos col-sm-6"
@@ -443,10 +473,10 @@
             </a>
           </li>
         </ul>
-        <p class="copyright"> © <script> {new Date().getFullYear()};</script> Davey Perron </p>
+        <p class="copyright"> <span class="copysymbol"> &copy; &nbsp; </span> davey perron </p>
       </div>
       <div class="privacy-policy-block">
-        <a href="./privacy-policy.html" class="privacy" rel="noopener noreferral">
+        <a href="./sections/privacy-policy/privacy-policy.html" class="privacy" rel="noopener noreferral">
           Privacy Policy
         </a>
       </div>
@@ -466,8 +496,8 @@
   <!-- Select2 (used in contact form dropdown list) -->
   <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 
-  <script src="./contact-form/form.js"></script>
-  <script src="./spotify-carousel/carousel.js"></script>
+  <script src="./sections/contact-form/form.js"></script>
+  <script src="./sections/spotify-carousel/carousel.js"></script>
 
 </body>
 

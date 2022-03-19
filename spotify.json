@@ -1,42 +1,40 @@
 {
-  "ultranightmare": {
-    "albums": [
-      {
-        "id": 0,
-        "title": "The Mark of Cain",
-        "url": "https://open.spotify.com/embed/album/79Pm2J5bMmZ9YIzft9AzoM?si=786e0445999b459d?utm_source=generator",
-        "released": "2021"
-      },
-      {
-        "id": 1,
-        "title": "Exterminatus",
-        "url": "https://open.spotify.com/embed/album/3ESXW7vhhFzV8one29V2v2?si=-m2QkwDlSkudtjJF9_1iKQ?utm_source=generator&amp;",
-        "released": "2021"
-      },
-      {
-        "id": 2,
-        "title": "Knee Deep in the Dead",
-        "url": "https://open.spotify.com/embed/album/76sS3PD02bv2cRYzuJHlkR?si=1TJjQffiS06gC9s-ExYuAQ?utm_source=generator",
-        "released": "2020"
-      },
-      {
-        "id": 3,
-        "title": "The Shores of Hell",
-        "url": "https://open.spotify.com/embed/album/6nBMz0jYy0bV35nPzKG0Yi?si=KFF9CkTxSM-QNcewFL4OZw?utm_source=generator",
-        "released": "2020"
-      },
-      {
-        "id": 4,
-        "title": "Nightmare Fuel",
-        "url": "https://open.spotify.com/embed/album/4mxIUAxCWqEk1Xoz5P82Ti?si=q6UMfh50TYGk9NmQBjaa_g?utm_source=generator",
-        "released": "2020"
-      },
-      {
-        "id": 5,
-        "title": "Exterminatus Instrumentals",
-        "url": "https://open.spotify.com/embed/album/272uppODmPcrRuu3pRcChE?si=-5ynGirlRCGmGYIswMkaDw?utm_source=generator&amp;",
-        "released": "2021"
-      }
-    ]
-  }
+  "albums": [
+    {
+      "id": 0,
+      "title": "The Mark of Cain",
+      "url": "https://open.spotify.com/embed/album/79Pm2J5bMmZ9YIzft9AzoM?si=786e0445999b459d?utm_source=generator",
+      "released": "2021"
+    },
+    {
+      "id": 1,
+      "title": "Exterminatus",
+      "url": "https://open.spotify.com/embed/album/3ESXW7vhhFzV8one29V2v2?si=-m2QkwDlSkudtjJF9_1iKQ?utm_source=generator&amp;",
+      "released": "2021"
+    },
+    {
+      "id": 2,
+      "title": "Knee Deep in the Dead",
+      "url": "https://open.spotify.com/embed/album/76sS3PD02bv2cRYzuJHlkR?si=1TJjQffiS06gC9s-ExYuAQ?utm_source=generator",
+      "released": "2020"
+    },
+    {
+      "id": 3,
+      "title": "The Shores of Hell",
+      "url": "https://open.spotify.com/embed/album/6nBMz0jYy0bV35nPzKG0Yi?si=KFF9CkTxSM-QNcewFL4OZw?utm_source=generator",
+      "released": "2020"
+    },
+    {
+      "id": 4,
+      "title": "Nightmare Fuel",
+      "url": "https://open.spotify.com/embed/album/4mxIUAxCWqEk1Xoz5P82Ti?si=q6UMfh50TYGk9NmQBjaa_g?utm_source=generator",
+      "released": "2020"
+    },
+    {
+      "id": 5,
+      "title": "Exterminatus Instrumentals",
+      "url": "https://open.spotify.com/embed/album/272uppODmPcrRuu3pRcChE?si=-5ynGirlRCGmGYIswMkaDw?utm_source=generator&amp;",
+      "released": "2021"
+    }
+  ]
 }

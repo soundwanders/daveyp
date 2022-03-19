@@ -40,6 +40,12 @@ a:hover {
 
 #back-arrow {
     text-align: left;
-    margin-left: 0.5rem;
+    margin-left: 1.75rem;
     width: 1.25rem;
+}
+
+@media (max-width: 960px) {
+    #back-arrow {
+        margin-left: 0.25rem;
+    }
 }
