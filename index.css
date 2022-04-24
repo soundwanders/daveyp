@@ -58,7 +58,7 @@ button {
 
 #dp-logo {
     filter: drop-shadow(0px 1px 0px #e1e1e1);
-    max-width: 72%;
+    max-width: 75%;
     animation: fade 1.3s ease-in;
 }
 
@@ -74,7 +74,7 @@ button {
 
 @media only screen and (max-height: 575.98px) and (orientation: landscape) {
     #dp-logo {
-        max-width: 80%;
+        max-width: 82%;
     }
 }
 
@@ -92,6 +92,7 @@ button {
     font-family: 'Vhiena', serif;
     font-size: 7rem;
     text-rendering: optimizeSpeed;
+    animation: fade 1.3s ease-in;
 }
 
 .nav-anchors:hover {
@@ -109,14 +110,15 @@ button {
 svg.list-item-divider {
     width: 1.5rem;
     height: 7rem;
-    padding: 0 0 4px 0;
     fill: #cccccc;
+    animation: fade 1.3s ease-in;
 }
 
 @media (max-width: 940px) {
     svg.list-item-divider {
         width: 0.75rem;
         height: 100%;
+        padding: 0 0 8px 0;
     }
 }
 
@@ -154,11 +156,10 @@ svg.list-item-divider {
     height: 40px;
     margin-top: -1rem;
     border-top: 4px solid #b9b9b9;
-    -webkit-animation: expandUnderline 1s linear;
-    -moz-animation: expandUnderline 1s linear;
-    -o-animation: expandUnderline 1s linear;
-    animation: expandUnderline 1s linear;
-    animation-delay: 0.5s;
+    -webkit-animation: expandUnderline 1.3s linear;
+    -moz-animation: expandUnderline 1.3s linear;
+    -o-animation: expandUnderline 1.3s linear;
+    animation: expandUnderline 1.3s linear;
     opacity: 0.9;
 }
 
