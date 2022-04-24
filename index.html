@@ -15,24 +15,23 @@
   <link rel="preload" href="https://open.spotify.com/embed/album/79Pm2J5bMmZ9YIzft9AzoM?si=786e0445999b459d?utm_source=generator" as="document"/>
   <link rel="preload" href="https://open.spotify.com/embed/album/3ESXW7vhhFzV8one29V2v2?si=-m2QkwDlSkudtjJF9_1iKQ?utm_source=generator" as="document"/>
   <link rel="preload" href="https://open.spotify.com/embed/album/76sS3PD02bv2cRYzuJHlkR?si=1TJjQffiS06gC9s-ExYuAQ?utm_source=generator" as="document"/>
-  <link rel="preload" href="./media/background/dark-2.png" as="image"/>
-  <link rel="preload" href="./media/background/content-bg.png" as="image"/>
-  <link rel="preload" href="./media/line.png" as="image"/>
   <link rel="preload" href="./media/dplogo.png" as="image"/>
-  <link rel="preload" href="./media/spectre.png" as="image"/>
   <!-- Bootstrap CSS -->
   <link 
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" 
-    rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
+    rel="stylesheet" 
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
     crossorigin="anonymous"
   />
   <!-- Select2 CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"/>
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet"/>
+  <!-- Animation On Scroll -->
+  <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet"/>
    <!-- Stylesheets --> 
-  <link rel="stylesheet" href="./sections/contact-form/form.css"/>
-  <link rel="stylesheet" href="./sections/spotify-carousel/carousel.css"/>
-  <link rel="stylesheet" href="./index.css"/>
-  
+  <link href="./components/contact-form/form.css" rel="stylesheet"/>
+  <link href="./components/spotify-carousel/carousel.css" rel="stylesheet"/>
+  <link href="./index.css" rel="stylesheet"/>
+
   <title>Davey Perron</title>
 </head>
 
@@ -46,30 +45,30 @@
 
     <div class="container-fluid mb-4" id="header-sub">
       <div class="row justify-content-center" id="nav-list-row">
-        <ul class="list-group nav list-group-horizontal d-flex justify-content-center">
-          <li class="list-group-item nav">
+        <ul class="list-group nav list-group-horizontal d-flex justify-content-center align-content-center">
+          <li class="list-group-item nav align-content-center">
             <a href="#music" class="nav-links">
-              <h3 class="nav-anchors d-flex">MUSIC</h3>
+              <h3 class="nav-anchors">MUSIC</h3>
             </a>
           </li> 
-          <li class="list-group-item nav">
+          <li class="list-group-item nav align-content-center">
             <span>
               <svg class="list-item-divider" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"></circle></svg>
             </span>
           </li>
-          <li class="list-group-item nav">
+          <li class="list-group-item nav align-content-center">
             <a href="#movies" class="nav-links">
-              <h3 class="nav-anchors d-flex">MOVIES</h3>
+              <h3 class="nav-anchors">MOVIES</h3>
             </a>
           </li>
-          <li class="list-group-item nav">
+          <li class="list-group-item nav align-content-center">
             <span>
               <svg class="list-item-divider" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"></circle></svg>
             </span>
           </li> 
-          <li class="list-group-item nav">
+          <li class="list-group-item nav align-content-center">
             <a href="#art" class="nav-links">
-              <h3 class="nav-anchors d-flex">ART</h3>
+              <h3 class="nav-anchors">ART</h3>
             </a>
           </li>
         </ul>
@@ -97,7 +96,7 @@
             <p class="lead bio d-flex justify-content-center" id="elevate">
               Want to elevate your project to the next level?
             </p>
-            <p class="lead bio d-flex justify-content-center" id="contact-me">
+            <p class="lead bio d-flex justify-content-center" id="elevate">
               Contact Me
             </p>
           </div>
@@ -107,7 +106,14 @@
         </div>
       </div>
 
-      <div class="container-md contact d-flex justify-content-flex-start">
+      <div class="container-md contact d-flex justify-content-flex-start"
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-delay="40"
+        data-aos-duration="1300"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+      >
         <div class="row">
           <div class="wrap-contact" id="contact-form">
             <form class="contact-form validate-form" action="https://formsubmit.co/ce0f8ffa5c09d702ac9afeebcbdf2cf3" method="POST">
@@ -154,17 +160,30 @@
       </div>
 
       <!-- Section Dividing Line -->
-      <div class="container-fluid d-flex justify-content-center">
+      <div class="container-fluid d-flex justify-content-center"
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-delay="40"
+        data-aos-duration="1300"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+      >
         <img src="./media/line.webp" class="dividing-line" alt="Decorative Line" aria-hidden="true"/>
       </div>
-
     </div>
 
     <!-- Background Image Container, covers Spotify embeds to end of page Youtube video -->
     <div class="site-background container-fluid w-100 d-block px-0">
 
       <!-- Spotify Album Carousel -->
-      <div class="container-md" id="music">
+      <div class="container-md" id="music" 
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-delay="40"
+        data-aos-duration="1300"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+    >
         <div class="carousel" id="spotify-carousel" data-bs-ride="carousel" data-bs-interval="false">
           <div class="album-wrapper carousel-inner">
             <div class="album carousel-item active" aria-current="true" aria-label="Mark of Cain">
@@ -299,7 +318,14 @@
       <!-- End Spotify Carousel -->
 
       <!-- Youtube Embed -->
-      <div class="container-md" id="movies">
+      <div class="container-md" id="movies" 
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-delay="40"
+        data-aos-duration="1300"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+      >
         <div class="row">
           <div class="iframe-wrapper h-100 d-flex justify-content-center">
             <iframe 
@@ -317,21 +343,28 @@
       </div>
 
       <!-- Lightbox Image Gallery -->
-      <div class="container-md" id="art">
+      <div class="container-md" id="art" 
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-delay="40"
+        data-aos-duration="1300"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+      >
         <div class="row justify-content-center">
-          <a href="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(63).webp" 
-          class="photos col-sm-12"
-          data-toggle="lightbox" 
-          data-gallery="image-gallery" 
-          data-caption="This is an optional caption that describes the image"
-        >
-          <img
-            src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(63).webp"
-            class="art-gallery d-block w-100 rounded mt-2 mb-4"
-            alt="Snowscape"
-          />
-        </a>
-            <!-- Replace <a> above with this comment block to go back to 2x2 photo grid
+          <a href="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(112).webp" 
+            class="photos col-sm-12"
+            data-toggle="lightbox" 
+            data-gallery="image-gallery" 
+            data-caption="This is an optional caption that describes the image"
+          >
+            <img
+              src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(112).webp" 
+              class="art-gallery d-block w-100 rounded mt-2 mb-4"
+              alt="Waterfall"
+            />
+          </a>
+            <!-- Replace <a> above with the following comment block to go back to 2x2 photo grid...
 
               <a href="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(68).webp" 
                 class="photos col-sm-6"
@@ -343,7 +376,7 @@
                   src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(68).webp"
                   class="art-gallery d-block w-100 rounded mt-2 mb-4" 
                   alt="Windswept Mountain"
-                  loading="lazy" 
+
                 />
               </a>
 
@@ -357,7 +390,7 @@
                   src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(58).webp"
                   class="art-gallery d-block w-100 rounded mt-2 mb-4" 
                   alt="Starry Night"
-                  loading="lazy" 
+
                 />
               </a>
             -->
@@ -369,24 +402,22 @@
             data-caption="This is an optional caption that describes the image"
           >
             <img
-              src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(75).webp"
+              src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(75).webp" 
               class="art-gallery d-block w-100 rounded mt-2 mb-4" 
               alt="Snowscape"
-              loading="lazy" 
             />
           </a>
 
-          <a href="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(47).webp"
+          <a href="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(125).webp" 
             class="photos col-sm-6"
             data-toggle="lightbox" 
-            data-gallery="image-gallery"
+            data-gallery="image-gallery" 
             data-caption="This is an optional caption that describes the image"
           >
             <img
-              src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(47).webp"
-              class="art-gallery d-block w-100 rounded mt-2 mb-4"
-              alt="Waves at Sunset"
-              loading="lazy" 
+              src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(125).webp" 
+              class="art-gallery d-block w-100 rounded mt-2 mb-4" 
+              alt="Big River"
             />
           </a>
 
@@ -453,10 +484,11 @@
       <div class="footer-flex d-flex">
         <ul class="footer list-group list-group-horizontal">
           <li class="list-group-item footer">
-            <a href="https://www.youtube.com/daveyperron" class="social-links" target="_blank" rel="noopener noreferral">
-              <img class="footer-logo" src="media/socials/youtube.png" alt="Youtube Logo" title="Youtube"/>
+            <a href="https://www.artstation.com/daveyperron" class="social-links" target="_blank" rel="noopener noreferral">
+              <img class="footer-logo" src="media/socials/artstation.png" alt="Artstation Logo" title="Artstation"/>
             </a>
           </li>
+
           <li class="list-group-item footer">
             <a href="https://twitter.com/DaveyPerron" class="social-links" target="_blank" rel="noopener noreferral">
               <img class="footer-logo" src="media/socials/twitter.png" alt="Twitter Logo" title="Twitter"/>
@@ -468,21 +500,26 @@
             </a>
           </li>
           <li class="list-group-item footer">
-            <a href="https://www.artstation.com/daveyperron" class="social-links" target="_blank" rel="noopener noreferral">
-              <img class="footer-logo" src="media/socials/artstation.png" alt="Artstation Logo" title="Artstation"/>
+            <a href="https://www.youtube.com/daveyperron" class="social-links" target="_blank" rel="noopener noreferral">
+              <img class="footer-logo" src="media/socials/youtube.png" alt="Youtube Logo" title="Youtube"/>
             </a>
           </li>
         </ul>
         <p class="copyright"> <span class="copysymbol"> &copy; &nbsp; </span> davey perron </p>
       </div>
       <div class="privacy-policy-block">
-        <a href="./sections/privacy-policy/privacy-policy.html" class="privacy" rel="noopener noreferral">
+        <a href="./components/privacy-policy/privacy-policy.html" class="privacy" rel="noopener noreferral">
           Privacy Policy
         </a>
       </div>
     </div>
   </footer>
 
+  <!-- Animate On Scroll -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   <!-- Bootstrap Bundle -->
   <script 
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
@@ -492,12 +529,11 @@
   <!-- Bootstrap Lightbox -->
   <script src="./index.bundle.min.js"></script>
   <!-- JQuery -->
-  <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <!-- Select2 (used in contact form dropdown list) -->
   <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-
-  <script src="./sections/contact-form/form.js"></script>
-  <script src="./sections/spotify-carousel/carousel.js"></script>
+  <script src="./components/contact-form/form.js"></script>
+  <script src="./components/spotify-carousel/carousel.js"></script>
 
 </body>
 

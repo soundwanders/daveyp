@@ -3,10 +3,18 @@
     src: url('./media/fonts/Mideltone.ttf') format('truetype');
 }
 
-
 @font-face {
     font-family: 'Vhiena';
     src: url('./media/fonts/Vhiena.otf');
+}
+ 
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 
@@ -36,7 +44,7 @@ button {
 
 #header-wrapper {
     background-color: #050505;
-    background: url(./media/background/dark-2.png);
+    background: url(./media/background/hero-bg.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -44,13 +52,14 @@ button {
 }
 
 #logo-container {
-    padding: 5rem 0 2.5rem 0;
+    padding: 5rem 0 2rem 0;
     background: transparent;
 }
 
 #dp-logo {
     filter: drop-shadow(0px 1px 0px #e1e1e1);
-    max-width: 70%;
+    max-width: 72%;
+    animation: fade 1.3s ease-in;
 }
 
 @media (max-width: 940px) {
@@ -76,12 +85,12 @@ button {
 }
 
 .nav-anchors {
-    padding: 1rem 0 0 0;
+    padding: 0;
     align-items: center;
     line-height: 1;
     color: #cccccc;
     font-family: 'Vhiena', serif;
-    font-size: 6.75rem;
+    font-size: 7rem;
     text-rendering: optimizeSpeed;
 }
 
@@ -91,7 +100,7 @@ button {
 
 @media (max-width: 940px) {
     .nav-anchors {
-        font-size: 2rem;
+        font-size: 2.05rem;
         line-height: 1.5;
         text-shadow: none;
     }
@@ -99,8 +108,8 @@ button {
 
 svg.list-item-divider {
     width: 1.5rem;
-    height: 8rem;
-    padding: 6px 0 0 0;
+    height: 7rem;
+    padding: 0 0 4px 0;
     fill: #cccccc;
 }
 
@@ -143,6 +152,7 @@ svg.list-item-divider {
 #header-underline {
     max-width: 51%;
     height: 40px;
+    margin-top: -1rem;
     border-top: 4px solid #b9b9b9;
     -webkit-animation: expandUnderline 1s linear;
     -moz-animation: expandUnderline 1s linear;
@@ -154,7 +164,7 @@ svg.list-item-divider {
 
 @media (max-width: 940px) {
     #header-underline {
-        margin-top: 0.25rem;
+        margin-top: -0.5rem;
         max-width: 90%;
         height: 20px;
         border-top: 2px solid #b9b9b9;
@@ -178,7 +188,8 @@ svg.list-item-divider {
 
 @media (max-width: 940px) {
     .dividing-line {
-        width: 90%;
+        width: 92%;
+        min-height: 3rem;
         padding: 0;
         margin-bottom: -1rem;
         margin-top: 0.875rem;
@@ -240,10 +251,10 @@ svg.list-item-divider {
         padding: 0;
     }
     #music, #art {
-        padding: 40px 0 0 0;
+        padding: 50px 0 0 0;
     }
     #movies {
-        padding: 40px 0 20px 0;
+        padding: 50px 0 30px 0;
     }
     #call-to-action { 
         padding: 20px 0;
@@ -265,6 +276,7 @@ svg.list-item-divider {
     padding: 1rem 2rem;
     color: #f9f9f9;
     cursor: default;
+    animation: fade 1.3s ease-in;
 }
 
 
@@ -310,6 +322,7 @@ svg.list-item-divider {
     display: flex;
     align-items: center;
     justify-content: center;
+    animation: fade 1.3s ease-in;
 }
 
 #spectre {
@@ -471,22 +484,22 @@ footer {
 }
 
 .social-links {
+    display: inline-block; 
+    position: relative;
     text-decoration: none;
-    display: inline-block;     
-    position: relative;    
-    z-index: 1;     
-    padding: 2em;     
-    margin: -2em; 
-    -webkit-filter: grayscale(0%);
-    -moz-filter: grayscale(0%);
-    filter: grayscale(0%);
-    transition: all 0.5s ease;
-}
-
-.social-links:hover {
+    padding: 0.2rem; 
+    margin: 0 -0.375rem;
     -webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);
     filter: grayscale(100%);
+    transition: all 0.5s ease;
+    z-index: 1;
+}
+
+.social-links:hover {
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    filter: grayscale(0%);
     transition: all 0.5s ease;
 }
 
@@ -535,7 +548,7 @@ footer {
     font-size: 10px;
     width: 100%;
     text-align: right;
-    padding: 0 1rem 0.5rem 0;
+    padding: 0 1rem 0.75rem 0;
 }
 
 .privacy-policy-block a {

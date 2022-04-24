@@ -41,12 +41,12 @@ textarea:-ms-input-placeholder { color: #adadad;}
 input:focus::-webkit-input-placeholder { color:transparent; }
 input:focus:-moz-placeholder { color:transparent; }
 input:focus::-moz-placeholder { color:transparent; }
-input:focus:-ms-input-placeholder { color:transparent; }
+input:-ms-input-placeholder { color:transparent; }
 
 textarea:focus::-webkit-input-placeholder { color:transparent; }
 textarea:focus:-moz-placeholder { color:transparent; }
 textarea:focus::-moz-placeholder { color:transparent; }
-textarea:focus:-ms-input-placeholder { color:transparent; }
+textarea:-ms-input-placeholder { color:transparent; }
 
 /*---------------------------------------------------*/
 
@@ -278,7 +278,7 @@ Restyle Select2.js dropdown
 .select2-container .select2-selection--single .select2-selection__rendered {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 1.2;
   background-color: #1d1d1d;
   color: #f9f9f9;
@@ -293,7 +293,7 @@ Restyle Select2.js dropdown
   justify-content: flex-end;
   height: 100%;
   top: 50%;
-  right: 0px;
+  right: 0.3rem;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);

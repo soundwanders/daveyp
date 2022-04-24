@@ -14,7 +14,7 @@
     });
   });
 
-  /** Validate form inputs*/
+  /** Validate form input */
   let input = $('.validate-input .input');
 
   $('.validate-form').on('submit', function () {
@@ -63,7 +63,7 @@
     $('.btn-hide-validate').each(function () {
       $(this).on('click', function () {
         hideValidate(this);
-        $('textarea[name="message"]').removeAttr("placeholder");
+        $('textarea[name="message"]').removeAttr('placeholder');
       });
     });
   }
