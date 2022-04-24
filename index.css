@@ -43,9 +43,8 @@ button {
 */ 
 
 #header-wrapper {
-    background-color: #050505;
-    background: url(./media/background/hero-bg.png);
-    background-position: center;
+    background-color: #171717;
+    background-image: repeating-linear-gradient(45deg, rgba(240, 240, 240, 0.04) 0px, rgba(240, 240, 240,0.04) 2px, transparent 2px, transparent 4px), linear-gradient(90deg, #171717, #171717); 
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -59,7 +58,7 @@ button {
 #dp-logo {
     filter: drop-shadow(0px 1px 0px #e1e1e1);
     max-width: 75%;
-    animation: fade 1.3s ease-in;
+    animation: fade 0.5s ease-in;
 }
 
 @media (max-width: 940px) {
@@ -92,7 +91,7 @@ button {
     font-family: 'Vhiena', serif;
     font-size: 7rem;
     text-rendering: optimizeSpeed;
-    animation: fade 1.3s ease-in;
+    animation: fade 0.5s ease-in;
 }
 
 .nav-anchors:hover {
@@ -111,7 +110,7 @@ svg.list-item-divider {
     width: 1.5rem;
     height: 7rem;
     fill: #cccccc;
-    animation: fade 1.3s ease-in;
+    animation: fade 0.5s ease-in;
 }
 
 @media (max-width: 940px) {
@@ -156,10 +155,10 @@ svg.list-item-divider {
     height: 40px;
     margin-top: -1rem;
     border-top: 4px solid #b9b9b9;
-    -webkit-animation: expandUnderline 1.3s linear;
-    -moz-animation: expandUnderline 1.3s linear;
-    -o-animation: expandUnderline 1.3s linear;
-    animation: expandUnderline 1.3s linear;
+    -webkit-animation: expandUnderline 0.5s linear;
+    -moz-animation: expandUnderline 0.5s linear;
+    -o-animation: expandUnderline 0.5s linear;
+    animation: expandUnderline 0.5s linear;
     opacity: 0.9;
 }
 
@@ -277,7 +276,7 @@ svg.list-item-divider {
     padding: 1rem 2rem;
     color: #f9f9f9;
     cursor: default;
-    animation: fade 1.3s ease-in;
+    animation: fade 0.5s ease-in;
 }
 
 
@@ -323,7 +322,7 @@ svg.list-item-divider {
     display: flex;
     align-items: center;
     justify-content: center;
-    animation: fade 1.3s ease-in;
+    animation: fade 0.5s ease-in;
 }
 
 #spectre {
