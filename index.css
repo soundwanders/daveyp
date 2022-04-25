@@ -157,10 +157,10 @@ svg.list-item-divider {
     height: 40px;
     margin-top: -1rem;
     border-top: 4px solid #b9b9b9;
-    -webkit-animation: expandUnderline 1.3s linear;
-    -moz-animation: expandUnderline 1.3s linear;
-    -o-animation: expandUnderline 1.3s linear;
-    animation: expandUnderline 1.3s linear;
+    -webkit-animation: expandUnderline 1s linear;
+    -moz-animation: expandUnderline 1s linear;
+    -o-animation: expandUnderline 1s linear;
+    animation: expandUnderline 1s linear;
     opacity: 0.9;
 }
 
