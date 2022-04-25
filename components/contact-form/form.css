@@ -50,7 +50,7 @@ textarea:-ms-input-placeholder { color:transparent; }
 
 /*---------------------------------------------------*/
 
-.bg1 { background-color: #1d1d1d; }
+.bg1 { background-color: #1a1a1a; }
 
 /** Form Container */
 .container-md.contact {
@@ -65,7 +65,7 @@ textarea:-ms-input-placeholder { color:transparent; }
 }
 
 .wrap-contact {
-  max-width: 960px;
+  max-width: 900px;
   background: transparent;
   border-radius: 10px;
   overflow: hidden;
@@ -110,7 +110,7 @@ textarea:-ms-input-placeholder { color:transparent; }
 .input {
   display: block;
   width: 100%;
-  background: #1d1d1d;
+  background: #1a1a1a;
   color: #f9f9f9;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 1rem;
@@ -280,7 +280,7 @@ Restyle Select2.js dropdown
   font-weight: 700;
   font-size: 1rem;
   line-height: 1.2;
-  background-color: #1d1d1d;
+  background-color: #1a1a1a;
   color: #f9f9f9;
   padding-left: 0px;
 }
