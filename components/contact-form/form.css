@@ -55,7 +55,6 @@ textarea:-ms-input-placeholder { color:transparent; }
 /** Form Container */
 .container-md.contact {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -65,7 +64,7 @@ textarea:-ms-input-placeholder { color:transparent; }
 }
 
 .wrap-contact {
-  max-width: 900px;
+  max-width: 920px;
   background: transparent;
   border-radius: 10px;
   overflow: hidden;
@@ -75,7 +74,6 @@ textarea:-ms-input-placeholder { color:transparent; }
 .contact-form {
   width: 100%;
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -112,7 +110,6 @@ textarea:-ms-input-placeholder { color:transparent; }
   width: 100%;
   background: #1a1a1a;
   color: #f9f9f9;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 1rem;
   line-height: 1.2;
   padding-right: 14px;
@@ -139,7 +136,6 @@ textarea.input {
 /** Submit Button */
 .container-contact-form-btn {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -149,7 +145,6 @@ textarea.input {
 
 .contact-form-btn {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -160,7 +155,6 @@ textarea.input {
   color: #f9f9f9;
   border: 1px solid #b9b9b9;
   border-radius: 13px;
-  font-family: 'Roboto', sans-serif;
   font-size: 1.175rem;
   font-weight: 600;
   letter-spacing: 1px;
@@ -203,7 +197,6 @@ textarea.input {
 .alert-validate::before {
   content: attr(data-validate);
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   align-items: center;
   position: absolute;
@@ -214,14 +207,12 @@ textarea.input {
   padding: 0 45px 0 22px;
   color: #ff6b77;
   pointer-events: none;
-  font-family: 'Roboto', sans-serif;
   font-size: 0.875rem;
   line-height: 1.2;
 }
 
 .btn-hide-validate {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -230,7 +221,6 @@ textarea.input {
   height: 40px;
   top: 35px;
   right: 12px;
-  font-family: 'Roboto', sans serif;
   font-size: 0.875rem;
   color: #ff5f6c;
   cursor: pointer;
@@ -238,7 +228,6 @@ textarea.input {
 
 .true-validate::after {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -247,47 +236,53 @@ textarea.input {
   height: 40px;
   top: 35px;
   right: 10px;
-  font-family: 'Roboto', sans serif;
   font-size: 1.125rem;
   color: #00b865;
 }
 
 /** 
-Restyle Select2.js dropdown
+  Dropdown list
 *******************************
 */
 
-.select2-container {
+.select-wrapper {
+  width: 100% !important;
+}
+
+/** Hide default dropdown arrow */
+.select-container select {
+  /* for Firefox */
+  -moz-appearance: none;
+  /* for Safari, Chrome, Opera */
+  -webkit-appearance: none;
+}
+.select-container select::-ms-expand {
+  display: none;
+}
+
+.select-container {
   display: block;
   max-width: 100% !important;
   width: auto !important;
+  background-color: #1a1a1a;
+  color: #f9f9f9;
 }
 
-.select2-container .select2-selection--single {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  align-items: center;
-  background-color: transparent;
-  border: none;
-  height: 40px;
-  outline: none;
+/** DROPDOWN LIST OPTIONS */
+
+.select-container select {
   position: relative;
-}
-
-.select2-container .select2-selection--single .select2-selection__rendered {
-  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 1rem;
   line-height: 1.2;
-  background-color: #1a1a1a;
-  color: #f9f9f9;
   padding-left: 0px;
+  top: 12px;
+  
 }
 
-.select2-container--default .select2-selection--single .select2-selection__arrow {
+/** DROPDOWN ARROW */
+.arrow {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -300,22 +295,15 @@ Restyle Select2.js dropdown
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-.select2-selection__arrow b {
-  display: none;
-}
 
-.select2-selection__arrow::before {
+.arrow::before {
   content: '↓';
-  font-family: 'Roboto', sans serif;
-  font-size: 1rem;
   color: #f9f9f9;
 }
 
-/** Dropdown option */
-.select2-container--open .select2-dropdown {
+/** Dropdown List Selections  */
+.select-container, .select-container > option {
   width: calc(100% + 2px);
-  left: -24px;
-  background-color: #181818;
   border: 0px solid transparent;
   border-radius: 8px;
   box-shadow: 0 3px 10px 0px rgba(0, 0, 0, 0.2);
@@ -323,52 +311,32 @@ Restyle Select2.js dropdown
   z-index: 15;
 }
 
-.select2-dropdown--above {top: -38px;}
-.select2-dropdown--below {top: 10px;}
+.dropdown--above {top: -38px;}
+.dropdown--below {top: 10px;}
 
-.select2-container .select2-results__option[aria-selected] {
+option[aria-selected] {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 24px;
 }
 
-.select2-container .select2-results__option[aria-selected="true"] {
-  background: #580000;
-  color: #f9f9f9;
-}
-
-.select2-container .select2-results__option--highlighted[aria-selected] {
-  background: #580000;
-  color: #f9f9f9;
-}
-
-.select2-container .select2-results__option--selected {
-  background: #4b4b4b;
-}
-
-.select2-results__options {
-  font-family: 'Roboto', sans-serif;
+option {
   font-size: 0.875rem;
   font-weight: 600;
   color: #f9f9f9;
   line-height: 1.2;
 }
 
-.select2-search--dropdown .select2-search__field {
-  border: 1px solid #5555;
+.dropdown {
+  width: calc(100% + 2px) !important;
   outline: none;
-  font-family: 'Roboto', sans-serif;
   font-size: 0.9rem;
   color: #292929;
   line-height: 1.2;
 }
 
-.wrap-input .dropDownSelect2 .select2-container--open {
-  width: 100% !important;
-}
-
-.wrap-input .dropDownSelect2 .select2-dropdown {
-  width: calc(100% + 2px) !important;
+.dropdown:active {
+  border: 1px solid #5555;
 }
 
 /** Media queries */
@@ -395,13 +363,10 @@ Restyle Select2.js dropdown
     right: 0px;
     width: 30px;
   }
-  .select2-container--open .select2-dropdown {
-    left: -12px;
-  }
-  .select2-container .select2-results__option[aria-selected] {
-    padding-left: 12px;
-  }
   .contact-form-btn {
     font-size: 1rem;
   }
+  .select-container select {
+    font-size: 0.875rem;
+  }  
 }

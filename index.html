@@ -23,8 +23,6 @@
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
     crossorigin="anonymous"
   />
-  <!-- Select2 CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet"/>
   <!-- Animation On Scroll -->
   <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet"/>
    <!-- Stylesheets --> 
@@ -106,13 +104,11 @@
         </div>
       </div>
 
-      <div class="container-md contact d-flex justify-content-flex-start"
+      <div class="select-container container-md contact d-flex justify-content-flex-start"
         data-aos="fade-up"
-        data-aos-offset="120"
         data-aos-delay="30"
-        data-aos-duration="1300"
+        data-aos-duration="1200"
         data-aos-easing="ease-in-out"
-        data-aos-mirror="false"
       >
         <div class="row">
           <div class="wrap-contact" id="contact-form">
@@ -129,14 +125,15 @@
       
               <div class="wrap-input input-select bg1">
                 <span class="label-input">Inquiring About...</span>
-                <div>
-                  <select class="js-select2" name="service">
-                    <option>Music</option>
-                    <option>Movies</option>
-                    <option>Art</option>
-                    <option>Other</option>
+                <div class="select-wrapper">
+                  <select class="select-container" name="service">
+                    <option value="Music" selected="selected">Music</option>
+                    <option value="Movies">Movies</option>
+                    <option value="Art">Art</option>
+                    <option value="Other">Other</option>
                   </select>
-                  <div class="dropDownSelect2"></div>
+                  <span class="arrow"></span>
+                  <div class="dropdown"></div>
                 </div>
               </div>
       
@@ -162,11 +159,9 @@
       <!-- Section Dividing Line -->
       <div class="container-fluid d-flex justify-content-center"
         data-aos="fade-up"
-        data-aos-offset="120"
         data-aos-delay="30"
-        data-aos-duration="1300"
+        data-aos-duration="1200"
         data-aos-easing="ease-in-out"
-        data-aos-mirror="false"
       >
         <img src="./media/line.webp" class="dividing-line" alt="Decorative Line" aria-hidden="true"/>
       </div>
@@ -180,9 +175,8 @@
         data-aos="fade-up"
         data-aos-offset="120"
         data-aos-delay="30"
-        data-aos-duration="1300"
+        data-aos-duration="1200"
         data-aos-easing="ease-in-out"
-        data-aos-mirror="false"
     >
         <div class="carousel" id="spotify-carousel" data-bs-ride="carousel" data-bs-interval="false">
           <div class="album-wrapper carousel-inner">
@@ -320,11 +314,9 @@
       <!-- Youtube Embed -->
       <div class="container-md" id="movies" 
         data-aos="fade-up"
-        data-aos-offset="240"
         data-aos-delay="30"
-        data-aos-duration="1300"
+        data-aos-duration="1200"
         data-aos-easing="ease-in-out"
-        data-aos-mirror="false"
       >
         <div class="row">
           <div class="iframe-wrapper h-100 d-flex justify-content-center">
@@ -347,9 +339,8 @@
         data-aos="fade-up"
         data-aos-offset="120"
         data-aos-delay="30"
-        data-aos-duration="1300"
+        data-aos-duration="1200"
         data-aos-easing="ease-in-out"
-        data-aos-mirror="false"
       >
         <div class="row justify-content-center">
           <a href="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(112).webp" 
@@ -468,7 +459,13 @@
       </div>
 
       <!-- Call to action, with anchor link to Contact Form -->
-      <div class="container-md" id="call-to-action">
+      <div class="container-md" id="call-to-action"
+        data-aos="fade-up"
+        data-aos-offset="120"
+        data-aos-delay="30"
+        data-aos-duration="1200"
+        data-aos-easing="ease-in-out"
+      >
         <div class="row">
           <p class="d-inline-block">
             Interested in working together? <a href="#contact-form" class="contact-redirect-anchor">Let's talk!</a>
@@ -530,8 +527,7 @@
   <script src="./index.bundle.min.js"></script>
   <!-- JQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <!-- Select2 (used in contact form dropdown list) -->
-  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
   <script src="./components/contact-form/form.js"></script>
   <script src="./components/spotify-carousel/carousel.js"></script>
 
