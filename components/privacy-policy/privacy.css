@@ -1,5 +1,5 @@
 body {
-    background-color: #070707;
+    background-color: #151515;
     color: #f9f9f9;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
@@ -9,11 +9,11 @@ body {
 
 h1, h2, h3, h4 {
     font-family: 'Ubuntu', sans-serif;
-    padding-bottom: 8px;
+    padding-bottom: 4px;
 }
 
 .privacypolicy {
-    padding: 1rem 0;
+    padding: 0.5rem 0 1rem 0;
     margin: 0 auto;
     max-width: 97%;
 }
@@ -27,6 +27,7 @@ h1, h2, h3, h4 {
 
 a {
     text-decoration: none;
+    color: white;
 }
 
 a:hover {

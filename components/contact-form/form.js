@@ -4,7 +4,7 @@
   'use strict';
 
   /** Validate after type */
-  $('.validate-input .input100').each(function () {
+  $('.validate-input .input').each(function () {
     $(this).on('blur', function () {
       if (validate(this) == false) {
         showValidate(this);
