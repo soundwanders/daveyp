@@ -34,44 +34,16 @@
 </head>
 
 <body class="d-flex flex-column h-100">
-  <div class="container-fluid shadow" id="header-wrapper">
+  <div class="header-wrapper container-fluid shadow">
     <div class="container-fluid" id="logo-container">
       <div class="row justify-content-center" id="logo-row">
-        <img src="./media/dplogo.png" class="img-fluid w-100" id="dp-logo" alt="Davey Perron Logo"/>
+        <img src="./media/background/FinalLogo.png" class="img-fluid w-100" id="dp-logo" alt="Davey Perron Logo"/>
       </div>
     </div>
-
-    <div class="container-fluid mb-4" id="header-sub">
-      <div class="row justify-content-center" id="nav-list-row">
-        <ul class="list-group nav list-group-horizontal d-flex justify-content-center align-content-center">
-          <li class="list-group-item nav align-content-center">
-            <a href="#music" class="nav-links">
-              <h3 class="nav-anchors">MUSIC</h3>
-            </a>
-          </li> 
-          <li class="list-group-item nav align-content-center">
-            <span>
-              <svg class="list-item-divider" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"></circle></svg>
-            </span>
-          </li>
-          <li class="list-group-item nav align-content-center">
-            <a href="#movies" class="nav-links">
-              <h3 class="nav-anchors">MOVIES</h3>
-            </a>
-          </li>
-          <li class="list-group-item nav align-content-center">
-            <span>
-              <svg class="list-item-divider" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"></circle></svg>
-            </span>
-          </li> 
-          <li class="list-group-item nav align-content-center">
-            <a href="#art" class="nav-links">
-              <h3 class="nav-anchors">ART</h3>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="container-fluid d-flex justify-content-center" id="header-underline"></div>
+    <div class="downArrow d-flex justify-content-center">
+      <a href="#intro" id="scrollDown">
+        <img src="./media/downArrow.svg" id="arrow-image" />
+      </a>
     </div>
   </div>
 
@@ -123,17 +95,9 @@
                 <input class="input" type="text" name="email" placeholder=". . .">
               </div>
       
-              <div class="wrap-input input-select bg1">
-                <span class="label-input">Inquiring About...</span>
-                <div class="select-wrapper">
-                  <select class="select-container" name="service">
-                    <option value="Music" selected="selected">Music</option>
-                    <option value="Movies">Movies</option>
-                    <option value="Art">Art</option>
-                    <option value="Other">Other</option>
-                  </select>
-                  <span class="arrow"></span>
-                </div>
+              <div class="wrap-input validate-input bg1" data-validate = "Subject">
+                <span class="label-input">Subject</span>
+                <input class="input" type="text" name="email" placeholder=". . .">
               </div>
       
               <div class="wrap-input validate-input bg1 rs1-alert-validate" data-validate = "Please write a message">
@@ -342,16 +306,16 @@
         data-aos-easing="ease-in-out"
       >
         <div class="row justify-content-center">
-          <a href="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(112).webp" 
-            class="photos col-sm-12"
+          <a href="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(75).webp" 
+            class="photos col-sm-6"
             data-toggle="lightbox" 
             data-gallery="image-gallery" 
             data-caption="This is an optional caption that describes the image"
           >
             <img
-              src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(112).webp" 
-              class="art-gallery d-block w-100 rounded mt-2 mb-4"
-              alt="Waterfall"
+              src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(75).webp" 
+              class="art-gallery d-block w-100 rounded mt-2 mb-4" 
+              alt="Snowscape one"
             />
           </a>
             <!-- Replace <a> above with the following comment block to go back to 2x2 photo grid 
@@ -394,21 +358,21 @@
             <img
               src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(75).webp" 
               class="art-gallery d-block w-100 rounded mt-2 mb-4" 
-              alt="Snowscape"
+              alt="Snowscape two"
             />
           </a>
 
-          <a href="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(125).webp" 
+          <a href="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(75).webp" 
             class="photos col-sm-6"
             data-toggle="lightbox" 
             data-gallery="image-gallery" 
             data-caption="This is an optional caption that describes the image"
           >
-            <img
-              src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(125).webp" 
-              class="art-gallery d-block w-100 rounded mt-2 mb-4" 
-              alt="Big River"
-            />
+          <img
+            src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(75).webp" 
+            class="art-gallery d-block w-100 rounded mt-2 mb-4" 
+            alt="Snowscape three"
+          />
           </a>
 
           <!-- Hidden photos, show in slideshow but not on screen -->
@@ -458,13 +422,7 @@
       </div>
 
       <!-- Call to action, with anchor link to Contact Form -->
-      <div class="container-md" id="call-to-action"
-        data-aos="fade-up"
-        data-aos-offset="120"
-        data-aos-delay="30"
-        data-aos-duration="1200"
-        data-aos-easing="ease-in-out"
-      >
+      <div class="container-md" id="call-to-action">
         <div class="row">
           <p class="d-inline-block">
             Interested in working together? <a href="#contact-form" class="contact-redirect-anchor">Let's talk!</a>

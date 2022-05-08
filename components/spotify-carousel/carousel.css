@@ -36,7 +36,7 @@ iframe.music-gallery {
     }
 }
 
-@media (max-width: 940px) {
+@media (max-width: 1080px) {
     .spotify-buttons.carousel-control-prev,
     .spotify-buttons.carousel-control-next {
         margin: 0 auto;
@@ -57,7 +57,7 @@ iframe.music-gallery {
     transform: translateX(2rem);
 }
 
-@media (max-width: 940px) {
+@media (max-width: 1080px) {
     .image-buttons.carousel-control-prev,
     .image-buttons.carousel-control-next {
         transform: none;
