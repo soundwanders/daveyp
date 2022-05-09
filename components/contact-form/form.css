@@ -29,28 +29,24 @@ textarea:focus, input:focus {
 }
 
 input::-webkit-input-placeholder { color: #adadad;}
-input:-moz-placeholder { color: #adadad;}
 input::-moz-placeholder { color: #adadad;}
 input:-ms-input-placeholder { color: #adadad;}
 
 textarea::-webkit-input-placeholder { color: #adadad;}
-textarea:-moz-placeholder { color: #adadad;}
 textarea::-moz-placeholder { color: #adadad;}
 textarea:-ms-input-placeholder { color: #adadad;}
 
 input:focus::-webkit-input-placeholder { color:transparent; }
-input:focus:-moz-placeholder { color:transparent; }
 input:focus::-moz-placeholder { color:transparent; }
 input:-ms-input-placeholder { color:transparent; }
 
 textarea:focus::-webkit-input-placeholder { color:transparent; }
-textarea:focus:-moz-placeholder { color:transparent; }
 textarea:focus::-moz-placeholder { color:transparent; }
 textarea:-ms-input-placeholder { color:transparent; }
 
 /*---------------------------------------------------*/
 
-.bg1 { background-color: #1a1a1a; }
+.dark-bg { background-color: #1a1a1a; }
 
 /** Form Container */
 .container-md.contact {
@@ -86,11 +82,11 @@ textarea:-ms-input-placeholder { color:transparent; }
   border: 1px solid #b9b9b9;
   border-radius: 13px;
   padding: 10px 30px 9px 22px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
-/** rs1-wrap-input available if you need two inputs on same row
-  .rs1-wrap-input {
+/** half-wrap-input available if you need two inputs on same row
+  .half-wrap-input {
     width: calc((100% - 30px) / 2);
   } 
 */
@@ -155,39 +151,25 @@ textarea.input {
   color: #f9f9f9;
   border: 1px solid #b9b9b9;
   border-radius: 13px;
-  font-size: 1.175rem;
+  font-size: 1.1rem;
   font-weight: 600;
   letter-spacing: 1px;
-  line-height: 1.2;
+  line-height: 1;
   -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
   -moz-transition: all 0.4s;
   transition: all 0.4s;
-}
-
-.contact-form-btn i {
-  -webkit-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  transition: all 0.4s;
-}
-
-.contact-form-btn:hover i {
-  -webkit-transform: translateX(10px);
-  -moz-transform: translateX(10px);
-  -ms-transform: translateX(10px);
-  -o-transform: translateX(10px);
-  transform: translateX(10px);
 }
 
 .contact-form-btn:active {
+  border: 1px solid #b9b9b9 !important;
   -webkit-transform: translateY(1px);
   -moz-transform: translateY(1px);
   -ms-transform: translateY(1px);
   -o-transform: translateY(1px);
   transform: translateY(1px);
   background-color: #181818;
-} 
+}
 
 /** Form data validation */
 .validate-input {
@@ -267,7 +249,4 @@ textarea.input {
   .contact-form-btn {
     font-size: 1rem;
   }
-  .select-container select {
-    font-size: 0.875rem;
-  }  
 }
