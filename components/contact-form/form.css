@@ -8,17 +8,6 @@ input {
 	border: none;
 }
 
-input[type="number"] {
-    -moz-appearance: textfield;
-    -webkit-appearance: none;
-    appearance: none;
-}
-
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-}
-
 textarea {
   outline: none;
   border: none;
@@ -28,6 +17,14 @@ textarea:focus, input:focus {
   border-color: transparent !important;
 }
 
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus::-moz-placeholder { color:transparent; }
+input:focus:-ms-input-placeholder { color:transparent; }
+
+textarea:focus::-webkit-input-placeholder { color:transparent; }
+textarea:focus::-moz-placeholder { color:transparent; }
+textarea:focus:-ms-input-placeholder { color:transparent; }
+
 input::-webkit-input-placeholder { color: #adadad;}
 input::-moz-placeholder { color: #adadad;}
 input:-ms-input-placeholder { color: #adadad;}
@@ -35,14 +32,6 @@ input:-ms-input-placeholder { color: #adadad;}
 textarea::-webkit-input-placeholder { color: #adadad;}
 textarea::-moz-placeholder { color: #adadad;}
 textarea:-ms-input-placeholder { color: #adadad;}
-
-input:focus::-webkit-input-placeholder { color:transparent; }
-input:focus::-moz-placeholder { color:transparent; }
-input:-ms-input-placeholder { color:transparent; }
-
-textarea:focus::-webkit-input-placeholder { color:transparent; }
-textarea:focus::-moz-placeholder { color:transparent; }
-textarea:-ms-input-placeholder { color:transparent; }
 
 /*---------------------------------------------------*/
 
@@ -176,6 +165,10 @@ textarea.input {
   position: relative;
 }
 
+.rs1-alert-validate.alert-validate::before {
+  background-color: #1a1a1a;
+}
+
 .alert-validate::before {
   content: attr(data-validate);
   display: -webkit-box;
@@ -199,11 +192,12 @@ textarea.input {
   align-items: center;
   justify-content: center;
   position: absolute;
-  width: 40px;
+  width: 45px;
   height: 40px;
   top: 35px;
-  right: 12px;
-  font-size: 0.875rem;
+  padding: 2px;
+  right: 1rem;
+  font-size: 1rem;
   color: #ff5f6c;
   cursor: pointer;
 }
@@ -217,7 +211,7 @@ textarea.input {
   width: 40px;
   height: 40px;
   top: 35px;
-  right: 10px;
+  right: 20px;
   font-size: 1.125rem;
   color: #00b865;
 }
@@ -231,13 +225,6 @@ textarea.input {
   }
   .wrap-input {
     padding: 6px 10px 4px 10px;
-  }
-  .alert-validate::before {
-    padding: 0 10px 0 10px;
-  }
-  .true-validate::after, .btn-hide-validate {
-    right: 0px;
-    width: 30px;
   }
   .alert-validate::before {
     padding: 0 10px 0 10px;
