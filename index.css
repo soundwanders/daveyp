@@ -105,21 +105,10 @@ button {
     z-index: 4;
 }
 
-#arrow-image::before {
-    animation: fade 0.5s ease-in;
-}
-
 #arrow-image:hover {
     filter: brightness(120%);
 }
 
-@media (max-width: 1080px) {
-    #arrow-image {
-        width: 2rem;
-        padding: 2px;
-        margin: 0 -5%;
-    }
-}
 
 /** Decorative dividing line image*/
 .dividing-line {
@@ -139,6 +128,12 @@ button {
         margin-bottom: -1rem;
         margin-top: 0.875rem;
     }
+}
+
+#arrow-image {
+    width: 2rem;
+    bottom: 15%;
+    padding: 2px;
 }
 
 /**
