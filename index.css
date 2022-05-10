@@ -201,7 +201,7 @@ button {
 
 @media (max-width: 1080px) {
     .lead.bio {
-        font-size: 0.875rem;
+        font-size: 0.9rem;
         margin-bottom: 0;
     }
 }
