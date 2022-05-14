@@ -82,7 +82,6 @@ textarea:-ms-input-placeholder { color: #adadad;}
 
 .label-input {
   color: #f9f9f9;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 0.7rem;
   letter-spacing: 1px;
   line-height: 1.5;
@@ -227,7 +226,8 @@ textarea.input {
     padding: 6px 10px 4px 10px;
   }
   .alert-validate::before {
-    padding: 0 10px 0 10px;
+    top: 32px;
+    padding: 0 10px;
   }
   .true-validate::after, .btn-hide-validate {
     right: 0px;
