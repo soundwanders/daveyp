@@ -47,45 +47,49 @@ button {
     Header/Hero Section 
 ********************************
 */ 
-.header-wrapper {
+/* .header-wrapper {
     position: relative;
     width: 100%;
     height: 100vh;
     margin: 0;
     padding: 0;
-    background-image: url(./media/background/OriginalFinal.png);
+    background-image: url(./media/background/HeroLogo.png);
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
     z-index: 2;
-}
+} */
 
 @media (max-width: 1080px) {
     .header-wrapper {
         height: 100%;
-        background-image: url(./media/background/FinalMobile.png);
+        background-image: url(./media/background/Bg.png);
         background-size: 100% 100%;
         background-position: top center;
     }
 }
 
-/* #logo-container {
+#logo-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
     padding: 0;
 }
 
 #dp-logo {
     width: 100%;
-    animation: fade 0.5s ease-in;
-} */
+    animation: fade 0.8s ease-in;
+}
 
 .downArrow {
     position: relative;
-    height: 100vh;
-    width: 100%;
+    bottom: 1.3rem;
     margin: 0 auto;
     padding: 4px;
-    animation: fade 0.5s ease-in;
+    animation: fade 0.8s ease-in;
     text-align: center;
+    z-index: 4;
 }
 
 #arrow-image {
@@ -118,7 +122,7 @@ button {
 /** Decorative dividing line image*/
 .dividing-line {
     display: inline-block;
-    width: 920px;
+    width: 1160px;
     padding: 20px 0 0 0;
     margin: 0 auto;
     opacity: 0.6;
@@ -244,7 +248,7 @@ button {
     animation: fade 0.5s ease-in;
 }
 
-#spectre {
+#space-marine {
     max-height: 80%;
     padding: 0;
     user-select: none;
