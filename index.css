@@ -58,7 +58,7 @@ button {
     background-repeat: no-repeat;
     background-attachment: scroll;
     z-index: 2;
-} */
+}
 
 @media (max-width: 1080px) {
     .header-wrapper {
@@ -68,6 +68,8 @@ button {
         background-position: top center;
     }
 }
+*/
+
 
 #logo-container {
     position: relative;
