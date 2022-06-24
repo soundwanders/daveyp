@@ -70,6 +70,72 @@ button {
 }
 */
 
+#header-wrapper {
+    background-color: #050505;
+    background-image: linear-gradient(0deg, #050505 0%, #1f1f1f 85%);
+    background-size: cover;
+    background-position: center;
+}
+
+#logo-container {
+    padding: 4rem 0 2rem 0;
+    background: transparent;
+}
+
+#dp-logo {
+    width: 100%;
+    filter: drop-shadow(0px 1px 0px #e1e1e1);
+    animation: fade 0.8s ease-in;
+}
+
+@media (max-width: 940px) {
+    #header-wrapper {
+        background-image: linear-gradient(0deg, #050505 0%, #1f1f1f 92%);
+    }
+    #logo-container {
+        padding: 3.5rem 0 1.25rem 0;
+    }
+    #dp-logo {
+        max-width: 100%;
+        padding: 0 1.5rem;
+    }
+}
+
+@media only screen and (max-height: 575.98px) and (orientation: landscape) {
+    #dp-logo {
+        max-width: 82%;
+    }
+}
+
+/** Header Navigation -- Anchor Links */
+#header-anchor {
+    background: transparent;
+    cursor: default;
+}
+
+.nav-anchors {
+    padding: 0;
+    align-items: center;
+    line-height: 1;
+    color: #cccccc;
+    font-family: 'Vhiena', serif;
+    font-size: 6.9rem;
+    text-rendering: optimizeSpeed;
+    animation: fade 0.5s ease-in;
+}
+
+.nav-anchors:hover {
+    filter: brightness(115%);
+}
+
+@media (max-width: 940px) {
+    .nav-anchors {
+        font-size: 2.05rem;
+        line-height: 1.5;
+        text-shadow: none;
+    }
+}
+
 
 #logo-container {
     position: relative;
@@ -77,11 +143,6 @@ button {
     height: 100vh;
     margin: 0;
     padding: 0;
-}
-
-#dp-logo {
-    width: 100%;
-    animation: fade 0.8s ease-in;
 }
 
 .downArrow {
