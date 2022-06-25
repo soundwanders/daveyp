@@ -67,32 +67,26 @@ button {
     animation: fade 0.8s ease-in;
 }
 
-@media (max-width: 1080px) {
+@media screen and (max-width: 1080px) {
     /** overwrite bootstrap class container-fluid default padding */
     .container-fluid {
         padding-right: 0 !important;
         padding-left: 0 !important;
     }
     #header-wrapper {
-        height: 100%;
-        background-size: 100% 100%;
-        background-position: top center;
         background-image: linear-gradient(0deg, #050505 0%, #1f1f1f 88%);
     }
     #logo-container {
+        height: 90%;
         padding: 3.5rem 0 0.5rem 0;
     }
     #dp-logo {
-        max-width: 100%;
-        padding: 0 1rem;
+        position: relative;
+        top: 16vmax;
+        max-width: 95%;
     }
 }
 
-@media only screen and (max-height: 575.98px) and (orientation: landscape) {
-    #dp-logo {
-        max-width: 80%;
-    }
-}
 
 .downArrow {
     position: relative;
@@ -107,7 +101,7 @@ button {
 #arrow-image {
     position: absolute;
     width: 2.675rem;
-    bottom: 10%;
+    bottom: 20%;
     opacity: 0.6;
     animation: bounce;
     animation-duration: 3s;
@@ -118,20 +112,32 @@ button {
 }
 
 #arrow-image:hover {
-    filter: brightness(125%);
+    filter: brightness(200%);
 }
 
-@media (max-width: 1080px) {
-
+@media screen and (max-width: 1080px) {
     .downArrow {
-        bottom: 0;
+        top: 35%;
     }
 	#arrow-image {
-	    width: 2.375rem;
+	    width: 2.4rem;
         top: 0;
 	    padding: 8px;
 	    margin-left: -1rem;
 	}
+}
+
+@media only screen and (max-height: 575.98px) and (orientation: landscape) {
+    #logo-container {
+        height: 99%;
+    }
+    #dp-logo {
+        max-width: 80%;
+        top: 0;
+    }
+    .downArrow {
+        top: -2rem;
+    }
 }
 
 
@@ -145,7 +151,7 @@ button {
     transform:scaleX(1.05);
 }
 
-@media (max-width: 1080px) {
+@media screen and (max-width: 1080px) {
     .dividing-line {
         width: 92%;
         min-height: 3rem;
@@ -186,7 +192,7 @@ button {
     padding: 10px 0 70px 0;
 }
 
-@media (max-width: 1080px) {
+@media screen and (max-width: 1080px) {
     #intro {
         padding: 10px 0 0 0;
     }
@@ -216,7 +222,7 @@ button {
     padding: 1rem 2rem;
     color: #f9f9f9;
     cursor: default;
-    animation: fade 0.5s ease-in;
+    animation: fade 0.8s ease-in;
 }
 
 .text-emphasis {
@@ -224,7 +230,7 @@ button {
     color: #ffa2b0;
 }
 
-@media (max-width: 1080px) {
+@media screen and (max-width: 1080px) {
     .lead.bio {
         font-size: 0.9rem;
         margin-bottom: 0;
@@ -240,7 +246,7 @@ button {
     padding: 6px 0;
 }
 
-@media (max-width: 1080px) {
+@media screen and (max-width: 1080px) {
     #elevate {
         font-size: 1.33rem;
         font-weight: 600;
@@ -254,7 +260,7 @@ button {
     font-weight: 900;
 }
 
-@media (max-width: 1080px) {
+@media screen and (max-width: 1080px) {
     #contact-me {
         font-size: 1.9rem;
     }
@@ -266,7 +272,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    animation: fade 0.5s ease-in;
+    animation: fade 0.8s ease-in;
 }
 
 #space-marine {
@@ -276,7 +282,7 @@ button {
     pointer-events: none;
 }
 
-@media (max-width: 1080px) {
+@media screen and (max-width: 1080px) {
     #space-marine { 
         margin-bottom: -2rem;
         max-height: 70%;
@@ -326,7 +332,7 @@ button {
     padding: 0.5rem 1.5rem;
 }
 
-@media (max-width: 1080px) {
+@media screen and (max-width: 1080px) {
     .art-header {
         font-size: 2rem;
     }
@@ -359,7 +365,7 @@ button {
     box-shadow: 0 3px 6px 0 rgba(73, 73, 73, 0.2), 0 6px 12px 0 rgba(32, 32, 32, 0.15);
 }
 
-@media (max-width: 1080px) {
+@media screen and (max-width: 1080px) {
     .youtube-iframe {
         padding: 0 2.2rem;
     }
@@ -373,7 +379,7 @@ p.d-inline-block, .contact-redirect-anchor {
     text-align: center;
 }
 
-@media (max-width: 1080px) {
+@media screen and (max-width: 1080px) {
     p.d-inline-block {
         padding: 0 2.2rem;
     }
@@ -425,7 +431,7 @@ footer {
     padding: 60px 0;
 }
 
-@media (max-width: 1080px) {
+@media screen and (max-width: 1080px) {
     .footer-flex {
         flex-direction: column;
         text-align: center;
@@ -449,7 +455,7 @@ footer {
     -webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);
     filter: grayscale(100%);
-    transition: all 0.5s ease;
+    transition: all 0.8s ease;
     z-index: 1;
 }
 
@@ -457,7 +463,7 @@ footer {
     -webkit-filter: grayscale(0%);
     -moz-filter: grayscale(0%);
     filter: grayscale(0%);
-    transition: all 0.5s ease;
+    transition: all 0.8s ease;
 }
 
 .copyright {
@@ -477,7 +483,7 @@ footer {
     font-size: 0.8rem;
 }
 
-@media (max-width: 1080px) {
+@media screen and (max-width: 1080px) {
     .copyright {
         position: initial;
         padding: 2rem 0 0 0;
@@ -493,7 +499,7 @@ footer {
     width: 2rem;
 }
 
-@media (max-width: 1080px) {
+@media screen and (max-width: 1080px) {
     .footer-logo {
         width: 1.675rem;
     }
