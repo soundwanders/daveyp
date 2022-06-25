@@ -78,11 +78,11 @@ button {
     }
     #logo-container {
         height: 90%;
-        padding: 3.5rem 0 0.5rem 0;
+        padding: 3.5rem 0 0 0;
     }
     #dp-logo {
         position: relative;
-        top: 16vmax;
+        top: 17vmax;
         max-width: 95%;
     }
 }
@@ -117,7 +117,7 @@ button {
 
 @media screen and (max-width: 1080px) {
     .downArrow {
-        top: 35%;
+        top: 40%;
     }
 	#arrow-image {
 	    width: 2.4rem;
@@ -227,7 +227,7 @@ button {
 
 .text-emphasis {
     font-weight: 800;
-    color: #ffa2b0;
+    color: #fdc9d2;
 }
 
 @media screen and (max-width: 1080px) {
