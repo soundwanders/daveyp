@@ -57,6 +57,8 @@ button {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
+    background-size: 100% 100%;
+    background-position: top center;
     z-index: 2;
 }
 
@@ -64,8 +66,6 @@ button {
     .header-wrapper {
         height: 100%;
         background-image: url(./media/background/FinalMobile.png);
-        background-size: 100% 100%;
-        background-position: top center;
     }
 }
 
