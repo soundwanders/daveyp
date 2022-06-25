@@ -46,107 +46,55 @@ button {
 ********************************
     Header/Hero Section 
 ********************************
-*/ 
-/* .header-wrapper {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-    background-image: url(./media/background/HeroLogo.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    z-index: 2;
-}
-
-@media (max-width: 1080px) {
-    .header-wrapper {
-        height: 100%;
-        background-image: url(./media/background/Bg.png);
-        background-size: 100% 100%;
-        background-position: top center;
-    }
-}
 */
 
 #header-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100vh;
     background-color: #050505;
-    background-image: linear-gradient(0deg, #050505 0%, #1f1f1f 85%);
+    background-image: linear-gradient(0deg, #050505 0%, #1f1f1f 90%);
     background-size: cover;
     background-position: center;
 }
 
 #logo-container {
-    padding: 4rem 0 2rem 0;
+    padding: 1rem 0;
     background: transparent;
 }
 
 #dp-logo {
-    width: 100%;
     animation: fade 0.8s ease-in;
 }
 
-@media (max-width: 940px) {
+@media (max-width: 1080px) {
+    /** overwrite bootstrap class container-fluid default padding */
+    .container-fluid {
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+    }
     #header-wrapper {
-        background-image: linear-gradient(0deg, #050505 0%, #1f1f1f 92%);
+        height: auto;
+        background-image: linear-gradient(0deg, #050505 0%, #050505 97.5%, #1f1f1f 100%);
     }
     #logo-container {
-        padding: 3.5rem 0 1.25rem 0;
+        padding: 3.5rem 0 0.5rem 0;
     }
     #dp-logo {
         max-width: 100%;
-        padding: 0 1.5rem;
+        padding: 0 1rem;
     }
 }
 
 @media only screen and (max-height: 575.98px) and (orientation: landscape) {
     #dp-logo {
-        max-width: 82%;
+        max-width: 80%;
     }
-}
-
-/** Header Navigation -- Anchor Links */
-#header-anchor {
-    background: transparent;
-    cursor: default;
-}
-
-.nav-anchors {
-    padding: 0;
-    align-items: center;
-    line-height: 1;
-    color: #cccccc;
-    font-family: 'Vhiena', serif;
-    font-size: 6.9rem;
-    text-rendering: optimizeSpeed;
-    animation: fade 0.5s ease-in;
-}
-
-.nav-anchors:hover {
-    filter: brightness(115%);
-}
-
-@media (max-width: 940px) {
-    .nav-anchors {
-        font-size: 2.05rem;
-        line-height: 1.5;
-        text-shadow: none;
-    }
-}
-
-
-#logo-container {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
 }
 
 .downArrow {
     position: relative;
-    bottom: 0;
+    bottom: 2rem;
     margin: 0 auto;
     padding: 4px;
     animation: fade 0.8s ease-in;
@@ -172,9 +120,13 @@ button {
 }
 
 @media (max-width: 1080px) {
+
+    .downArrow {
+        bottom: 0;
+    }
 	#arrow-image {
 	    width: 2.375rem;
-	    bottom: 18%;
+        top: 0;
 	    padding: 8px;
 	    margin-left: -1rem;
 	}
@@ -206,7 +158,8 @@ button {
     Section Containers
 ********************************
 */ 
-#gradient-wrapper {
+
+#black-bg-wrapper {
     background-color: #050505;
 }
 
@@ -254,16 +207,20 @@ button {
 .lead.bio { 
     align-items: center;
     font-weight: 400;
-    font-size: 1.175rem;
+    font-size: 1.125rem;
     text-align: center;
     text-rendering: optimizeLegibility;
-    line-height: 1.7;
+    line-height: 1.8;
     padding: 1rem 2rem;
     color: #f9f9f9;
     cursor: default;
     animation: fade 0.5s ease-in;
 }
 
+.text-emphasis {
+    font-weight: 800;
+    color: #ffa2b0;
+}
 
 @media (max-width: 1080px) {
     .lead.bio {
@@ -315,6 +272,13 @@ button {
     padding: 0;
     user-select: none;
     pointer-events: none;
+}
+
+@media (max-width: 1080px) {
+    #space-marine { 
+        margin-bottom: -2rem;
+        max-height: 70%;
+    }
 }
 
 /** Background Image, Begins at Spotify Album Embed container */
