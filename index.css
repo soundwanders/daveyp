@@ -512,7 +512,7 @@ footer {
     /**
     REMOVE DISPLAY HIDDEN TO SHOW PRIVACY POLICY LINK 
     */
-    display: hidden !important;
+    display: none !important;
 
     width: 100%;
     text-align: right;
