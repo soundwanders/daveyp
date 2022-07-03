@@ -190,7 +190,7 @@ button {
 
 @media screen and (max-width: 1080px) {
     #intro {
-        padding: 10px 0 0 0;
+        padding: -10px 0 0 0;
     }
     #music, #art {
         padding: 60px 0 0 0;
