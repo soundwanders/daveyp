@@ -46,55 +46,62 @@ button {
 ********************************
     Header/Hero Section 
 ********************************
-*/ 
-.header-wrapper {
+*/
+
+#header-wrapper {
     position: relative;
     width: 100%;
     height: 100vh;
-    margin: 0;
-    padding: 0;
-    background-image: url(./media/background/BackgroundHero.png);
+    background-color: #050505;
+    background-image: linear-gradient(0deg, #050505 0%, #1f1f1f 92%);
+    background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-size: 100% 100%;
-    background-position: top center;
-    z-index: 2;
 }
 
-@media (max-width: 1080px) {
-    .header-wrapper {
-        height: 100%;
-        background-image: url(./media/background/HeroMobile.png);
-        background-size: 100% 100%;
-        background-position: top center;
-    }
-}
-
-/* #logo-container {
-    padding: 0;
+#logo-container {
+    padding: 1rem 0;
+    background: transparent;
 }
 
 #dp-logo {
-    width: 100%;
-    animation: fade 0.5s ease-in;
-} */
+    animation: fade 0.8s ease-in;
+}
+
+@media screen and (max-width: 1080px) {
+    /** overwrite bootstrap class container-fluid default padding */
+    .container-fluid {
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+    }
+    #header-wrapper {
+        background-image: linear-gradient(0deg, #050505 0%, #1f1f1f 88%);
+    }
+    #logo-container {
+        height: min-content;
+        padding: 0.25rem 0 3rem 0;
+    }
+    #dp-logo {
+        position: relative;
+        top: 0;
+        max-width: 95%;
+    }
+}
+
 
 .downArrow {
     position: relative;
-    height: 100vh;
-    width: 100%;
     bottom: 0;
     margin: 0 auto;
     padding: 4px;
-    animation: fade 0.5s ease-in;
+    animation: fade 0.8s ease-in;
     text-align: center;
+    z-index: 4;
 }
 
 #arrow-image {
     position: absolute;
-    width: 2.75rem;
-    bottom: 10%;
+    width: 2.675rem;
+    bottom: 20%;
     opacity: 0.6;
     animation: bounce;
     animation-duration: 3s;
@@ -105,30 +112,42 @@ button {
 }
 
 #arrow-image:hover {
-    filter: brightness(120%);
+    filter: brightness(200%);
 }
 
-@media (max-width: 1080px) {
+@media screen and (max-width: 1080px) {
+    .downArrow {
+        top: 5%;
+    }
 	#arrow-image {
-	    width: 2.375rem;
-	    bottom: 18%;
+	    width: 2.4rem;
+        top: 0;
 	    padding: 8px;
 	    margin-left: -1rem;
 	}
+}
+
+@media only screen and (max-height: 575.98px) and (orientation: landscape) {
+    #logo-container {
+        height: 99%;
+    }
+    .downArrow {
+        top: -2rem;
+    }
 }
 
 
 /** Decorative dividing line image*/
 .dividing-line {
     display: inline-block;
-    width: 920px;
+    width: 1150px;
     padding: 20px 0 0 0;
     margin: 0 auto;
-    opacity: 0.6;
+    opacity: 0.55;
     transform:scaleX(1.05);
 }
 
-@media (max-width: 1080px) {
+@media screen and (max-width: 1080px) {
     .dividing-line {
         width: 92%;
         min-height: 3rem;
@@ -143,7 +162,8 @@ button {
     Section Containers
 ********************************
 */ 
-#gradient-wrapper {
+
+#black-bg-wrapper {
     background-color: #050505;
 }
 
@@ -156,27 +176,27 @@ button {
 }
 
 #music {
-    padding: 40px 0 20px 0;
+    padding: 10px 0 30px 0;
 }
 
 #movies, #art {
-    padding: 60px 0 40px 0;
+    padding: 70px 0 50px 0;
     max-width: 1200px;
 }
 
 #call-to-action {
-    padding: 10px 0 70px 0;
+    padding: 10px 0 60px 0;
 }
 
-@media (max-width: 1080px) {
+@media screen and (max-width: 1080px) {
     #intro {
         padding: 10px 0 0 0;
     }
     #music, #art {
-        padding: 40px 0 0 0;
+        padding: 60px 0 0 0;
     }
     #movies {
-        padding: 50px 0 30px 0;
+        padding: 60px 0 40px 0;
     }
     #call-to-action { 
         padding: 20px 0;
@@ -191,20 +211,25 @@ button {
 .lead.bio { 
     align-items: center;
     font-weight: 400;
-    font-size: 1.175rem;
+    font-size: 1.125rem;
     text-align: center;
     text-rendering: optimizeLegibility;
-    line-height: 1.7;
+    line-height: 1.8;
     padding: 1rem 2rem;
     color: #f9f9f9;
     cursor: default;
-    animation: fade 0.5s ease-in;
+    animation: fade 0.8s ease-in;
 }
 
+.text-emphasis {
+    font-weight: 800;
+    color: #fdc9d2;
+}
 
-@media (max-width: 1080px) {
+@media screen and (max-width: 1080px) {
     .lead.bio {
         font-size: 0.9rem;
+        margin-top: -1rem;
         margin-bottom: 0;
     }
 }
@@ -218,7 +243,7 @@ button {
     padding: 6px 0;
 }
 
-@media (max-width: 1080px) {
+@media screen and (max-width: 1080px) {
     #elevate {
         font-size: 1.33rem;
         font-weight: 600;
@@ -232,7 +257,7 @@ button {
     font-weight: 900;
 }
 
-@media (max-width: 1080px) {
+@media screen and (max-width: 1080px) {
     #contact-me {
         font-size: 1.9rem;
     }
@@ -244,14 +269,21 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    animation: fade 0.5s ease-in;
+    animation: fade 0.8s ease-in;
 }
 
-#spectre {
+#space-marine {
     max-height: 80%;
     padding: 0;
     user-select: none;
     pointer-events: none;
+}
+
+@media screen and (max-width: 1080px) {
+    #space-marine { 
+        margin-bottom: -2rem;
+        max-height: 70%;
+    }
 }
 
 /** Background Image, Begins at Spotify Album Embed container */
@@ -297,7 +329,7 @@ button {
     padding: 0.5rem 1.5rem;
 }
 
-@media (max-width: 1080px) {
+@media screen and (max-width: 1080px) {
     .art-header {
         font-size: 2rem;
     }
@@ -330,7 +362,7 @@ button {
     box-shadow: 0 3px 6px 0 rgba(73, 73, 73, 0.2), 0 6px 12px 0 rgba(32, 32, 32, 0.15);
 }
 
-@media (max-width: 1080px) {
+@media screen and (max-width: 1080px) {
     .youtube-iframe {
         padding: 0 2.2rem;
     }
@@ -344,7 +376,7 @@ p.d-inline-block, .contact-redirect-anchor {
     text-align: center;
 }
 
-@media (max-width: 1080px) {
+@media screen and (max-width: 1080px) {
     p.d-inline-block {
         padding: 0 2.2rem;
     }
@@ -396,7 +428,7 @@ footer {
     padding: 60px 0;
 }
 
-@media (max-width: 1080px) {
+@media screen and (max-width: 1080px) {
     .footer-flex {
         flex-direction: column;
         text-align: center;
@@ -420,7 +452,7 @@ footer {
     -webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);
     filter: grayscale(100%);
-    transition: all 0.5s ease;
+    transition: all 0.8s ease;
     z-index: 1;
 }
 
@@ -428,7 +460,7 @@ footer {
     -webkit-filter: grayscale(0%);
     -moz-filter: grayscale(0%);
     filter: grayscale(0%);
-    transition: all 0.5s ease;
+    transition: all 0.8s ease;
 }
 
 .copyright {
@@ -448,7 +480,7 @@ footer {
     font-size: 0.8rem;
 }
 
-@media (max-width: 1080px) {
+@media screen and (max-width: 1080px) {
     .copyright {
         position: initial;
         padding: 2rem 0 0 0;
@@ -464,7 +496,7 @@ footer {
     width: 2rem;
 }
 
-@media (max-width: 1080px) {
+@media screen and (max-width: 1080px) {
     .footer-logo {
         width: 1.675rem;
     }
