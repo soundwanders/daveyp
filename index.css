@@ -502,16 +502,25 @@ footer {
     }
 }
 
+
+
 .privacy-policy-block {
     /** double declaration of monospace prevents browsers from reducing font size */
     font-family: monospace, monospace;
     font-size: 10px;
+
+    /**
+    REMOVE DISPLAY HIDDEN TO SHOW PRIVACY POLICY LINK 
+    */
+    display: hidden !important;
+
     width: 100%;
     text-align: right;
     padding: 0 1rem 0.75rem 0;
 }
 
 .privacy-policy-block a {
+    
     text-decoration: none;
     color: #f9f9f9;
 }
