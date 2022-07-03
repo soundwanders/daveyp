@@ -5,7 +5,7 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="theme-color" content="#22222"/>
-  <meta name="description" content="Davey Perron. Composer, Producer, Artist."/>
+  <meta name="description" content="Davey Perron. Composer, Sound Designer. New England-based artist specializing in darker themes, running the gamut from industrial, epic and heavy to haunting, somber and melancholic. "/>
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
@@ -24,7 +24,7 @@
     crossorigin="anonymous"
   />
   <!-- Animation On Scroll -->
-  <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="node_modules/aos/dist/aos.css" />
    <!-- Stylesheets --> 
   <link href="./components/contact-form/form.css" rel="stylesheet"/>
   <link href="./components/spotify-carousel/carousel.css" rel="stylesheet"/>
@@ -87,12 +87,12 @@
             <form class="contact-form validate-form" action="https://formsubmit.co/ce0f8ffa5c09d702ac9afeebcbdf2cf3" method="POST">
               <div class="wrap-input validate-input dark-bg" data-validate="Please Enter Your Name">
                 <span class="label-input">Name *</span>
-                <input class="input" type="text" name="name" placeholder=". . ." required>
+                <input class="input" type="text" name="name" placeholder=". . .">
               </div>
       
               <div class="wrap-input validate-input dark-bg" data-validate = "email@example.com">
                 <span class="label-input">E-mail *</span>
-                <input class="input" type="email" name="email" placeholder=". . ." required>
+                <input class="input" type="email" name="email" placeholder=". . .">
               </div>
       
               <div class="wrap-input dark-bg" data-validate = "Subject">
@@ -102,7 +102,7 @@
       
               <div class="wrap-input validate-input dark-bg rs1-alert-validate" data-validate = "Please write your message">
                 <span class="label-input">Message *</span>
-                <textarea class="input" name="message" placeholder="Hey Davey..." required></textarea>
+                <textarea class="input" name="message" placeholder="Hey Davey..."></textarea>
               </div>
       
               <div class="container-contact-form-btn">
@@ -148,7 +148,6 @@
               height="380px" 
               width="320px" 
               allowtransparency="true"
-              allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen>
             </iframe>
           </div>
@@ -164,7 +163,7 @@
                 height="380px" 
                 width="320px" 
                 allowtransparency="true"
-                allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
+
                 allowfullscreen>
               </iframe>
             </div>
@@ -181,7 +180,7 @@
                 height="380px" 
                 width="320px" 
                 allowtransparency="true"
-                allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
+
                 allowfullscreen>
               </iframe>
             </div>
@@ -198,7 +197,7 @@
                 height="380px" 
                 width="320px" 
                 allowtransparency="true"
-                allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
+
                 allowfullscreen>
               </iframe>
             </div>
@@ -215,7 +214,7 @@
                 height="380px" 
                 width="320px" 
                 allowtransparency="true"
-                allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
+
                 allowfullscreen>
               </iframe>
             </div>
@@ -232,7 +231,7 @@
                 height="380px" 
                 width="320px" 
                 allowtransparency="true"
-                allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
+
                 allowfullscreen>
               </iframe>
             </div>
@@ -249,7 +248,7 @@
                 height="380px" 
                 width="320px" 
                 allowtransparency="true"
-                allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
+
                 allowfullscreen>
               </iframe>
             </div>
@@ -282,8 +281,7 @@
               src="https://www.youtube.com/embed/yJbLNlGMBlE"
               width="940" 
               title="MEGA ARMOR by Ultra Nightmare" 
-              frameborder="0" 
-              allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" 
+              frameborder="0"  
               allowfullscreen
             >
             </iframe>
@@ -467,7 +465,7 @@
   </footer>
 
   <!-- Animate On Scroll -->
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="node_modules/aos/dist/aos.js"></script>
   <script>
     AOS.init();
   </script>
@@ -481,7 +479,7 @@
   <script src="./index.bundle.min.js"></script>
   <!-- JQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="./components/contact-form/form.js"></script>
+  <script src="./components/contact-form/form2.js"></script>
   <script src="./components/spotify-carousel/carousel.js"></script>
 
 </body>

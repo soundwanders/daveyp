@@ -34,5 +34,8 @@
   "homepage": "https://github.com/soundwanders/daveyp#readme",
   "devDependencies": {
     "prettier": "2.5.1"
+  },
+  "dependencies": {
+    "aos": "^2.3.4"
   }
 }
