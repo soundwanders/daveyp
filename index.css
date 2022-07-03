@@ -77,12 +77,12 @@ button {
         background-image: linear-gradient(0deg, #050505 0%, #1f1f1f 88%);
     }
     #logo-container {
-        height: 90%;
-        padding: 3.5rem 0 0 0;
+        height: min-content;
+        padding: 0.25rem 0 3rem 0;
     }
     #dp-logo {
         position: relative;
-        top: 17vmax;
+        top: 0;
         max-width: 95%;
     }
 }
@@ -90,7 +90,7 @@ button {
 
 .downArrow {
     position: relative;
-    bottom: 2rem;
+    bottom: 0;
     margin: 0 auto;
     padding: 4px;
     animation: fade 0.8s ease-in;
@@ -117,7 +117,7 @@ button {
 
 @media screen and (max-width: 1080px) {
     .downArrow {
-        top: 40%;
+        top: 5%;
     }
 	#arrow-image {
 	    width: 2.4rem;
@@ -140,10 +140,10 @@ button {
 /** Decorative dividing line image*/
 .dividing-line {
     display: inline-block;
-    width: 1160px;
+    width: 1150px;
     padding: 20px 0 0 0;
     margin: 0 auto;
-    opacity: 0.6;
+    opacity: 0.55;
     transform:scaleX(1.05);
 }
 
@@ -229,6 +229,7 @@ button {
 @media screen and (max-width: 1080px) {
     .lead.bio {
         font-size: 0.9rem;
+        margin-top: -1rem;
         margin-bottom: 0;
     }
 }
