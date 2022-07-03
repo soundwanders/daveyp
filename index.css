@@ -25,6 +25,7 @@
 }
 
 body {
+    width: 100%;
     background-color: #050505;
     font-family: 'Martel', serif;
     font-size: calc(0.75em + 1vmin);
@@ -53,9 +54,11 @@ button {
     width: 100%;
     height: 100vh;
     background-color: #050505;
-    background-image: linear-gradient(0deg, #050505 0%, #1f1f1f 92%);
-    background-size: cover;
-    background-position: center;
+    /* background-image: linear-gradient(0deg, #050505 0%, #1f1f1f 92%); */
+    background-image: url(./media/background/HeadBackground.png);
+    background-size: 100% 100%;
+    background-position: top center;
+    animation: fade 0.9s ease-in;
 }
 
 #logo-container {
@@ -64,7 +67,7 @@ button {
 }
 
 #dp-logo {
-    animation: fade 0.8s ease-in;
+    animation: fade 0.9s ease-in;
 }
 
 @media screen and (max-width: 1080px) {
@@ -73,12 +76,16 @@ button {
         padding-right: 0 !important;
         padding-left: 0 !important;
     }
-    #header-wrapper {
-        background-image: linear-gradient(0deg, #050505 0%, #1f1f1f 88%);
+    #header-wrapper { 
+        height: 100%;
+        background-image: linear-gradient(0deg, #050505 99%, #1f1f1f 100%);
+        background-image: url(./media/background/HeadBackground.png);
+        background-size: contain;
+        background-position: top center;
+        background-repeat: no-repeat;
     }
     #logo-container {
-        height: min-content;
-        padding: 0.25rem 0 3rem 0;
+        padding: 0.5rem 0 0 0;
     }
     #dp-logo {
         position: relative;
@@ -90,10 +97,10 @@ button {
 
 .downArrow {
     position: relative;
-    bottom: 0;
+    bottom: 2rem;
     margin: 0 auto;
     padding: 4px;
-    animation: fade 0.8s ease-in;
+    animation: fade 0.9s ease-in;
     text-align: center;
     z-index: 4;
 }
@@ -102,7 +109,7 @@ button {
     position: absolute;
     width: 2.675rem;
     bottom: 20%;
-    opacity: 0.6;
+    opacity: 0.5;
     animation: bounce;
     animation-duration: 3s;
     animation-delay: 0;
@@ -116,13 +123,16 @@ button {
 }
 
 @media screen and (max-width: 1080px) {
+    /** remove background: transparent and color: transparent properties to make arrow visible on mobile */
     .downArrow {
-        top: 5%;
+        background: transparent;
+        color: transparent;
     }
 	#arrow-image {
-	    width: 2.4rem;
+        /** irrelevant styles unless arrow is made visible on mobile */
+	    width: 0;
         top: 0;
-	    padding: 8px;
+        padding: 8px;
 	    margin-left: -1rem;
 	}
 }
@@ -176,11 +186,11 @@ button {
 }
 
 #music {
-    padding: 10px 0 30px 0;
+    padding: 20px 0 30px 0;
 }
 
 #movies, #art {
-    padding: 70px 0 50px 0;
+    padding: 70px 0 40px 0;
     max-width: 1200px;
 }
 
@@ -190,7 +200,7 @@ button {
 
 @media screen and (max-width: 1080px) {
     #intro {
-        padding: -10px 0 0 0;
+        padding: 0;
     }
     #music, #art {
         padding: 60px 0 0 0;
@@ -218,7 +228,7 @@ button {
     padding: 1rem 2rem;
     color: #f9f9f9;
     cursor: default;
-    animation: fade 0.8s ease-in;
+    animation: fade 0.9s ease-in;
 }
 
 .text-emphasis {
@@ -229,7 +239,6 @@ button {
 @media screen and (max-width: 1080px) {
     .lead.bio {
         font-size: 0.9rem;
-        margin-top: -1rem;
         margin-bottom: 0;
     }
 }
@@ -269,7 +278,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    animation: fade 0.8s ease-in;
+    animation: fade 0.9s ease-in;
 }
 
 #space-marine {
@@ -281,8 +290,13 @@ button {
 
 @media screen and (max-width: 1080px) {
     #space-marine { 
-        margin-bottom: -2rem;
-        max-height: 70%;
+        max-height: 95%;
+    }
+    #portrait-container {
+        /** you can adjust the max-height to mess with picture size without affecting container spacing */
+        max-height: 450px;
+        padding: 2rem 0 0 0;
+        align-items: start;
     }
 }
 
@@ -383,6 +397,9 @@ p.d-inline-block, .contact-redirect-anchor {
     p.d-inline-block, .contact-redirect-anchor {
         font-size: 1.75rem;
     }
+    .contact-redirect-anchor {
+        margin-left: 1rem;
+    }
 }
 
 .contact-redirect-anchor {
@@ -452,7 +469,7 @@ footer {
     -webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);
     filter: grayscale(100%);
-    transition: all 0.8s ease;
+    transition: all 0.9s ease;
     z-index: 1;
 }
 
@@ -460,7 +477,7 @@ footer {
     -webkit-filter: grayscale(0%);
     -moz-filter: grayscale(0%);
     filter: grayscale(0%);
-    transition: all 0.8s ease;
+    transition: all 0.9s ease;
 }
 
 .copyright {

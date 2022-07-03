@@ -301,7 +301,7 @@
       >
         <div class="row justify-content-center">
           <a href="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(75).webp" 
-            class="photos col-sm-6"
+            class="photos col-sm-12"
             data-toggle="lightbox" 
             data-gallery="image-gallery" 
             data-caption="This is an optional caption that describes the image"
@@ -312,7 +312,9 @@
               alt="Snowscape one"
             />
           </a>
-            <!-- Replace <a> above with the following comment block to go back to 2x2 photo grid 
+            <!-- Replace the <a> above with the following comment block to go back to 2x2 photo grid
+                the key here is col-sm-6 vs col-sm-12, 12 ...
+                the 6 value means it takes up 50% of container, while 12 is 100%
 
               <a href="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(68).webp" 
                 class="photos col-sm-6"
@@ -362,12 +364,13 @@
             data-gallery="image-gallery" 
             data-caption="This is an optional caption that describes the image"
           >
-          <img
-            src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(75).webp" 
-            class="art-gallery d-block w-100 rounded mt-2 mb-4" 
-            alt="Snowscape three"
-          />
+            <img
+              src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(75).webp" 
+              class="art-gallery d-block w-100 rounded mt-2 mb-4" 
+              alt="Snowscape three"
+            />
           </a>
+        
 
           <!-- Hidden photos, show in slideshow but not on screen -->
           <div 
