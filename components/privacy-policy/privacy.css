@@ -12,7 +12,11 @@ h1, h2, h3, h4 {
     padding-bottom: 4px;
 }
 
+/**
+    HIDDEN, erase display:none to show privacy policy link in footer
+**/
 .privacypolicy {
+    display: none !important;
     padding: 0.5rem 0 1rem 0;
     margin: 0 auto;
     max-width: 97%;
@@ -24,6 +28,7 @@ h1, h2, h3, h4 {
         max-width: 92%;
     }
 }
+
 
 a {
     text-decoration: none;
