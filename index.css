@@ -493,9 +493,11 @@ footer {
         font-size: 1rem;
     }
 }
-footer.list-group {
+
+.footer.list-group {
     padding-right: 1rem;
 }
+
 .list-group-item.footer {
     padding: 0 1.4rem;
 }
