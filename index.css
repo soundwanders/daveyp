@@ -417,6 +417,10 @@ footer {
   overflow: hidden;
 }
 
+#footer-full-width {
+  background: #151515;
+}
+
 .footer-flex {
     display: -webkit-box;
     display: -moz-box;
