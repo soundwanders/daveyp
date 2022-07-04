@@ -24,6 +24,12 @@
     100% {transform: translateY(0);}
 }
 
+/** overwrite bootstrap class container-fluid default padding */
+.container-fluid {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
 body {
     width: 100%;
     background-color: #050505;
@@ -69,11 +75,6 @@ button {
 }
 
 @media screen and (max-width: 1020px) {
-    /** overwrite bootstrap class container-fluid default padding */
-    .container-fluid {
-        padding-right: 0 !important;
-        padding-left: 0 !important;
-    }
     #header-wrapper { 
         /** background-image: linear-gradient(0deg, #050505 99%, #1f1f1f 100%); */
         background-image: url(./media/background/MobileBackground.png);
@@ -173,7 +174,7 @@ button {
 }
 
 #intro {
-    padding: 80px 0 0 0;
+    padding: 100px 0 0 0;
 }
 
 #music {
