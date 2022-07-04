@@ -493,7 +493,9 @@ footer {
         font-size: 1rem;
     }
 }
-
+footer.list-group {
+    padding-right: 1rem;
+}
 .list-group-item.footer {
     padding: 0 1.4rem;
 }
@@ -507,8 +509,6 @@ footer {
         width: 1.675rem;
     }
 }
-
-
 
 .privacy-policy-block {
     /** double declaration of monospace prevents browsers from reducing font size */
