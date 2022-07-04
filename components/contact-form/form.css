@@ -77,7 +77,7 @@ textarea::-moz-placeholder { color: #adadad;}
 */
 
 .label-input {
-  color: #f9f9f9;
+  color: #fcfcfc;
   font-size: 0.7rem;
   letter-spacing: 1px;
   line-height: 1.5;
@@ -89,7 +89,7 @@ textarea::-moz-placeholder { color: #adadad;}
   display: block;
   width: 100%;
   background: #1a1a1a;
-  color: #f9f9f9;
+  color: #fcfcfc;
   font-size: 1rem;
   line-height: 1.2;
   padding-right: 14px;
@@ -132,7 +132,7 @@ textarea.input {
   height: 50px;
   padding: 0 20px;
   background-color: #1a1a1a;
-  color: #f9f9f9;
+  color: #fcfcfc;
   border: 1px solid #b9b9b9;
   border-radius: 13px;
   font-size: 1.1rem;
