@@ -1,6 +1,6 @@
 function resizeHero() {
   var $headerWrapper = $('#header-wrapper');
-  $headerWrapper.css('height', '' + $(window).height() - 40);
+  $headerWrapper.css('height', '' + $(window).height());
 }
 
 $(document).ready(function() {
