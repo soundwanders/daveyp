@@ -230,7 +230,6 @@ button {
 @media screen and (max-width: 1080px) {
     .lead.bio {
         font-size: 0.875rem;
-        margin-bottom: 0;
     }
 }
 
@@ -281,7 +280,7 @@ button {
 
 @media screen and (max-width: 1080px) {
     #space-marine { 
-        max-height: 72%;
+        max-height: 70%;
     }
 }
 
