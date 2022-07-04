@@ -68,7 +68,7 @@ button {
     animation: fade 0.9s ease-in;
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1020px) {
     /** overwrite bootstrap class container-fluid default padding */
     .container-fluid {
         padding-right: 0 !important;
@@ -92,7 +92,7 @@ button {
 
 .downArrow {
     position: relative;
-    bottom: 2rem;
+    bottom: 1.25rem;
     margin: 0 auto;
     padding: 4px;
     animation: fade 0.9s ease-in;
@@ -152,7 +152,7 @@ button {
     transform:scaleX(1.05);
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1020px) {
     .dividing-line {
         width: 92%;
         min-height: 3rem;
@@ -189,10 +189,9 @@ button {
     padding: 10px 0 60px 0;
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1020px) {
     #intro {
         padding: 0;
-        margin: -1rem 0;
     }
     #music, #art {
         padding: 60px 0 0 0;
@@ -228,7 +227,7 @@ button {
     color: #fdc9d2;
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1020px) {
     .lead.bio {
         font-size: 0.875rem;
     }
@@ -243,7 +242,7 @@ button {
     padding: 6px 0;
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1020px) {
     #elevate {
         font-size: 1.33rem;
         font-weight: 600;
@@ -257,7 +256,7 @@ button {
     font-weight: 900;
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1020px) {
     #contact-me {
         font-size: 1.9rem;
     }
@@ -279,7 +278,7 @@ button {
     pointer-events: none;
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1020px) {
     #space-marine { 
         max-height: 70%;
     }
@@ -328,7 +327,7 @@ button {
     padding: 0.5rem 1.5rem;
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1020px) {
     .art-header {
         font-size: 2rem;
     }
@@ -361,7 +360,7 @@ button {
     box-shadow: 0 3px 6px 0 rgba(73, 73, 73, 0.2), 0 6px 12px 0 rgba(32, 32, 32, 0.15);
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1020px) {
     .youtube-iframe {
         padding: 0 2.2rem;
     }
@@ -375,7 +374,7 @@ p.d-inline-block, .contact-redirect-anchor {
     text-align: center;
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1020px) {
     p.d-inline-block {
         padding: 0 2.2rem;
     }
@@ -430,7 +429,7 @@ footer {
     padding: 60px 0;
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1020px) {
     .footer-flex {
         flex-direction: column;
         text-align: center;
@@ -482,7 +481,7 @@ footer {
     font-size: 0.8rem;
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1020px) {
     .copyright {
         position: initial;
         padding: 2rem 0 0 0;
@@ -498,7 +497,7 @@ footer {
     width: 2rem;
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1020px) {
     .footer-logo {
         width: 1.675rem;
     }
@@ -512,7 +511,7 @@ footer {
     font-size: 10px;
 
     /**
-    REMOVE DISPLAY HIDDEN TO SHOW PRIVACY POLICY LINK 
+    REMOVE display: none TO SHOW PRIVACY POLICY LINK 
     */
     display: none !important;
 
@@ -522,12 +521,11 @@ footer {
 }
 
 .privacy-policy-block a {
-    
     text-decoration: none;
     color: #f9f9f9;
 }
 
-@media (max-width:1080px) {
+@media (max-width:1020px) {
     .privacy-policy-block {
         text-align: center;
         padding: 0 0 0.5rem 0;
