@@ -285,7 +285,7 @@ button {
 
 @media screen and (max-width: 1020px) {
     #portrait-container {
-        margin: -2.5rem 0;
+        margin: -3rem 0 -2.5rem 0;
     }
     #space-marine { 
         max-height: 72%;
