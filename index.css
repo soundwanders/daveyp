@@ -50,14 +50,12 @@ button {
 */
 
 #header-wrapper {
-    position: relative;
     width: 100%;
-    height: 100vh;
-    background-color: #050505;
     /* background-image: linear-gradient(0deg, #050505 0%, #1f1f1f 92%); */
-    background-image: url(./media/background/HeadBackground.png);
+    background-image: url(./media/background/Background.png);
     background-size: 100% 100%;
     background-position: top center;
+    background-attachment: scroll;
     animation: fade 0.9s ease-in;
 }
 
@@ -77,11 +75,9 @@ button {
         padding-left: 0 !important;
     }
     #header-wrapper { 
-        height: 100%;
-        background-image: linear-gradient(0deg, #050505 99%, #1f1f1f 100%);
-        background-image: url(./media/background/HeadBackground.png);
+        /** background-image: linear-gradient(0deg, #050505 99%, #1f1f1f 100%); */
+        background-image: url(./media/background/MobileBackground.png);
         background-size: contain;
-        background-position: top center;
         background-repeat: no-repeat;
     }
     #logo-container {
@@ -93,7 +89,6 @@ button {
         max-width: 95%;
     }
 }
-
 
 .downArrow {
     position: relative;
@@ -173,10 +168,6 @@ button {
 ********************************
 */ 
 
-#black-bg-wrapper {
-    background-color: #050505;
-}
-
 #intro, #music, #movies, #art, #call-to-action {
     background: transparent;
 }
@@ -238,7 +229,7 @@ button {
 
 @media screen and (max-width: 1080px) {
     .lead.bio {
-        font-size: 0.9rem;
+        font-size: 0.875rem;
         margin-bottom: 0;
     }
 }
@@ -290,13 +281,7 @@ button {
 
 @media screen and (max-width: 1080px) {
     #space-marine { 
-        max-height: 95%;
-    }
-    #portrait-container {
-        /** you can adjust the max-height to mess with picture size without affecting container spacing */
-        max-height: 450px;
-        padding: 2rem 0 0 0;
-        align-items: start;
+        max-height: 72%;
     }
 }
 
