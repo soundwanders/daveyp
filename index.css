@@ -300,7 +300,8 @@ button {
         display: initial;
     }
     #portrait {
-        max-height: 72%;
+        max-height: 70%;
+        margin: 0;
         padding: 0;
         user-select: none;
         pointer-events: none;
