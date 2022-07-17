@@ -212,13 +212,16 @@ button {
 .lead.bio { 
     align-items: center;
     font-weight: 400;
-    font-size: 1.125rem;
+    font-size: 1.15rem;
     text-align: center;
     text-rendering: optimizeLegibility;
     line-height: 1.8;
-    padding: 1rem 2rem;
+    padding: 0.75rem 2rem;
     color: #fcfcfc;
     cursor: default;
+}
+
+#bio-container {
     animation: fade 0.9s ease-in;
 }
 
@@ -276,19 +279,32 @@ button {
     animation: fade 0.9s ease-in;
 }
 
-#space-marine {
-    max-height: 80%;
+.image-wrapper {
+    background: url(./media/DaveyPerronImagev2.jpg);
+    background-size: cover;
     padding: 0;
+    margin-top: -2rem;
     user-select: none;
     pointer-events: none;
 }
 
-@media screen and (max-width: 1020px) {
-    #portrait-container {
-        margin: -3.75rem 0 -2rem 0;
+.mobile-portrait {
+    display: none;
+}
+
+@media screen and (max-width: 960px) {
+    .image-wrapper {
+        display: none;
     }
-    #space-marine { 
-        max-height: 72%;
+    .mobile-portrait {
+        display: initial;
+    }
+    #portrait {
+        max-height: 70%;
+        margin: 0;
+        padding: 0;
+        user-select: none;
+        pointer-events: none;
     }
 }
 
