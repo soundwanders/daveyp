@@ -292,7 +292,7 @@ button {
     display: none;
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (min-width: 960px) {
     .image-wrapper {
         display: none;
     }
