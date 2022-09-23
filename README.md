@@ -1,8 +1,12 @@
 #### soundwanders
 
-### [soundwanders.github.io/daveyp](https://soundwanders.github.io/daveyp/)
+### [daveyperron.com](https://www.daveyperron.com)
+<br />
 
-#### Check out Davey's socials! Music, movies, art and more.
+#### This is the public code repository for a website I built for a client.
+<br />
 
-- YouTube = https://www.youtube.com/daveyperron
-- Twitter = https://twitter.com/DaveyPerron
+#### Built with Boostrap plus a mix of Vanilla JS & JQuery
+<br />
+
+### Davey Perron is an artist, composer, creator who is most notably known for his work in the band 'Ultra Nightmare' and his solo project 'NeoNeoN'.
